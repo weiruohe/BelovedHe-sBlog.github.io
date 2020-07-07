@@ -4,6 +4,45 @@
   
     
     <entry>
+      <title>Improving Multimodal Named Entity Recognition via Entity Span Detection with Unified Multimodal Transformer</title>
+      <link href="/2020/07/06/improving-multimodal-named-entity-recognition-via-entity-spandetection-with-unified-multimodal-transformer/"/>
+      <url>/2020/07/06/improving-multimodal-named-entity-recognition-via-entity-spandetection-with-unified-multimodal-transformer/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Summary"><a href="#Summary" class="headerlink" title="##Summary"></a>##Summary</h2><p>Question:</p><p>1.the words are insensitive to the visual context</p><p>2.most of the words ignore the bias brought by the visual context</p><p>Strategy:</p><p>1.main strategy:多通道交互模块（MMI）：standard Transformer layer+cross-model attention mechanism</p><p>2.auxiliary task:leverage purely text-based entity span detection</p><p>Consequence:</p><p>achieves the new state-of-the-artperformance on two benchmark datasets.</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>nlp basic knowledge</title>
+      <link href="/2020/07/05/nlp-basic-knowledge-1/"/>
+      <url>/2020/07/05/nlp-basic-knowledge-1/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>nlp basic knowledge</title>
+      <link href="/2020/07/05/nlp-basic-knowledge/"/>
+      <url>/2020/07/05/nlp-basic-knowledge/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PPT Useful Plugin</title>
       <link href="/2020/05/11/ruan-jian-gong-ju/ppt/ppt-useful-plugin/"/>
       <url>/2020/05/11/ruan-jian-gong-ju/ppt/ppt-useful-plugin/</url>
