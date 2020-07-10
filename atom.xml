@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weiruohe.github.io/"/>
-  <updated>2020-07-07T11:39:20.821Z</updated>
+  <updated>2020-05-27T02:05:41.493Z</updated>
   <id>https://weiruohe.github.io/</id>
   
   <author>
@@ -15,111 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>deep learning notes in Wuenda&#39;s class</title>
-    <link href="https://weiruohe.github.io/2020/07/07/deep-learning-notes-in-wuenda-s-class/"/>
-    <id>https://weiruohe.github.io/2020/07/07/deep-learning-notes-in-wuenda-s-class/</id>
-    <published>2020-07-07T09:49:47.000Z</published>
-    <updated>2020-07-07T11:39:20.821Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;1-多功能&quot;&gt;&lt;a href=&quot;#1-多功能&quot; class=&quot;headerlink&quot; title=&quot;1.多功能&quot;&gt;&lt;/a&gt;1.多功能&lt;/h2&gt;&lt;h3 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MNER-Multimodal Entity Span Detection</title>
-    <link href="https://weiruohe.github.io/2020/07/06/improving-multimodal-named-entity-recognition-via-entity-spandetection-with-unified-multimodal-transformer/"/>
-    <id>https://weiruohe.github.io/2020/07/06/improving-multimodal-named-entity-recognition-via-entity-spandetection-with-unified-multimodal-transformer/</id>
-    <published>2020-07-06T14:48:36.000Z</published>
-    <updated>2020-07-08T12:27:46.588Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Named-entity recognition&lt;/strong&gt; (NER) (also known as &lt;strong&gt;entity identification&lt;/strong&gt;, &lt;strong&gt;entity
-        
-      
-    
-    </summary>
-    
-    
-      <category term="论文泛读" scheme="https://weiruohe.github.io/categories/%E8%AE%BA%E6%96%87%E6%B3%9B%E8%AF%BB/"/>
-    
-    
-      <category term="-MNER -Entity Span Detection" scheme="https://weiruohe.github.io/tags/MNER-Entity-Span-Detection/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>nlp basic knowledge</title>
-    <link href="https://weiruohe.github.io/2020/07/05/nlp-basic-knowledge-1/"/>
-    <id>https://weiruohe.github.io/2020/07/05/nlp-basic-knowledge-1/</id>
-    <published>2020-07-05T15:28:25.000Z</published>
-    <updated>2020-07-05T15:28:25.700Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>nlp basic knowledge</title>
-    <link href="https://weiruohe.github.io/2020/07/05/nlp-basic-knowledge/"/>
-    <id>https://weiruohe.github.io/2020/07/05/nlp-basic-knowledge/</id>
-    <published>2020-07-05T14:58:16.000Z</published>
-    <updated>2020-07-05T14:58:16.642Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>PPT Useful Plugin</title>
