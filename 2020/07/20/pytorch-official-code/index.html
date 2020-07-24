@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="MNER-Multimodal Entity Span Detection, NLP，知识图谱，liudongdong1 .etc">
+    <meta name="keywords" content="pytorch-official-code, NLP，知识图谱，liudongdong1 .etc">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>MNER-Multimodal Entity Span Detection | BelovedHe&#39;s Blogs</title>
+    <title>pytorch-official-code | BelovedHe&#39;s Blogs</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -334,12 +334,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/github-25970295/blogImage/raw/master/img/petal-5044428.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">MNER-Multimodal Entity Span Detection</h1>
+                    <h1 class="description center-align post-title">pytorch-official-code</h1>
                 </div>
             </div>
         </div>
@@ -462,25 +462,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/MNER/">
-                                <span class="chip bg-color">MNER</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E8%AE%BA%E6%96%87%E6%B3%9B%E8%AF%BB/" class="post-category">
-                                论文泛读
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -489,28 +476,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-07-06
+                    2020-07-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-07-10
+                    2020-07-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.4k
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    5 Min
+                    6 Min
                 </div>
                 
 
@@ -526,76 +513,200 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <blockquote>
-<p><strong>Named-entity recognition</strong> (NER) (also known as <strong>entity identification</strong>, <strong>entity chunking</strong> and <strong>entity extraction</strong>) is a subtask of <a href="https://encyclopedia.thefreedictionary.com/Information+extraction" target="_blank" rel="noopener">information extraction</a> that seeks to locate and classify named entities in text into pre-defined categories such as the names of persons, organizations, locations, expressions of times, quantities, monetary values, percentages, etc.</p>
+<hr>
+<p>title: pytorch official code<br>date: 2020-07-20 15:39:44<br>author: Weiruohe<br>categories: AI<br>reprintPolicy: cc_by<br>cover: false<br>tags:</p>
+<ul>
+<li>pytorch</li>
+</ul>
+<hr>
 </blockquote>
-<h4 id="A-example-of-NER"><a href="#A-example-of-NER" class="headerlink" title="A example of NER:"></a>A example of NER:</h4><table>
-<thead>
-<tr>
-<th>Jim bought 300 shares of Acme Corp. in 2006.</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>[Jim]Person bought 300 shares of [Acme Corp.]Organization in [2006]Time.</td>
-</tr>
-</tbody></table>
-<p><strong>level</strong>:ACL2020</p>
-<p><strong>author:</strong>Jianfei Yu</p>
-<p><strong>keywords:</strong>MNER,Entity Span Detection</p>
-<h2 id="Qusetions"><a href="#Qusetions" class="headerlink" title="##Qusetions"></a>##Qusetions</h2><blockquote>
-<h3 id="MNER-drawbacks"><a href="#MNER-drawbacks" class="headerlink" title="MNER drawbacks"></a>MNER drawbacks</h3></blockquote>
-<ul>
-<li><p>the words are insensitive to the visual context</p>
-<p>现有的方法侧重模态间交互进行建模，因为单词的隐藏层表示仍然基于文本上下文，对视觉上下文不敏感。</p>
-<p>忽略了合并视觉信息的误差。关联的图片信息只包括句子中的一两个实体，不涉及其他实体，这样会使其他实体无法识别。</p>
-</li>
-<li><p>most of the words ignore the bias brought by the visual context</p>
-</li>
-</ul>
-<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h3 id="Strategy"><a href="#Strategy" class="headerlink" title="Strategy:"></a>Strategy:</h3><p>1.main strategy:多通道交互模块（MMI）：standard Transformer layer+cross-model attention mechanism</p>
-<p>2.auxiliary task:leverage purely text-based entity span detection</p>
-<p>Consequence:</p>
-<p>achieves the new state-of-the-artperformance on two benchmark datasets.</p>
-<h2 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h2><p> Overall Architecture of Our Unified Multimodal Transformer.</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200708184644333.png" alt="image-20200708184644333"></p>
-<h3 id="Transformer模型"><a href="#Transformer模型" class="headerlink" title="Transformer模型"></a>Transformer模型</h3><h5 id="采用encoder-decoder模型。与Attention相似"><a href="#采用encoder-decoder模型。与Attention相似" class="headerlink" title="采用encoder-decoder模型。与Attention相似"></a>采用encoder-decoder模型。与Attention相似</h5><p><img src="C:/Users/89582/AppData/Roaming/Typora/typora-user-images/image-20200708094459080.png" alt="image-20200708094459080"></p>
-<p><strong>基本内部结构</strong>如图所示，进入Encoder层前先将单词进行Emebedding操作，self-attention操作后送入前馈神经网络，也可并行进行self-attention和前馈神经网络。</p>
-<p><img src="C:/Users/89582/AppData/Roaming/Typora/typora-user-images/image-20200708095052382.png" alt="image-20200708095052382"></p>
-<h4 id="BERT"><a href="#BERT" class="headerlink" title="BERT"></a><strong>BERT</strong></h4><ul>
-<li><p>全称Bidirectional Encoder Representation from Transformers，即双向Transformer的Encoder</p>
-</li>
-<li><p><strong>创新点：</strong>pre-train：Masked LM+Next Sentence Prediction</p>
-<p><strong>MLM（Masked LM)</strong>可以理解为完形填空，作者会随机mask每一个句子中15%的词，用其上下文来做预测，例如：<code>my dog is hairy → my dog is [MASK]</code></p>
-<p>此处将hairy进行了mask处理，然后采用非监督学习的方法预测mask位置的词是什么，但是该方法有一个问题，因为是mask15%的词，其数量已经很高了，这样就会导致某些词在fine-tuning阶段从未见过，为了解决这个问题，作者做了如下的处理：</p>
-<ul>
-<li>80%的时间是采用[mask]，my dog is hairy → my dog is [MASK]</li>
-<li>10%的时间是随机取一个词来代替mask的词，my dog is hairy -&gt; my dog is apple</li>
-<li>10%的时间保持不变，my dog is hairy -&gt; my dog is hairy</li>
-</ul>
-<p>那么为啥要以一定的概率使用随机词呢？这是因为transformer要保持对每个输入token分布式的表征，否则Transformer很可能会记住这个[MASK]就是”hairy”。至于使用随机词带来的负面影响，文章中解释说,所有其他的token(即非”hairy”的token)共享15%*10% = 1.5%的概率，其影响是可以忽略不计的。Transformer全局的可视，又增加了信息的获取，但是不让模型获取全量信息。<br>注意：</p>
-<ul>
-<li>有参数dupe_factor决定数据duplicate的次数。</li>
-<li>其中，create_instance_from_document函数，是构造了一个sentence-pair的样本。对每一句，先生成[CLS]+A+[SEP]+B+[SEP]，有长（0.9）有短（0.1），再加上mask，然后做成样本类object。</li>
-<li>create_masked_lm_predictions函数返回的tokens是已经被遮挡词替换之后的tokens</li>
-<li>masked_lm_labels则是遮挡词对应位置真实的label。</li>
-</ul>
-<h4 id="Next-Sentence-Prediction"><a href="#Next-Sentence-Prediction" class="headerlink" title="Next Sentence Prediction"></a>Next Sentence Prediction</h4><p>选择一些句子对A与B，其中50%的数据B是A的下一条句子，剩余50%的数据B是语料库中随机选择的，学习其中的相关性，添加这样的预训练的目的是目前很多NLP的任务比如QA和NLI都需要理解两个句子之间的关系，从而能让预训练的模型更好的适应这样的任务。<br>个人理解：</p>
-<ul>
-<li>Bert先是用Mask来提高视野范围的信息获取量，增加duplicate再随机Mask，这样跟RNN类方法依次训练预测没什么区别了除了mask不同位置外；</li>
-<li>全局视野极大地降低了学习的难度，然后再用A+B/C来作为样本，这样每条样本都有50%的概率看到一半左右的噪声；</li>
-<li>但直接学习Mask A+B/C是没法学习的，因为不知道哪些是噪声，所以又加上next_sentence预测任务，与MLM同时进行训练，这样用next来辅助模型对噪声/非噪声的辨识，用MLM来完成语义的大部分的学习。</li>
-</ul>
-</li>
-</ul>
-<h4 id="positional-Encoding"><a href="#positional-Encoding" class="headerlink" title="positional Encoding"></a><strong>positional Encoding</strong></h4><p>Transformer中缺少一种解释单词顺序的方法，positional Encoding维度和embedding一样，可以通过它计算出任意两个词之间的距离，最终将它和Embedding相加输入下一层即可</p>
-<h4 id="self-attention"><a href="#self-attention" class="headerlink" title="self-attention"></a><strong>self-attention</strong></h4><ol>
-<li>定义三个向量：Query,Key,Value(三个矩阵是embedding向量与三个随机矩阵相乘的结果，eg：维度（64，128)，注意第二个维度与embedding向量的维度相同</li>
-<li>scores=Q*K将结果除以1提到的第一个维度的开方得到的是softmax</li>
-</ol>
-<p>该词代表的是每个词对于当前位置的词的相关性大小。将value和softmax相乘得到的各个结果进行相加得到的结果即为self-attention在当前节点的值</p>
-<p><strong>Resnet</strong></p>
-<p>​    ResNet是一种残差网络,网络越深，获取的信息越多，特征也越丰富。但是根据实验表明，随着网络的加深，优化效果反而越差，测试数据和训练数据的准确率反而降低了。这是由于网络的加深会造成梯度爆炸和梯度消失的问题。</p>
-<p><img src="C:/Users/89582/AppData/Roaming/Typora/typora-user-images/image-20200709111035572.png" alt="image-20200709111035572"></p>
-<p>​                                                           Multimodal Interaction (MMI) Module.</p>
+<h3 id="1-numpy"><a href="#1-numpy" class="headerlink" title="1.numpy"></a>1.numpy</h3><p>[^numpy提供n维数组对象，是科学计算的通用框架，不涉及图，深度学习、梯度。但可借助网络手动实现向前向后传递。]: </p>
+<pre><code># -*- coding: utf-8 -*-
+import numpy as np
+
+# N is batch size; D_in is input dimension;
+# H is hidden dimension; D_out is output dimension.
+N, D_in, H, D_out = 64, 1000, 100, 10
+
+# Create random input and output data
+x = np.random.randn(N, D_in)
+y = np.random.randn(N, D_out)
+
+# Randomly initialize weights
+w1 = np.random.randn(D_in, H)
+w2 = np.random.randn(H, D_out)
+
+learning_rate = 1e-6
+for t in range(500):
+    # Forward pass: compute predicted y
+    h = x.dot(w1)
+    h_relu = np.maximum(h, 0)
+    y_pred = h_relu.dot(w2)
+
+    # Compute and print loss
+    loss = np.square(y_pred - y).sum()
+    print(t, loss)
+
+    # Backprop to compute gradients of w1 and w2 with respect to loss
+    grad_y_pred = 2.0 * (y_pred - y)
+    grad_w2 = h_relu.T.dot(grad_y_pred)
+    grad_h_relu = grad_y_pred.dot(w2.T)
+    grad_h = grad_h_relu.copy()
+    grad_h[h &lt; 0] = 0
+    grad_w1 = x.T.dot(grad_h)
+
+    # Update weights
+    w1 -= learning_rate * grad_w1
+    w2 -= learning_rate * grad_w2</code></pre><p>1.1numpy.random.randn(d0,d1,…,dn)</p>
+<blockquote>
+<p>#rand 函数给定维度生成[0,1)之间的数据，包含0，不包含1</p>
+<p>dn表示每个维度</p>
+<p>返回值为维度为d0<em>d1</em>….*dn的矩阵</p>
+</blockquote>
+<p>1.2range(start,stop,step)函数</p>
+<blockquote>
+<p>start:计数开始点（默认0）</p>
+<p>stop:技术结束点（不包括stop）</p>
+<p>step：步长（默认1）</p>
+</blockquote>
+<p>1.3numpy.dot(arr1,arr2)//numpy.dot(matrix1,matrix2)</p>
+<blockquote>
+<p>求解两数组的内积/矩阵积</p>
+</blockquote>
+<p>1.4numpy.maximum(x,y)</p>
+<blockquote>
+<p>求x与y较大者</p>
+</blockquote>
+<p>1.5numpy.max(a,axis=None,out=None,keepdims=False)</p>
+<blockquote>
+<p>求序列的最值，最少接收一个参数，axis（=0为列向，=1为行向量）</p>
+</blockquote>
+<p>1.6matrix.T(m)</p>
+<blockquote>
+<p>求矩阵的转置</p>
+</blockquote>
+<p>1.7numpy.square(num)</p>
+<blockquote>
+<p>求num的平方</p>
+</blockquote>
+<h3 id="2-Tensor"><a href="#2-Tensor" class="headerlink" title="2.Tensor"></a>2.Tensor</h3><p>[^Tensor是张量，即任意维度的向量，pytorch可以利用GPU加速数字计算，要在GPU上运行pytorch Tensor，需要将其转换为新的数据类型]: </p>
+<pre><code># -*- coding: utf-8 -*-
+
+import torch
+
+
+dtype = torch.float
+device = torch.device("cpu")
+# device = torch.device("cuda:0") # Uncomment this to run on GPU
+
+# N is batch size; D_in is input dimension;
+# H is hidden dimension; D_out is output dimension.
+N, D_in, H, D_out = 64, 1000, 100, 10
+
+# Create random input and output data
+x = torch.randn(N, D_in, device=device, dtype=dtype)
+y = torch.randn(N, D_out, device=device, dtype=dtype)
+
+# Randomly initialize weights
+w1 = torch.randn(D_in, H, device=device, dtype=dtype)
+w2 = torch.randn(H, D_out, device=device, dtype=dtype)
+
+learning_rate = 1e-6
+for t in range(500):
+    # Forward pass: compute predicted y
+    h = x.mm(w1)
+    h_relu = h.clamp(min=0)
+    y_pred = h_relu.mm(w2)
+
+    # Compute and print loss
+    loss = (y_pred - y).pow(2).sum().item()
+    if t % 100 == 99:
+        print(t, loss)
+
+    # Backprop to compute gradients of w1 and w2 with respect to loss
+    grad_y_pred = 2.0 * (y_pred - y)
+    grad_w2 = h_relu.t().mm(grad_y_pred)
+    grad_h_relu = grad_y_pred.mm(w2.t())
+    grad_h = grad_h_relu.clone()
+    grad_h[h &lt; 0] = 0
+    grad_w1 = x.t().mm(grad_h)
+
+    # Update weights using gradient descent
+    w1 -= learning_rate * grad_w1
+    w2 -= learning_rate * grad_w2</code></pre><p>2.1torch.device(‘cpu’/‘cuda’)</p>
+<blockquote>
+<p>将torch.Tensor分配到的设备的对象</p>
+</blockquote>
+<p>2.2torch.mm(input,mat2,out=None)</p>
+<blockquote>
+<p>对矩阵input和mat2执行矩阵乘法，返回结果矩阵</p>
+</blockquote>
+<p>2.3torch.clamp(input,min,max,out=None)-&gt;Tensor</p>
+<blockquote>
+<p>input:输入张量；min：限制范围下限；max：上限；out：输出张量</p>
+</blockquote>
+<h3 id="3-Autograd"><a href="#3-Autograd" class="headerlink" title="3.Autograd"></a>3.Autograd</h3><p>[^针对大型网络而言，手动实现前向和后向传递非常麻烦，使用autograd自动计算神经网络中的反向传递。pytorch中的autograd软件包完全提供了此功能，前向传递定义一个计算图；节点为张量，边为输入张量产生输出张量的函数，接着就可以通过该图进行反向传播，可以轻松计算梯度。if x:Tensor,x.requires_grad=True,x.grad是另一个Tensor。]: </p>
+<blockquote>
+<p>不需要手动通过网络实现反向传递，使用Pytorch Tensor和autograd来实现两层网络。</p>
+</blockquote>
+<pre><code># -*- coding: utf-8 -*-
+import torch
+
+dtype = torch.float
+device = torch.device("cpu")
+# device = torch.device("cuda:0") # Uncomment this to run on GPU
+
+# N is batch size; D_in is input dimension;
+# H is hidden dimension; D_out is output dimension.
+N, D_in, H, D_out = 64, 1000, 100, 10
+
+# Create random Tensors to hold input and outputs.
+# Setting requires_grad=False indicates that we do not need to compute gradients
+# with respect to these Tensors during the backward pass.
+x = torch.randn(N, D_in, device=device, dtype=dtype)
+y = torch.randn(N, D_out, device=device, dtype=dtype)
+
+# Create random Tensors for weights.
+# Setting requires_grad=True indicates that we want to compute gradients with
+# respect to these Tensors during the backward pass.
+w1 = torch.randn(D_in, H, device=device, dtype=dtype, requires_grad=True)
+w2 = torch.randn(H, D_out, device=device, dtype=dtype, requires_grad=True)
+
+learning_rate = 1e-6
+for t in range(500):
+    # Forward pass: compute predicted y using operations on Tensors; these
+    # are exactly the same operations we used to compute the forward pass using
+    # Tensors, but we do not need to keep references to intermediate values since
+    # we are not implementing the backward pass by hand.
+    y_pred = x.mm(w1).clamp(min=0).mm(w2)
+
+    # Compute and print loss using operations on Tensors.
+    # Now loss is a Tensor of shape (1,)
+    # loss.item() gets the scalar value held in the loss.
+    loss = (y_pred - y).pow(2).sum()
+    if t % 100 == 99:
+        print(t, loss.item())
+
+    # Use autograd to compute the backward pass. This call will compute the
+    # gradient of loss with respect to all Tensors with requires_grad=True.
+    # After this call w1.grad and w2.grad will be Tensors holding the gradient
+    # of the loss with respect to w1 and w2 respectively.
+    loss.backward()
+
+    # Manually update weights using gradient descent. Wrap in torch.no_grad()
+    # because weights have requires_grad=True, but we don't need to track this
+    # in autograd.
+    # An alternative way is to operate on weight.data and weight.grad.data.
+    # Recall that tensor.data gives a tensor that shares the storage with
+    # tensor, but doesn't track history.
+    # You can also use torch.optim.SGD to achieve this.
+    with torch.no_grad():
+        w1 -= learning_rate * w1.grad
+        w2 -= learning_rate * w2.grad
+
+        # Manually zero the gradients after updating weights
+        w1.grad.zero_()
+        w2.grad.zero_()</code></pre><p>3.1</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -629,7 +740,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://weiruohe.github.io" rel="external nofollow noreferrer">Weiruohe</a>
+                    <a href="https://weiruohe.github.io" rel="external nofollow noreferrer">WeiRuoHe</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -639,7 +750,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://weiruohe.github.io/2020/07/06/improving-multimodal-named-entity-recognition-via-entity-spandetection-with-unified-multimodal-transformer/">https://weiruohe.github.io/2020/07/06/improving-multimodal-named-entity-recognition-via-entity-spandetection-with-unified-multimodal-transformer/</a>
+                    <a href="https://weiruohe.github.io/2020/07/20/pytorch-official-code/">https://weiruohe.github.io/2020/07/20/pytorch-official-code/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -652,7 +763,7 @@
                     All articles in this blog are used except for special statements
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     reprint polocy. If reproduced, please indicate source
-                    <a href="https://weiruohe.github.io" target="_blank">Weiruohe</a>
+                    <a href="https://weiruohe.github.io" target="_blank">WeiRuoHe</a>
                     !
                 </span>
             </div>
@@ -676,11 +787,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/MNER/">
-                                    <span class="chip bg-color">MNER</span>
-                                </a>
-                            
+                            <span class="chip bg-color">No tag</span>
                         </div>
                     
                 </div>
@@ -846,35 +953,71 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2020/07/07/deep-learning-wuenda/">
+                <a href="/2020/07/20/pytorch-official-code/">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/github-25970295/blogImage/raw/master/img/petal-5044428.png" class="responsive-img" alt="deep learning-Wuenda">
                         
-                        <span class="card-title">deep learning-Wuenda</span>
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="pytorch-official-code">
+                        
+                        <span class="card-title">pytorch-official-code</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1.多功能note
+                            
 
-n=number of features
-
-x(i)=input of ith training example
-
-x(i)j=value of j feature in ith training example
-假设
+title: pytorch official codedate: 2020-07-20 15:39:44author: Weiruohecategories: AIreprintPolicy: cc_bycover: falsetag
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-07
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            WeiRuoHe
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/07/15/attention-is-all-your-need/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Attention is all your need">
+                        
+                        <span class="card-title">Attention is all your need</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Expanding  knowledge
+1.RNN(Recurrent Neural Network)循环神经网络：为了能更好的处理前后相关的sequence信息提出了RNN。假设该网络在输入为xt，隐藏层为st，输出为ot，前提下，st
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -894,53 +1037,8 @@ x(i)j=value of j feature in ith training example
                         <span class="chip bg-color">deep-learning</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/05/11/ruan-jian-gong-ju/ppt/ppt-useful-plugin/">
-                    <div class="card-image">
-                        
-                        <img src="https://gitee.com/github-25970295/blogImage/raw/master/img/ppt.webp" class="responsive-img" alt="PPT Useful Plugin">
-                        
-                        <span class="card-title">PPT Useful Plugin</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            1、PPT美化大师“让制作专业精美PPT变得简单”“让不会做PPT的人，也能做好PPT”作为一款由wps的开发公司金山软件开发的PPT插件，自然来头不小，也不负大师之名。
-1.1、内容规划 生成模板在美化大师工具栏选择新建一个PPT，选择美
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-11
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/" class="post-category">
-                                    软件工具
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/PPT/">
-                        <span class="chip bg-color">PPT</span>
+                    <a href="/tags/language-model/">
+                        <span class="chip bg-color">language model</span>
                     </a>
                     
                 </div>

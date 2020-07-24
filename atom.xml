@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weiruohe.github.io/"/>
-  <updated>2020-07-10T09:31:21.920Z</updated>
+  <updated>2020-07-21T01:19:59.041Z</updated>
   <id>https://weiruohe.github.io/</id>
   
   <author>
@@ -17,11 +17,65 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>deep learning notes in Wuenda&#39;s class</title>
-    <link href="https://weiruohe.github.io/2020/07/07/deep-learning-notes-in-wuenda-s-class/"/>
-    <id>https://weiruohe.github.io/2020/07/07/deep-learning-notes-in-wuenda-s-class/</id>
+    <title>pytorch-official-code</title>
+    <link href="https://weiruohe.github.io/2020/07/20/pytorch-official-code/"/>
+    <id>https://weiruohe.github.io/2020/07/20/pytorch-official-code/</id>
+    <published>2020-07-20T07:39:44.891Z</published>
+    <updated>2020-07-21T01:19:59.041Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;title: pytorch official code&lt;br&gt;date: 2020-07-20 15:39:44&lt;br&gt;author: Weiruohe&lt;br&gt;categories: AI&lt;br&gt;reprintPolicy:
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Attention is all your need</title>
+    <link href="https://weiruohe.github.io/2020/07/15/attention-is-all-your-need/"/>
+    <id>https://weiruohe.github.io/2020/07/15/attention-is-all-your-need/</id>
+    <published>2020-07-15T02:37:38.000Z</published>
+    <updated>2020-07-17T12:20:47.532Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Expanding-knowledge&quot;&gt;&lt;a href=&quot;#Expanding-knowledge&quot; class=&quot;headerlink&quot; title=&quot;Expanding  knowledge&quot;&gt;&lt;/a&gt;&lt;strong&gt;Expanding 
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AI" scheme="https://weiruohe.github.io/categories/AI/"/>
+    
+    
+      <category term="deep-learning" scheme="https://weiruohe.github.io/tags/deep-learning/"/>
+    
+      <category term="language model" scheme="https://weiruohe.github.io/tags/language-model/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>deep learning-Wuenda</title>
+    <link href="https://weiruohe.github.io/2020/07/07/deep-learning-wuenda/"/>
+    <id>https://weiruohe.github.io/2020/07/07/deep-learning-wuenda/</id>
     <published>2020-07-07T09:49:47.000Z</published>
-    <updated>2020-07-10T09:31:21.920Z</updated>
+    <updated>2020-07-24T13:16:18.976Z</updated>
     
     <summary type="html">
     
@@ -36,10 +90,10 @@
     </summary>
     
     
-      <category term="论文泛读" scheme="https://weiruohe.github.io/categories/%E8%AE%BA%E6%96%87%E6%B3%9B%E8%AF%BB/"/>
+      <category term="AI" scheme="https://weiruohe.github.io/categories/AI/"/>
     
     
-      <category term="AI" scheme="https://weiruohe.github.io/tags/AI/"/>
+      <category term="deep-learning" scheme="https://weiruohe.github.io/tags/deep-learning/"/>
     
   </entry>
   
