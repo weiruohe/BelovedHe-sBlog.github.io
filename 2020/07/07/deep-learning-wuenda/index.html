@@ -541,12 +541,11 @@
 <p>特征缩放</p>
 <p>​        -多个特征值所在的范围都在相近的范围内，此时梯度下降算法就会更快地收敛，特征值在-1/3-1/3之间较好，过大过小都不好</p>
 <p><strong>均值归一化</strong></p>
-<p>​        <img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200709201143531.png" alt="image-20200709201143531"></p>
 <p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200709201212057.png" alt="image-20200709201212057"></p>
-<p>代价函数：<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200709201843971.png" alt="image-20200709201843971"></p>
+<p>代价函数：<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200724215558011.png" alt="image-20200724215558011"></p>
 <h3 id="4-5多项式回归"><a href="#4-5多项式回归" class="headerlink" title="4-5多项式回归"></a><strong>4-5多项式回归</strong></h3><p>在多个参数的代价函数中，要分别对各个参数求偏导，分别设为零。</p>
 <p>if 斯塔为实数而非向量，那么转化为二次函数的求最值</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200710083840836.png" alt="image-20200710083840836"></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200724215748186.png" alt="image-20200724215748186"></p>
 <h6 id="Gradient-Descent-vs-Normal-Equation"><a href="#Gradient-Descent-vs-Normal-Equation" class="headerlink" title="Gradient Descent vs Normal Equation"></a><strong>Gradient Descent vs Normal Equation</strong></h6><p>Gradient Descent需要不断修正学习率α，需要迭代，在n（特征量的数量）很大的情况下也能很好的工作。</p>
 <p>Normal Equation不需要修正学习率，需要计算XtX,在n很大的情况下时间复杂度为n³，费时</p>
 <blockquote>
