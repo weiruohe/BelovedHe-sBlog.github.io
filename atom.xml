@@ -93,11 +93,11 @@
   </entry>
   
   <entry>
-    <title>pytorch-official-code</title>
+    <title>pytorch official code</title>
     <link href="https://weiruohe.github.io/2020/07/20/pytorch-official-code/"/>
     <id>https://weiruohe.github.io/2020/07/20/pytorch-official-code/</id>
-    <published>2020-07-20T07:39:44.891Z</published>
-    <updated>2020-07-21T01:19:59.041Z</updated>
+    <published>2020-07-20T07:39:44.000Z</published>
+    <updated>2020-08-13T13:14:06.671Z</updated>
     
     <summary type="html">
     
@@ -105,15 +105,17 @@
       
         
         
-          &lt;blockquote&gt;
-&lt;hr&gt;
-&lt;p&gt;title: pytorch official code&lt;br&gt;date: 2020-07-20 15:39:44&lt;br&gt;author: Weiruohe&lt;br&gt;categories: AI&lt;br&gt;reprintPolicy:
+          &lt;h3 id=&quot;1-numpy&quot;&gt;&lt;a href=&quot;#1-numpy&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
     
+      <category term="AI" scheme="https://weiruohe.github.io/categories/AI/"/>
+    
+    
+      <category term="pytorch" scheme="https://weiruohe.github.io/tags/pytorch/"/>
     
   </entry>
   
@@ -178,7 +180,7 @@
     <link href="https://weiruohe.github.io/2020/07/06/improving-multimodal-named-entity-recognition-via-entity-spandetection-with-unified-multimodal-transformer/"/>
     <id>https://weiruohe.github.io/2020/07/06/improving-multimodal-named-entity-recognition-via-entity-spandetection-with-unified-multimodal-transformer/</id>
     <published>2020-07-06T14:48:36.000Z</published>
-    <updated>2020-07-10T09:40:28.610Z</updated>
+    <updated>2020-08-13T13:13:10.173Z</updated>
     
     <summary type="html">
     
@@ -194,7 +196,7 @@
     </summary>
     
     
-      <category term="论文泛读" scheme="https://weiruohe.github.io/categories/%E8%AE%BA%E6%96%87%E6%B3%9B%E8%AF%BB/"/>
+      <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
     
     
       <category term="MNER" scheme="https://weiruohe.github.io/tags/MNER/"/>
