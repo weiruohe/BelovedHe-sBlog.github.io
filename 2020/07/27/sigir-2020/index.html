@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="deep learning-Wuenda, NLP，知识图谱，liudongdong1 .etc">
+    <meta name="keywords" content="SIGIR-2020, NLP，知识图谱，liudongdong1 .etc">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>deep learning-Wuenda | BelovedHe&#39;s Blogs</title>
+    <title>SIGIR-2020 | BelovedHe&#39;s Blogs</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -334,12 +334,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/github-25970295/blogImage/raw/master/img/petal-5044428.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">deep learning-Wuenda</h1>
+                    <h1 class="description center-align post-title">SIGIR-2020</h1>
                 </div>
             </div>
         </div>
@@ -462,25 +462,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/deep-learning/">
-                                <span class="chip bg-color">deep-learning</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/AI/" class="post-category">
-                                AI
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -489,28 +476,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-07-07
+                    2020-07-27
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-07-27
+                    2020-08-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.9k
+                    452
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    7 Min
+                    1 Min
                 </div>
                 
 
@@ -525,191 +512,75 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="4-1多功能"><a href="#4-1多功能" class="headerlink" title="4-1多功能"></a>4-1多功能</h3><h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200709194136749.png" alt=""></h3><p><strong>note</strong></p>
-<ul>
-<li><p>n=number of features</p>
-</li>
-<li><p>x(i)=input of ith training example</p>
-</li>
-<li><p>x(i)j=value of j feature in ith training example</p>
-<p><strong>假设函数</strong></p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200709195313024.png" alt=""></p>
-<p>[^默认x0=1]: </p>
-</li>
-</ul>
-<p>  <img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200709200300679.png" alt=""></p>
-<p>特征缩放</p>
-<p>​        -多个特征值所在的范围都在相近的范围内，此时梯度下降算法就会更快地收敛，特征值在-1/3-1/3之间较好，过大过小都不好</p>
-<p><strong>均值归一化</strong></p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200709201212057.png" alt=""></p>
-<p>代价函数：<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200724215558011.png" alt=""></p>
-<h3 id="4-5多项式回归"><a href="#4-5多项式回归" class="headerlink" title="4-5多项式回归"></a><strong>4-5多项式回归</strong></h3><p>在多个参数的代价函数中，要分别对各个参数求偏导，分别设为零。</p>
-<p>if 斯塔为实数而非向量，那么转化为二次函数的求最值</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200724215748186.png" alt=""></p>
-<h6 id="Gradient-Descent-vs-Normal-Equation"><a href="#Gradient-Descent-vs-Normal-Equation" class="headerlink" title="Gradient Descent vs Normal Equation"></a><strong>Gradient Descent vs Normal Equation</strong></h6><p>Gradient Descent需要不断修正学习率α，需要迭代，在n（特征量的数量）很大的情况下也能很好的工作。</p>
-<p>Normal Equation不需要修正学习率，需要计算XtX,在n很大的情况下时间复杂度为n³，费时</p>
+                <h3 id="Prof-Zongben-Xu"><a href="#Prof-Zongben-Xu" class="headerlink" title="Prof.Zongben Xu"></a>Prof.Zongben Xu</h3><p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727152040478.png" alt="image-20200727152040478"></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727152310072.png" alt="image-20200727152310072"></p>
+<p>prerequisite</p>
+<p>MLemail</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727181706415.png" alt="image-20200727181706415"></p>
+<p>bert相比于Transformer+Ngram</p>
+<p>利用上下文相邻词的搭配信息计算出具有最大概率的句子。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727181533041.png" alt="image-20200727181533041"></p>
+<p>该表格是人为训练得到的词组附加信息</p>
+<p>代码部分：</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200802103545203.png" alt="image-20200802103545203"></p>
 <blockquote>
-<p>如果矩阵不可逆（singular/degenerate)，使用pinv（X’<em>X)</em>X’*Y也可求出矩阵的逆</p>
-<p>也可以使用正则化或者删除一些特征向量</p>
+<p>data_preprocessing:运行模型前要安装的包</p>
+<p>LICNSE:协议</p>
+<p>gitgnore：上传GitHub时可忽略</p>
+<p>modles：存放模型</p>
+<p>机器学习流程：训练（用有标记的数据训练）、测试（用有标记的数据检测正确率）、预测（没有答案，没有标记）</p>
 </blockquote>
-<p><strong>overfitting</strong>(高方差)：模型过多数据集过少</p>
-<p>泛化能力：训练得到的模型适应新训练集的能力。</p>
-<p>出现过拟合解决的方法：</p>
-<ul>
-<li><p>Reduce number of features.</p>
-<p> -保留舍弃</p>
-<p> -选择适当的模型（model  selection algorithm)</p>
-</li>
-<li><p>正则化(Regulation)</p>
-<p>-线性回归的正则化</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200711173321699.png" alt=""></p>
-</li>
-</ul>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200711175549803.png" alt=""></p>
-<p>​            <img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200711175628518.png" alt=""></p>
-<p>[^if X不可逆则选用prinv函数]: </p>
-<p>​        -logistic回归的正则化</p>
-<p>​        多项式的参数的代价函数，会导致模型过于复杂，出现过拟合</p>
-<p>​            对各个参数分别求偏导</p>
-<h3 id="8-1神经网络（Neural-Network"><a href="#8-1神经网络（Neural-Network" class="headerlink" title="8-1神经网络（Neural Network)"></a>8-1神经网络（Neural Network)</h3><h5 id="p43-8-1"><a href="#p43-8-1" class="headerlink" title="p43 8-1"></a><strong>p43 8-1</strong></h5><p>非线性回归</p>
-<p>n过大时计算量过大</p>
-<p>神经元与大脑</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200711184448515.png" alt=""></p>
-<p>[^上标表示与第几层有关，下标表示与第几个神经元有关]: </p>
-<p>神经元层分为三个：输入层、隐藏层（好多层）、输出层</p>
-<p>XOR：异或：不同为一</p>
-<p>NXOR：同或:相同为一</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200713160945825.png" alt=""></p>
-<p>（NOT x1)AND(NOT x2)</p>
-<p>可能有很多隐藏层</p>
-<p>每层对输入进行不同的处理，最后送入输出层</p>
-<p>多元分类</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200713162834051.png" alt=""></p>
-<p>L表示层数</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200713163115839.png" alt=""></p>
-<p>[^h\theta(x)是k维向量，(h\theta(x))$i_d$表示神经网络输出向量的第i个元素]: </p>
-<p><strong>Gradient computation</strong></p>
-<p>1.前向传播</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200713164907850.png" alt=""></p>
-<p>[^a(1)为第一层的激活值，g为sigmod激活函数，计算第二层的激活函数]: </p>
-<hr>
-<p><strong>Backporpagation algorithm</strong></p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200719182147968.png" alt=""></p>
-<p>反向传播就是反过来计算误差值</p>
-<p>总结神经网络</p>
-<p><strong>1.确定架构</strong></p>
-<p>就是选择神经元之间的连接方法</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200719212007267.png" alt=""></p>
-<p><strong>2.训练神经网络</strong></p>
-<ul>
-<li>确定初始化权值</li>
-<li>使用正向传播算法为每个x（i）计算出h(x(i))</li>
-<li>使用代码计算出代价J（Θ）</li>
-<li>使用反向传播计算出每个偏导数</li>
-<li>使用梯度检测确定反向传播计算的偏导数和用数值计算的估计值之间的误差，最后确定算法是正确的</li>
-</ul>
-<p>使用最优化算法来确定代价函数的最小值</p>
-<h4 id="梯度代价函数"><a href="#梯度代价函数" class="headerlink" title="梯度代价函数"></a><strong>梯度代价函数</strong></h4><p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200720084214076.png" alt=""></p>
-<p>通过求偏导数无限接近于代价较小的点</p>
-<h3 id="10-2评估假设"><a href="#10-2评估假设" class="headerlink" title="10-2评估假设"></a>10-2评估假设</h3><p>将数据集70%用于训练集，30%用于测试集。</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200720084824398.png" alt=""></p>
-<h4 id="Model-Selection"><a href="#Model-Selection" class="headerlink" title="Model Selection"></a><strong>Model Selection</strong></h4><p><strong>Evaluating your hypothesis</strong></p>
-<p>6:2:2(训练集：交叉验证集：测试集)</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200720090804228.png" alt=""></p>
-<p><strong>Model selection</strong></p>
-<p>用验证集或者交叉验证集来选择模型，评估泛化误差（防止过拟合）</p>
-<p>ps：与前面的验证集不同，前面的验证集只能选择合适的模型，无法评估泛化能力。</p>
-<p><strong>10-4偏差与方差</strong>（欠拟合与过拟合）</p>
-<blockquote>
-<p>偏差：预测值的期望与真实值之间的差距，偏差越大，越偏离真实数据</p>
-<p>方差：描述预测值的变化范围，离散程度</p>
-</blockquote>
-<p>训练集和交叉验证集的代价计算公式</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200721103256057.png" alt=""></p>
-<p>两种误差的变化趋势</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200721103150199.png" alt=""></p>
-<p><strong>10-5结合正则化</strong></p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200721103958207.png" alt=""></p>
-<p>选择使代价最小的λ值</p>
-<h3 id="10-6学习曲线"><a href="#10-6学习曲线" class="headerlink" title="10-6学习曲线"></a>10-6学习曲线</h3><p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200721113346897.png" alt=""></p>
-<p><img src="C:/Users/89582/AppData/Roaming/Typora/typora-user-images/image-20200721162202446.png" alt=""></p>
-<h3 id="11-1确定执行的优先级"><a href="#11-1确定执行的优先级" class="headerlink" title="11-1确定执行的优先级"></a>11-1确定执行的优先级</h3><p><strong>example</strong>：垃圾邮件分类器</p>
-<h3 id="11-2误差分析"><a href="#11-2误差分析" class="headerlink" title="11-2误差分析"></a>11-2误差分析</h3><blockquote>
-<ol>
-<li>建立一个简单的模型</li>
-<li>画出学习曲线以及分析</li>
-<li>误差分析（找出需要特殊处理的样本）在交叉验证集上进行</li>
-</ol>
-</blockquote>
-<h3 id="11-3不对称分类的误差分析"><a href="#11-3不对称分类的误差分析" class="headerlink" title="11-3不对称分类的误差分析"></a>11-3不对称分类的误差分析</h3><p>Cancer classification example</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200721223025519.png" alt=""></p>
-<p>precision表示交叉部分占所有预测值的比例</p>
-<p>recall表示交叉部分占总的正例的比例</p>
-<h3 id="11-5机器学习数据"><a href="#11-5机器学习数据" class="headerlink" title="11-5机器学习数据"></a>11-5机器学习数据</h3><h3 id="12-1优化数据"><a href="#12-1优化数据" class="headerlink" title="12-1优化数据"></a>12-1优化数据</h3><h4 id="支持向量机"><a href="#支持向量机" class="headerlink" title="支持向量机"></a>支持向量机</h4><ol>
-<li><p>logistic回归</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200722153941516.png" alt=""></p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200722154423535.png" alt=""></p>
-</li>
-</ol>
-<blockquote>
-<p>SVM：Support Vector Machine,向量机：用supervised learning对数据进行二元分类的广义分类器</p>
-</blockquote>
-<h4 id="12-3大间隔分类器"><a href="#12-3大间隔分类器" class="headerlink" title="12-3大间隔分类器"></a>12-3大间隔分类器</h4><blockquote>
-<p><strong>向量内积</strong></p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200722161211108.png" alt="">        </p>
-</blockquote>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200723113904597.png" alt=""></p>
-<p>为了达到向量机优化算法的目的，要使参数θ的取值范围尽可能小，为了保持p*θ&gt;=1（正样本）恒成立，p的取值应该尽可能大，p为样本点在向量参数θ上的投影，显然右图的投影长度更长。（即正负样本与分类线之间的距离更大）</p>
-<h3 id="12-核函数"><a href="#12-核函数" class="headerlink" title="12-*核函数"></a>12-*核函数</h3><h5 id="非线性函数的决策边界"><a href="#非线性函数的决策边界" class="headerlink" title="非线性函数的决策边界"></a>非线性函数的决策边界</h5><p>[^要确定计算边界要构造一个很复杂的多项式函数θ，但是过于复杂，就提出核函数]: </p>
-<p><strong>高斯核函数</strong></p>
-<p>[^||x-l(1)||是欧式距离]: </p>
-<p>1.选择标记点</p>
-<p>2.用高斯核函数计算f值</p>
-<p>3.代入预测函数计算结果是1or0</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200723163128297.png" alt=""></p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200723162655307.png" alt=""></p>
-<p>** how to choose landmarks**：直接将训练样本点的位置作为标记点的位置</p>
-<p>计算fi=similarity(x,l^i)</p>
-<p><strong>SVM parameters</strong></p>
-<h5 id="SVM应用"><a href="#SVM应用" class="headerlink" title="*SVM应用 *"></a><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200723214650858.png" alt="">*<em>SVM应用 *</em></h5><p>1.选择内核参数C和内核</p>
-<p>[^没有内核就是线性内函数，通过计算参数不等式来确定取值]: </p>
-<h3 id="13-1无监督学习"><a href="#13-1无监督学习" class="headerlink" title="13-1无监督学习"></a>13-1无监督学习</h3><blockquote>
-<p>提出聚类算法-分类无标签的数据集</p>
-</blockquote>
-<h3 id="13-2K-means算法"><a href="#13-2K-means算法" class="headerlink" title="13-2K-means算法"></a>13-2K-means算法</h3><p><strong>cluster assignment</strong></p>
-<ol>
-<li>簇分配：随机生成两个聚类中心</li>
-<li>根据距离聚类中心更近的原则进行分类</li>
-<li>移动聚类中心：计算所有红类点的坐标均值，将聚类中心移动到该点上，继续进行2操作直至聚类中心不在移动</li>
-</ol>
-<p><strong>non-separated clusters</strong></p>
-<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="https://www.bilibili.com/video/BV164411b7dx?p=76" target="_blank" rel="noopener">https://www.bilibili.com/video/BV164411b7dx?p=76</a></p>
-<h3 id="13-3优化函数"><a href="#13-3优化函数" class="headerlink" title="13-3优化函数"></a>13-3优化函数</h3><p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727092604110.png" alt=""></p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727092711287.png" alt=""></p>
-<h3 id="随机初始化"><a href="#随机初始化" class="headerlink" title="随机初始化"></a>随机初始化</h3><p>为了避局部最优化，初始选择多次局部最优化。具体过程如下：</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727093439675.png" alt=""></p>
-<h3 id="13-5选择聚类数量"><a href="#13-5选择聚类数量" class="headerlink" title="13-5选择聚类数量"></a>13-5选择聚类数量</h3><p>[^最常见就是手动选择。需要结合自己的经验，还可以借助]: </p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727094948688.png" alt=""></p>
-<h3 id="14-1目标Ⅰ：数据压缩"><a href="#14-1目标Ⅰ：数据压缩" class="headerlink" title="14-1目标Ⅰ：数据压缩"></a>14-1目标Ⅰ：数据压缩</h3><blockquote>
-<p>节省内存或者硬盘空间，加快算法计算速度。</p>
-</blockquote>
-<p><strong>Data Compreesion</strong></p>
-<p>降维可以使用投影的方法</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727100241361.png" alt=""></p>
-<h3 id="14-2目标Ⅱ：可视化数据"><a href="#14-2目标Ⅱ：可视化数据" class="headerlink" title="14-2目标Ⅱ：可视化数据"></a>14-2目标Ⅱ：可视化数据</h3><p><strong>Data Visualization</strong></p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727100835002.png" alt=""></p>
-<p><strong>Reduce 50D to 2D</strong></p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727100913558.png" alt=""></p>
-<h3 id="14-3-4主成分分析问题规划（PCA"><a href="#14-3-4主成分分析问题规划（PCA" class="headerlink" title="14-3-4主成分分析问题规划（PCA)"></a>14-3-4主成分分析问题规划（PCA)</h3><p>[^PCA：寻找一个低维平面，使得数据投影在直线上的垂直距离平方和达到最小值。如下图所示，如果选择品红色的直线而非大红色的直线，如果选择品红色直线，数据点需要移动很长的距离才能到达投影直线。]: </p>
-<p><img src="C:/Users/89582/AppData/Roaming/Typora/typora-user-images/image-20200727104627377.png" alt="image-20200727104627377"></p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727105537284.png" alt="image-20200727105537284"></p>
-<p>PCA选择计算的是垂直距离，linear regression选择的是与直线的正交距离</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727155808024.png" alt="image-20200727155808024"></p>
-<p>[^svd：奇异值分解]: </p>
-<p>$$<br>[U,S,V] = svd(Sigma)</p>
-<p>sigma is a n*n matrix.<br>$$</p>
-<p>取U矩阵的前k列，与矩阵X相乘得到矩阵Z</p>
-<h4 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727160229473.png" alt="image-20200727160229473"></h4><h3 id="14-5主成分数量选择"><a href="#14-5主成分数量选择" class="headerlink" title="14-5主成分数量选择"></a>14-5主成分数量选择</h3><p><strong>choose k(number of principal components</strong></p>
+<p>huggingface/transformers   NLP模型</p>
+<p>confi设置</p>
+<p>modeling模型</p>
+<p>Tokenization符号化（按词分开按字分开）</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200802105517955.png" alt="image-20200802105517955"></p>
+<p>seq2seq翻译问题序列到序列finetune后训练 预训练</p>
+<p>run_squard预测答案的所在的区间</p>
+<p>做任务看example</p>
+<p>_tf</p>
+<p>wmseq.model</p>
+<p>InputExample:ba’yi’ge’li’zi’zhuan’hua’wie’t</p>
+<p>Bert</p>
+<p>BIES</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200802110057407.png" alt="image-20200802110057407"></p>
+<p>word2id</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727183526167.png" alt="image-20200727183526167"></p>
+<p>加载tokenazation</p>
+<p>ymcil/Chinese-BERT-wwm#bert模型</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727183644598.png" alt="image-20200727183644598"></p>
+<p>快速加载：只需要填词就可以</p>
+<p>都会存在hpara</p>
+<p>分类器只能告诉类别，不能加限制</p>
+<p>解码器限制输出是合法输出BIE/BE，此刻输出</p>
+<p>CRF概率模型B-F 50</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727184205047.png" alt="image-20200727184205047"></p>
+<p>PYTORCH</p>
+<p>forward数据流动</p>
+<p>——init——()</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/0V~FRU9G3J4SI%7D~4%V0JGCP.png" alt="img"></p>
+<p>forward call(tf)</p>
+<p>![img](C:/Users/89582/Documents/Tencent Files/895824013/Image/C2C/J@QW_9L~)TBJX7F4K1Z)$D4.png)</p>
+<p>input——id attention_mask:qkv</p>
+<p>QKV:</p>
+<p>Masked Self-attention:</p>
+<p>attenton_mask：控制每个时间点看到的词语</p>
+<p>bert</p>
+<p>tansformer;enconder,decoder,enconder-deconder</p>
+<p>信息流处理</p>
+<p>模型尽可能小获取更多的信息transformer</p>
+<p>istm模型遗忘</p>
+<p>kv——memory</p>
+<p>viterbi</p>
+<p>crf参考了上一个的概率以及当前输入的-综合算出概率</p>
+<p>概率图模型<img src="https://bkimg.cdn.bcebos.com/pic/7dd98d1001e93901e04c0c6e7cec54e736d19610?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5" alt="img"></p>
+<p>神经网络的前身是概率图模型</p>
+<p>.class Word kVMN:</p>
+<p>。batchsize越大越好permute</p>
+<p>matmul</p>
+<p>clamp</p>
+<p>exp自然范围</p>
+<p>stack对函数</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -743,7 +614,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://weiruohe.github.io" rel="external nofollow noreferrer">Weiruohe</a>
+                    <a href="https://weiruohe.github.io" rel="external nofollow noreferrer">WeiRuoHe</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -753,7 +624,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://weiruohe.github.io/2020/07/07/deep-learning-wuenda/">https://weiruohe.github.io/2020/07/07/deep-learning-wuenda/</a>
+                    <a href="https://weiruohe.github.io/2020/07/27/sigir-2020/">https://weiruohe.github.io/2020/07/27/sigir-2020/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -766,7 +637,7 @@
                     All articles in this blog are used except for special statements
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     reprint polocy. If reproduced, please indicate source
-                    <a href="https://weiruohe.github.io" target="_blank">Weiruohe</a>
+                    <a href="https://weiruohe.github.io" target="_blank">WeiRuoHe</a>
                     !
                 </span>
             </div>
@@ -790,11 +661,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/deep-learning/">
-                                    <span class="chip bg-color">deep-learning</span>
-                                </a>
-                            
+                            <span class="chip bg-color">No tag</span>
                         </div>
                     
                 </div>
@@ -964,25 +831,27 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/07/15/attention-is-all-your-need/">
+                <a href="/2020/08/12/phrases-embedding-the-dictionary/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Attention is all your need">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="phrases-embedding the dictionary">
                         
-                        <span class="card-title">Attention is all your need</span>
+                        <span class="card-title">phrases-embedding the dictionary</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Expanding  knowledge
-1.RNN(Recurrent Neural Network)循环神经网络：为了能更好的处理前后相关的sequence信息提出了RNN。假设该网络在输入为xt，隐藏层为st，输出为ot，前提下，st
+                            NameLearning to Understand Phrases by Embedding the Dictionary
+
+        document.querySelectorAll('.github-emoji')
+     
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-15
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-12
                         </span>
                         <span class="publish-author">
                             
@@ -999,12 +868,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/deep-learning/">
-                        <span class="chip bg-color">deep-learning</span>
-                    </a>
-                    
-                    <a href="/tags/language-model/">
-                        <span class="chip bg-color">language model</span>
+                    <a href="/tags/Embedding/">
+                        <span class="chip bg-color">Embedding</span>
                     </a>
                     
                 </div>
@@ -1018,44 +883,34 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/06/improving-multimodal-named-entity-recognition-via-entity-spandetection-with-unified-multimodal-transformer/">
+                <a href="/2020/07/20/pytorch-official-code/">
                     <div class="card-image">
                         
-                        <img src="https://gitee.com/github-25970295/blogImage/raw/master/img/petal-5044428.png" class="responsive-img" alt="MNER-Multimodal Entity Span Detection">
                         
-                        <span class="card-title">MNER-Multimodal Entity Span Detection</span>
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="pytorch-official-code">
+                        
+                        <span class="card-title">pytorch-official-code</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-Named-entity recognition (NER) (also known as entity identification, entity chunking and entity extraction) is a subtas
+
+title: pytorch official codedate: 2020-07-20 15:39:44author: Weiruohecategories: AIreprintPolicy: cc_bycover: falsetag
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-20
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%AE%BA%E6%96%87%E6%B3%9B%E8%AF%BB/" class="post-category">
-                                    论文泛读
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            WeiRuoHe
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/MNER/">
-                        <span class="chip bg-color">MNER</span>
-                    </a>
-                    
                 </div>
                 
             </div>

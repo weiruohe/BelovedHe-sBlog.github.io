@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weiruohe.github.io/"/>
-  <updated>2020-07-21T01:19:59.041Z</updated>
+  <updated>2020-08-13T12:55:01.853Z</updated>
   <id>https://weiruohe.github.io/</id>
   
   <author>
@@ -15,6 +15,82 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Word Representation-Sememes</title>
+    <link href="https://weiruohe.github.io/2020/08/12/word-representation-sememes/"/>
+    <id>https://weiruohe.github.io/2020/08/12/word-representation-sememes/</id>
+    <published>2020-08-12T13:48:18.000Z</published>
+    <updated>2020-08-13T12:55:01.853Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Abstract&quot;&gt;&lt;a href=&quot;#Abstract&quot; class=&quot;headerlink&quot; title=&quot;Abstract&quot;&gt;&lt;/a&gt;Abstract&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;Sememes are minimum semantic
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Word Representation" scheme="https://weiruohe.github.io/tags/Word-Representation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>phrases-embedding the dictionary</title>
+    <link href="https://weiruohe.github.io/2020/08/12/phrases-embedding-the-dictionary/"/>
+    <id>https://weiruohe.github.io/2020/08/12/phrases-embedding-the-dictionary/</id>
+    <published>2020-08-12T03:12:01.000Z</published>
+    <updated>2020-08-12T03:14:59.533Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Name&quot;&gt;&lt;a href=&quot;#Name&quot; class=&quot;headerlink&quot; title=&quot;Name&quot;&gt;&lt;/a&gt;Name&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Learning to Understand Phrases by Embedding the
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AI" scheme="https://weiruohe.github.io/categories/AI/"/>
+    
+    
+      <category term="Embedding" scheme="https://weiruohe.github.io/tags/Embedding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SIGIR-2020</title>
+    <link href="https://weiruohe.github.io/2020/07/27/sigir-2020/"/>
+    <id>https://weiruohe.github.io/2020/07/27/sigir-2020/</id>
+    <published>2020-07-27T07:19:22.000Z</published>
+    <updated>2020-08-02T10:46:03.439Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Prof-Zongben-Xu&quot;&gt;&lt;a href=&quot;#Prof-Zongben-Xu&quot; class=&quot;headerlink&quot; title=&quot;Prof.Zongben Xu&quot;&gt;&lt;/a&gt;Prof.Zongben Xu&lt;/h3&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>pytorch-official-code</title>
@@ -75,7 +151,7 @@
     <link href="https://weiruohe.github.io/2020/07/07/deep-learning-wuenda/"/>
     <id>https://weiruohe.github.io/2020/07/07/deep-learning-wuenda/</id>
     <published>2020-07-07T09:49:47.000Z</published>
-    <updated>2020-07-24T14:21:59.013Z</updated>
+    <updated>2020-07-27T08:11:48.839Z</updated>
     
     <summary type="html">
     
