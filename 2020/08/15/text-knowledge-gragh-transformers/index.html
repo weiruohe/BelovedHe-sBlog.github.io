@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Word Representation-Sememes, NLP，知识图谱，liudongdong1 .etc">
+    <meta name="keywords" content="text knowledge-gragh transformers, NLP，知识图谱，liudongdong1 .etc">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Word Representation-Sememes | BelovedHe&#39;s Blogs</title>
+    <title>text knowledge-gragh transformers | BelovedHe&#39;s Blogs</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -334,12 +334,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Word Representation-Sememes</h1>
+                    <h1 class="description center-align post-title">text knowledge-gragh transformers</h1>
                 </div>
             </div>
         </div>
@@ -464,14 +464,23 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Word-Representation/">
-                                <span class="chip bg-color">Word Representation</span>
+                            <a href="/tags/gragh-transformer/">
+                                <span class="chip bg-color">gragh transformer</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/PaperLookThrough/" class="post-category">
+                                PaperLookThrough
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -480,28 +489,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-08-12
+                    2020-08-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-08-13
+                    2020-08-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    881
+                    4.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    3 Min
+                    18 Min
                 </div>
                 
 
@@ -516,36 +525,97 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><blockquote>
-<p>Sememes are minimum semantic units of word meanings, and the meaning of each word sense is typically composed by several sememes.</p>
+                <h3 id="Name"><a href="#Name" class="headerlink" title="Name:"></a>Name:</h3><p><strong>Text Generation from Knowledge Graphs with Graph Transformers</strong></p>
+<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><blockquote>
+<p> ​    Generating texts which express complex ideas spanning multiple sentences requires a structured representation of their content (document plan), but these representations are prohibitively expensive to manually produce. </p>
+<p> ​    生成包含复杂含义并且横跨多个句子的文本需要一种对他们文章结构化的表达（文本计划），但是这些表达对于自然生产来说却过于昂贵。</p>
+<p>  In this work, we address the problem of generating coherent multi-sentence texts from the output of an information extraction system,and in particular a knowledge graph. Graphical knowledge representations are ubiquitous in computing, but pose a signifificant challenge for text generation techniques due to their non-hierarchical nature, collapsing of long distance dependencies, and structural variety.</p>
+<p> ​    本文解决了从信息提取系统，特别是知识图谱中生成连续多个句子组成的文本的难题。图形知识对计算机而言是独特的，但由于文本技术无等级的性质，长距离依赖的崩溃以及结构的多样性，图形知识生成技术对于文本生成技术也是一个挑战。</p>
+<p> We introduce a novel graph transforming encoder which can leverage the relational structure of such knowledge graphs without imposing linearization or hierarchical constraints.</p>
+<p> 我们介绍一种创新的图转化编码器，这种编码器可以在没有线性和等级限制的前提下，利用这种知识图谱的关系结构。</p>
+<p> Incorporated into an encoder-decoder setup,we provide an end-to-end trainable system for graph-to-text generation that we apply to the domain of scientifific text. Automatic and human evaluations show that our technique produces more informative texts which exhibit better document structure than competitive encoder-decoder methods.</p>
+<p> 结合编码解码器我们为在科学文本领域应用的图到文本生成器提供了一种端到端的训练系统。自动和人工的测量展现了我们的技术生产出更多含义丰富的文本，这些文本相对于有竞争力的编码解码器展现出更好的文档结构。</p>
 </blockquote>
-<p>义原是人为标记的，标记义原后最终形成语义常识知识库。word representation learning(WRL)就是把词语映射到低维空间中。本文提出了三种义原编码模型来学习义原、意识、词语的表示，再结合attention机制来发现词语意识。</p>
-<h3 id="Related-Work"><a href="#Related-Work" class="headerlink" title="Related Work"></a>Related Work</h3><p>ono-hot:数据稀疏，忽视词语关系</p>
-<p>提出分布式表示，所有词语投射到低维语义环境，将每个词都考虑为向量。</p>
-<p>随着文本语料呈指数增长，模型效率很重要，所以提出的CBOW和Skip-Gram两种模型。</p>
+<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><blockquote>
+<p>​    Increases in computing power and model capacity have made it possible to generate mostly grammatical sentence-length strings of natural language text. However, generating several sentences related to a topic and which display overall coherence and discourse-relatedness is an open challenge. The difficulties are compounded in domains of interest such as scientific writing.</p>
+</blockquote>
+<p>计算能力和模型容量的增强和增大使得生成主要是自然语言文本的语法句子长度成为可能。然而，生成一些与主题相关的句子并且显示出整体一致性和语篇相关性是一个公开的挑战。这些困难在像科学写作的兴趣领域中变得更为复杂。</p>
 <blockquote>
-<p>这两种模型都是通过最大化词和上下文的预测概率，进一步在word affinity matrix上，利用矩阵分解来学习词表示。但没有考虑一词多义，提出一种对每个单词进行non-parametric的Skip-Gram模型。提出了用来联合学习词语、语义和近义词表示的自编码器。</p>
+<p>Additionally, there are strong constraints on document structure, as scientifific communication requires carefully ordered explanations of processes and phenomena.</p>
 </blockquote>
-<h3 id="Word-Sense-Disambiguation-and-Representation-learning"><a href="#Word-Sense-Disambiguation-and-Representation-learning" class="headerlink" title="Word Sense Disambiguation and Representation learning"></a>Word Sense Disambiguation and Representation learning</h3><p>WSD:在确定的上下文中计算上的识别出词语的词义和意识。</p>
-<p>[^WSD:supervised and  kowledge-based methods]: </p>
-<h3 id="Methodology"><a href="#Methodology" class="headerlink" title="Methodology"></a>Methodology</h3><p><strong>framework:SE-WRL</strong>(Sememe-Encoded WRL义原编码词语表示学习)</p>
-<p>[^该框架为词语语义消歧和表示学习任务，考虑了义原信息。]: </p>
-<h3 id="Knowledege"><a href="#Knowledege" class="headerlink" title="Knowledege"></a>Knowledege</h3><p><strong>Semems,Sesens and words in Hownet</strong></p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200813104751621.png" alt="image-20200813104751621"></p>
-<p>[^第一层表示词语“苹果”，第二层表示苹果的两个语义“电脑”与”水果“。第三层表示第一个语义有三个义原“电脑、携带和特定牌子。]: </p>
-<h3 id="Conventional-Skip-Gram-Model"><a href="#Conventional-Skip-Gram-Model" class="headerlink" title="Conventional Skip-Gram Model"></a>Conventional Skip-Gram Model</h3><p>[^义原、语义、词语集合为X,S,W]: </p>
-<p>对于每一条纯文本序列中的目标字w，C(w)代表它的上下词语集合</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200813110339351.png" alt="image-20200813110339351"></p>
-<h3 id="SE-WRL-model"><a href="#SE-WRL-model" class="headerlink" title="SE-WRL model"></a>SE-WRL model</h3><p>SE-WRL model的三种应用义原信息的不同策略，包括SSA,SAC,SAT.</p>
-<h5 id="1-SSA-Simple-Sememe-Aggregation-Model-简单义原聚集模型"><a href="#1-SSA-Simple-Sememe-Aggregation-Model-简单义原聚集模型" class="headerlink" title="1.SSA(Simple Sememe Aggregation Model)简单义原聚集模型"></a>1.SSA(Simple Sememe Aggregation Model)简单义原聚集模型</h5><p>SSA把所有词语的语义的义原一同考虑进来，用目标词的所有上下文的义原嵌入的平均值来表示。</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200813111950211.png" alt="image-20200813111950211"></p>
-<h5 id="2-SAC-Sememe-Attention-over-Context-Model-基于上下文的义原注意力模型"><a href="#2-SAC-Sememe-Attention-over-Context-Model-基于上下文的义原注意力模型" class="headerlink" title="2.SAC(Sememe Attention over Context Model)基于上下文的义原注意力模型"></a>2.SAC(Sememe Attention over Context Model)基于上下文的义原注意力模型</h5><p>SSA模型用聚集的义原嵌入来代替目标词词嵌入，用义原信息编码来进行词表示学习。</p>
-<p>但是不能处理大多数词的多义词现象。SAC利用注意力机制，根据当前词自动选择上下文合适的语义。</p>
-<h5 id="3-SAT-Sememe-Attention-over-Target-Model-基于目标词的义原注意力模型"><a href="#3-SAT-Sememe-Attention-over-Target-Model-基于目标词的义原注意力模型" class="headerlink" title="3.SAT(Sememe Attention over Target Model)基于目标词的义原注意力模型"></a>3.SAT(Sememe Attention over Target Model)基于目标词的义原注意力模型</h5><p>与SAC模型不同，SAT为上下文词语学习原始的词嵌入，但是为目标词学习义原嵌入。</p>
-<h3 id="Word-Similarity词汇相似度"><a href="#Word-Similarity词汇相似度" class="headerlink" title="Word Similarity词汇相似度"></a>Word Similarity词汇相似度</h3><p>通过比较在给定的数据集上，通过词语表示学习模型计算出的词对相似度来衡量词语表示的质量。词语表示学习模型在语义空间中，根据词语的距离来计算词语相似度。</p>
-<h3 id="Word-Analogy词语类推"><a href="#Word-Analogy词语类推" class="headerlink" title="Word Analogy词语类推"></a>Word Analogy词语类推</h3><p>词语类比推理是用来评价模型词语表示学习质量的任务。</p>
-<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>利用义原信息来表示每一个词各种各样的语义，提出了可以自动地上下文中选取合适的语义的义原注意力。</p>
-<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="https://www.cnblogs.com/fengyubo/p/9365824.html" target="_blank" rel="noopener">https://www.cnblogs.com/fengyubo/p/9365824.html</a></p>
+<blockquote>
+<p>另外，对于文档结构而言有强的限制，作为科学文档需要对过程和现象进行仔细有趣的解释有序的解释。之前研究者们采用手动注释的方法，现在就采用自动注释的方法，但是存在但由于它们的自动性，它们也给生成带来了挑战，如错误注释、结构多样性和表面文本特征(如GR)的显著抽象 语法关系或谓词结构)。</p>
+</blockquote>
+<blockquote>
+<p>​        To effect our study, we use a collection of abstracts from a corpus of scientifific articles (Ammar et al., 2018). We extract entity, coreference, and relation annotations for each abstract with a state-of-the-art information extraction system (Luan et al., 2018), and represent the annotations as a knowledge graph* which collapses co-referential entities. An example of a text and graph are shown in Figure 1. We use these graph/text pairs to train a novel attention-based encoder-decoder model for knowledge-graph-to-text generation. Our model,GraphWriter, extends the successful Transformer for text encoding (Vaswani et al., 2017) to graph structured inputs, building on the recent Graph Attention Network architecture (Velickovic et al.,2018). The result is a powerful, general model for graph encoding which can incorporate global structural information when contextualizing vertices in their local neighborhoods.</p>
+</blockquote>
+<p>​            为了实施我们的研究，我们使用了科学杂志语料库的摘要集（Ammar等人，2018），我么使用最先进的信息提取系统提取出了每个摘要集的实体，引用以及关系注释（Luan 等人，2018），并且将注释生成为一个知识图谱，该图谱折叠了一些共同引用的实体。一个关于文本和图的例子在图一中展示。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200818092807792.png" alt="image-20200818092807792"></p>
+<p>我们使用这些图形文本对为了知识图谱到文本的生成器去训练一种创新的基于注意力机制的编码解码器。我们的模型，Graphwriter，将文本编码成功的转换器扩展到图形化的输入。建立在</p>
+<p>最近的图注意力网络结构。这个结果是生成一个强大并且通用的模型，这个模型是针对在目标词上下文进行语境化时能够合并全局结构化信息的图形编码建立的。</p>
+<blockquote>
+<p>The main contributions of this work include:</p>
+<ol>
+<li><p>We propose a new graph transformer encoder that applies the successful sequence transformer to graph structured inputs.</p>
+</li>
+<li><p>We show how IE output can be formed as a connected unlabeled graph for use in attention-based encoders.</p>
+</li>
+<li><p>We provide a large dataset of knowledge graphs paired with scientifific texts for further</p>
+<p>study.</p>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>​    Through detailed automatic and human evaluations, we demonstrate that automatically extracted knowledge can be used for multi-sentence text generation. We further show that structuring and encoding this knowledge as a graph leads to improved generation performance compared to other encoder-decoder setups. Finally, we show that GraphWriter’s transformer-style encoder is more effective than Graph Attention Networks on the knowledge-graph-to-text task.</p>
+</blockquote>
+<p>​         通过详细的自动和人工评估，我们证明了自动提取的知识可以用于多句文本生成。 我们进一步证明了与其他编解码器设置相比，结构化以及将此类知识当作图形进行编码都产生了更好的生成性能。 最后，我们证明了图形写入器的转换器式编码器比在知识图谱到文本任务上的图形注意力网络更有效率。</p>
+<h3 id="3-The-AGENDA-Dataset"><a href="#3-The-AGENDA-Dataset" class="headerlink" title="3.The AGENDA Dataset"></a>3.The AGENDA Dataset</h3><p>我们考虑从自动提取的信息（知识）生成文本的问题。 IE系统可以为各种领域提供高质量的知识，从句子甚至文档边界中综合信息。从知识生成连贯的文本需要一个模型，该模型考虑知识的全局特征以及每个实体的局部特征。这项任务的功能促使我们使用图来表示知识，邻居通过图来定位重要信息，并且路径通过图建立了中间节点之间的远距离节点之间的连接。示例知识图如图1所示。</p>
+<p>我们将问题表达如下：给定科学文章的标题和由自动信息提取系统构建的知识图，目标是生成一个摘要，其中a)适用于给定的标题，b)表示该标题的内容。自然语言文本中的知识图。为了评估模型完成此目标的能力，我们引入了Abstract GENeration DAtaset（AGENDA），这是一个与科学摘要配对的知识图谱数据集。我们的数据集包含来自12个顶级AI会议(Ammar et al.，2018)会议过程的语义学者语料库(Semantic Scholar Corpus)的4万篇论文标题和摘要。</p>
+<p>对于每个摘要，我们分两步创建一个知识图谱。首先，我们应用Luan等人(2018年)的SciIE系统，一个最新的科学领域信息提取系统。该系统提供科学术语的命名实体识别，其实体类型为”Task”，“Method”,“Metric”,“Material”或”Other-Scientific Term”。该模型还产生共参考注释(co-reference annotations)以及可以在不同实体之间获得的七个关系（Compare，Used-for，Feature-of，Hyponym-of，Evaluate和Conjunction）。例如，在图1中，标记为”SemEval 2011 Task 11”的节点的类型为”Task”,“HMM Models”的类型为” Model”，并且存在”Evaluate-For”关系，该关系表明在任务上已被评估模型。</p>
+<p>我们将这些注释形成知识图谱。 我们将共同引用实体折叠到与最长提及相关联的单个节点中（假设这些实体将提供最多信息）。 然后，我们使用关系注释将节点彼此连接，将它们视为图形中的标记边缘。 结果是给定摘要的SciIE注释可能是未连接的图形表示形式。<br>表1中提供了AGENDA数据集的统计信息。我们将AGENDA数据集分为38,720个训练，1000个验证和1000个测试数据点。 我们提供标准化的数据拆分，以方便比较。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200209221151600.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FSUE9TUEY=,size_16,color_FFFFFF,t_70" alt="表1"></p>
+<h3 id="4-Model"><a href="#4-Model" class="headerlink" title="4.Model"></a>4.Model</h3><blockquote>
+<p>​        Following most work on neural generation we adopt an encoder-decoder architecture, shown in Figure 3, which we call GraphWriter. The input to GraphWriter is a title and a knowledge graph which are encoded respectively with a bidirectional recurrent neural network and a novel Graph Transformer architecture (to be discussed in Section 4.1). At each decoder time step, we attend on encodings of the knowledge graph and document title using the decoder hidden state ht ∈ Rd. The resulting vectors are used to select output wt either from the decoder’s vocabulary or by copying an entity from the knowledge graph. Details of our decoding process are described in Section 4.2. The model is trained end-to-end to minimize the negative log likelihood of the mixed copy and vocabulary probability distribution and the human authored text.</p>
+</blockquote>
+<p>​        在神经系统生成的大部分工作后，我们生成了一种在图3中展示出来的被称为GraphWriter的编码解码结构。GraphWriter的输入是可以分别用BRNN和新的图形Transformer结构编码的一个标题和一个知识图谱。在每个解码的时间点上，我们使用解码的隐藏状态ht∈Rd对知识图谱和文档标题进行编码。结果向量被用于去从解码器词汇表中选择一个wi输出或者从知识图谱中复制一个实体。解码过程的细节在4.2部分中被描述，这个模型在端到端上被训练去最小化副本、词汇概率分布以及人类创作的文本的负对数似然。</p>
+<h3 id="4-1Encoder"><a href="#4-1Encoder" class="headerlink" title="4.1Encoder"></a>4.1Encoder</h3><blockquote>
+<p>​    The AGENDA dataset contains a knowledge graph for each datapoint, but our model requires unlabeled, connected graphs as input. To encode knowledge graphs with this model, we restructure each graph as an unlabeled connected graph, preserving label information by the method described below and sketched in Figure 2.</p>
+</blockquote>
+<p>​        AGENDA数据集对每个数据点都包含一个知识图谱，但是我们的模型需要无标记、相连接的图谱作为输入。为了用这个模型编码知识图谱，我们将每个图谱作为未标记已连接的图谱，如图2所示通过下面描述的方法保存标签信息。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200823111326465.png" alt="image-20200823111326465"></p>
+<p>[^将未连接已标记的图谱转化成已连接未标记的图谱，作用于基于注意力机制的编码器中。vi是顶点，Rij是关系，G是全局文本节点。]: </p>
+<blockquote>
+<p><strong>Graph Preparation</strong> </p>
+<p>​        We convert each graph to an unlabeled connected bipartite graphs following a similar procedure to Beck et al. (2018). In this process, each labeled edge is replaced with two vertices: one representing the forward direction of the relation and one representing the reverse. These new vertices are then connected to the entity vertices so that the directionality of the former edge is maintained. This restructures the original knowledge graph as an unlabeled directed graph where all vertices correspond to entities and relations in the SciIE annotations without loss of information. To promote information flow between disconnected parts of the graph, we add a global vertex which connects all entity vertices. This global vertex will be used to initialize the decoder, analogously to the fifinal encoder hidden state in a traditional sequence to sequence model. The fifinal result of these restructuring operations is a connected, unlabeled graph <em>G</em> = (<em>V, E</em>), where <em>V</em> is a list of entities, relations, and a global node and<em>E</em> is an adjacency matrix describing the directed edges.</p>
+</blockquote>
+<h3 id="图形准备"><a href="#图形准备" class="headerlink" title="图形准备"></a>图形准备</h3><p>​            我们按照Beck在2018年写的similiar程序将每个图转换成一个未标记的连通二分图。在这个过程中，每个被标记的边被两个顶点代替：一个代表正向关系，另一个代表正向关系，另一个代表反向关系。为了保持前一条边的方向性，这些新的顶点接着被连接到实体顶点。将原始的知识图谱重组成未标记的有向图，其中所有的顶点都对应SciIE注释中的实体和关系，并且没有损失任何信息。为了提升图中非连通部分之间的信息流动，我们增加了一个可以连接实体顶点的全局顶点。这个全局顶点将会被用于初始化解码器，与传统序列到序列模型之间最终的编码隐藏层类似。这些重组操作的最终结果是一个连通的未标记图G=(V,E),V是实体，关系以及一个全局节点的列表。边是一个描述有向边的邻接矩阵。</p>
+<blockquote>
+<p><strong>Graph Transformer</strong> </p>
+<p>Our model is most similar to the Graph Attention Network (GAT) of Velickovic et al. (2018), which computes the hidden representations of each node in a graph by attending over its neighbors following a self-attention strategy. The use of self-attention in GAT addresses the shortcomings of prior methods based on graph convolutions (Defferrard et al.2016; Kipf and Welling, 2017), but limits vertex updates to information from adjacent nodes. Our model allows for a more global contextualization of each vertex through the use of a transformerstyle architecture. The recently proposed Transformer (Vaswani et al., 2017) addresses the inherent sequential computation shortcoming of recurrent neural networks, enabling effificient and paralleled computation by invoking a self-attention mechanism for global context modeling. These models have shown promising results in a variety of text processing tasks (Radford et al., 2018).</p>
+</blockquote>
+<h3 id="图转换器"><a href="#图转换器" class="headerlink" title="图转换器"></a>图转换器</h3><p>​        我们的模型与GAT（图形注意网络）是最相似的，它通过自注意力策略处理邻居顶点来计算图形中每个节点的隐藏表示。在GAT中使用的自注意力机制解决了基于图卷积的现有方法的缺点，但是限制顶点从相邻顶点更新信息。我们的模型允许通过使用transformer类型的结构为每一个顶点进行更全局的上下文化。最近提出的Transformer模型中RNN固有的序列计算的缺点。通过为全局文本模型调用自注意力机制启用高效并行的计算。这些模型在多种文本处理任务中展现出了预期的结果。</p>
+<blockquote>
+<p>​        Our Graph Transformer encoder starts with self-attention of local neighborhoods of vertices; the key difference with GAT is that our model includes additional mechanisms for capturing global context. This additional modeling power allows the Graph Transformer to better articulate how a vertex should be updated given the content of its neighbors, as well as to learn global patterns of graph structure relevant to the model’s objective.</p>
+<p>​        Specififically, <em>V</em> is embedded in a dense continuous space by the embedding process described at the end of this section, resulting in matrix <strong>V</strong>0 = [<strong>v*</strong>i<em>]</em>,* <strong>v*</strong>i* <em>∈</em> R<em>d</em> which will serve as input to the graph transformer model shown in Figure 4. Each vertex representation <strong>v*</strong>i* is contextualized by attending over the other vertices to which <em>v**i</em> is connected in <em>G</em>. We use an <em>N</em>-headed self attention setup, where <em>N</em> independent attentions are calculated and concatenated before a residual connection is applied:</p>
+</blockquote>
+<p>​        我们的图形Transformer编码器编码以顶点的本地令居的自注意力机制为起点，与GAT关键的差异就在于我们的模型包含额外捕捉全局上下文的机制。这个另外的使得图形Transformer能够在考虑邻居节点的前提下如何更新阐明一个顶点，同样也可以学习与模型目标相关的图形结构的全局模式。</p>
+<p><img src="C:/Users/89582/AppData/Roaming/Typora/typora-user-images/image-20200825093359698.png" alt="image-20200825093359698"></p>
+<p>​        特别地，V就像在这个部分最后描述的嵌入过程中那样被嵌入在一个密集的连续空间中，导致生成矩阵V=[vi],vi∈Rd，矩阵作为如图4所示的图形tranformer模型中的输入。每一个顶点的表示vi都是通过处理与vi在图G中相连的其他所有顶点来进行上下文化。我们使用一个N头的自注意力机制，N头独立的注意力机制，这个N头自注意力机制中在被计算和连接之前需要处理剩余的连接：</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200825094135094.png" alt="image-20200825094135094"></p>
+<blockquote>
+<p>Here, || denotes the concatenation of the <em>N</em> attention heads, <em>N**i</em> denotes the neighborhood of <em>v**i</em> in <em>G</em>, <img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200825094704284.png" alt=""> , and where <em>a**n</em> are attention mechanisms parameterized per head. In this work,we use attention functions of the following form:</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200825094726513.png" alt=""></p>
+<p>Each a learns independent transformations<strong>W***</strong>Q<strong>,</strong>W<strong><em>K</em> <em>∈</em> R*d</strong>×<strong>d* of **q</strong> and <strong>k</strong> respectively, andthe resulting product is normalized across all connected edges. To reduce the tendency of these dot products to impede gradient flflow, we scale them by <img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200825095341227.png" alt="">, following Vaswani et al. (2017).The Graph Transformer then augments these multi-headed attention layers with <em>block</em> networks.Each block applies the following transformations:</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200825094942641.png" alt=""></p>
+<p>Where FFN(<strong>x</strong>) is a two layer feedforward network with a non-linear transformation <em>f</em> between layersi.e. <em>f</em>(<strong>xW</strong>1 + <em>b</em>1)<strong>W</strong>2 + <em>b</em>2.</p>
+</blockquote>
+<p>​            在这，||表示N注意力头部的连接，Ni表示在图G中的vi的邻居顶点，<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200825103417862.png" alt="">)，并且a在每个头部注意力机制被参数化。在这个工作中，我们使用下面公式的注意力结构：<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200825103734156.png" alt=""></p>
+<p>每个a分别学习q和k的独立变换Wq，Wk∈R，并在所有连接的边上对所得乘积进行归一化。为了减少这些点积阻碍梯度流的趋势，我们按照1/根号d缩放。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200826180839842.png" alt="image-20200826180839842"></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200826181025088.png" alt=""></p>
+<p><img src="https://img-blog.csdnimg.cn/20200209221457785.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FSUE9TUEY=,size_16,color_FFFFFF,t_70" alt=""></p>
+<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>我们研究了从自动信息提取系统的输出中生成多句文本的问题，并表明将知识作为图形进行合并可以提高性能。 我们介绍了GraphWriter，它具有用于图形编码的新注意力模型，并通过与强基准相比的人工和自动评估证明了其实用性。 最后，我们为生成社区提供了一个新资源，即摘要和知识的AGENDA数据集。 未来的工作可能会解决所生成文本中重复和实体覆盖的问题。</p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="https://blog.csdn.net/ARPOSPF/article/details/104241533" target="_blank" rel="noopener">https://blog.csdn.net/ARPOSPF/article/details/104241533</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -589,7 +659,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://weiruohe.github.io/2020/08/12/word-representation-sememes/">https://weiruohe.github.io/2020/08/12/word-representation-sememes/</a>
+                    <a href="https://weiruohe.github.io/2020/08/15/text-knowledge-gragh-transformers/">https://weiruohe.github.io/2020/08/15/text-knowledge-gragh-transformers/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -627,8 +697,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Word-Representation/">
-                                    <span class="chip bg-color">Word Representation</span>
+                                <a href="/tags/gragh-transformer/">
+                                    <span class="chip bg-color">gragh transformer</span>
                                 </a>
                             
                         </div>
@@ -800,79 +870,28 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/08/15/text-knowledge-gragh-transformers/">
+                <a href="/2020/08/20/wuenda-s-class-2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="text knowledge-gragh transformers">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Wuenda&#39;s class(2)">
                         
-                        <span class="card-title">text knowledge-gragh transformers</span>
+                        <span class="card-title">Wuenda&#39;s class(2)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Name:Text Generation from Knowledge Graphs with Graph Transformers
-Abstract
- ​    Generating texts which express complex
+                            p1.Train/dev/test sets
+Train：训练集，用来训练各种模型
+dev：验证集(development set)/Hold-out cross validation set，评估这些模型，通过迭代选出最优模型
+test：
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-15
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-20
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/PaperLookThrough/" class="post-category">
-                                    PaperLookThrough
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/gragh-transformer/">
-                        <span class="chip bg-color">gragh transformer</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/08/12/phrases-embedding-the-dictionary/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="phrases-embedding the dictionary">
-                        
-                        <span class="card-title">phrases-embedding the dictionary</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            NameLearning to Understand Phrases by Embedding the Dictionary
-
-        document.querySelectorAll('.github-emoji')
-     
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-12
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -888,8 +907,54 @@ Abstract
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Embedding/">
-                        <span class="chip bg-color">Embedding</span>
+                    <a href="/tags/deep-learning/">
+                        <span class="chip bg-color">deep-learning</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/08/12/word-representation-sememes/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Word Representation-Sememes">
+                        
+                        <span class="card-title">Word Representation-Sememes</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Abstract
+Sememes are minimum semantic units of word meanings, and the meaning of each word sense is typically composed b
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Weiruohe
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Word-Representation/">
+                        <span class="chip bg-color">Word Representation</span>
                     </a>
                     
                 </div>

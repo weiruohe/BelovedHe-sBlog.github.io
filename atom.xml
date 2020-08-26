@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weiruohe.github.io/"/>
-  <updated>2020-08-13T12:55:01.853Z</updated>
+  <updated>2020-08-22T23:43:25.739Z</updated>
   <id>https://weiruohe.github.io/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Wuenda&#39;s class(2)</title>
+    <link href="https://weiruohe.github.io/2020/08/20/wuenda-s-class-2/"/>
+    <id>https://weiruohe.github.io/2020/08/20/wuenda-s-class-2/</id>
+    <published>2020-08-20T00:50:32.000Z</published>
+    <updated>2020-08-22T23:43:25.739Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;p1-Train-dev-test-sets&quot;&gt;&lt;a href=&quot;#p1-Train-dev-test-sets&quot; class=&quot;headerlink&quot; title=&quot;p1.Train/dev/test sets&quot;&gt;&lt;/a&gt;p1.Train/dev/test
+        
+      
+    
+    </summary>
+    
+    
+      <category term="AI" scheme="https://weiruohe.github.io/categories/AI/"/>
+    
+    
+      <category term="deep-learning" scheme="https://weiruohe.github.io/tags/deep-learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>text knowledge-gragh transformers</title>
+    <link href="https://weiruohe.github.io/2020/08/15/text-knowledge-gragh-transformers/"/>
+    <id>https://weiruohe.github.io/2020/08/15/text-knowledge-gragh-transformers/</id>
+    <published>2020-08-15T01:29:46.000Z</published>
+    <updated>2020-08-26T10:12:50.603Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Name&quot;&gt;&lt;a href=&quot;#Name&quot; class=&quot;headerlink&quot; title=&quot;Name:&quot;&gt;&lt;/a&gt;Name:&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Text Generation from Knowledge Graphs with Graph
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
+    
+    
+      <category term="gragh transformer" scheme="https://weiruohe.github.io/tags/gragh-transformer/"/>
+    
+  </entry>
   
   <entry>
     <title>Word Representation-Sememes</title>
