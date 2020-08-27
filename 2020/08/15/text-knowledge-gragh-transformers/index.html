@@ -496,7 +496,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-08-26
+                    2020-08-27
                 </div>
                 
 
@@ -550,7 +550,7 @@
 <p>​        To effect our study, we use a collection of abstracts from a corpus of scientifific articles (Ammar et al., 2018). We extract entity, coreference, and relation annotations for each abstract with a state-of-the-art information extraction system (Luan et al., 2018), and represent the annotations as a knowledge graph* which collapses co-referential entities. An example of a text and graph are shown in Figure 1. We use these graph/text pairs to train a novel attention-based encoder-decoder model for knowledge-graph-to-text generation. Our model,GraphWriter, extends the successful Transformer for text encoding (Vaswani et al., 2017) to graph structured inputs, building on the recent Graph Attention Network architecture (Velickovic et al.,2018). The result is a powerful, general model for graph encoding which can incorporate global structural information when contextualizing vertices in their local neighborhoods.</p>
 </blockquote>
 <p>​            为了实施我们的研究，我们使用了科学杂志语料库的摘要集（Ammar等人，2018），我么使用最先进的信息提取系统提取出了每个摘要集的实体，引用以及关系注释（Luan 等人，2018），并且将注释生成为一个知识图谱，该图谱折叠了一些共同引用的实体。一个关于文本和图的例子在图一中展示。</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200818092807792.png" alt="image-20200818092807792"></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200818092807792.png" alt=""></p>
 <p>我们使用这些图形文本对为了知识图谱到文本的生成器去训练一种创新的基于注意力机制的编码解码器。我们的模型，Graphwriter，将文本编码成功的转换器扩展到图形化的输入。建立在</p>
 <p>最近的图注意力网络结构。这个结果是生成一个强大并且通用的模型，这个模型是针对在目标词上下文进行语境化时能够合并全局结构化信息的图形编码建立的。</p>
 <blockquote>
@@ -573,7 +573,7 @@
 <p>我们将问题表达如下：给定科学文章的标题和由自动信息提取系统构建的知识图，目标是生成一个摘要，其中a)适用于给定的标题，b)表示该标题的内容。自然语言文本中的知识图。为了评估模型完成此目标的能力，我们引入了Abstract GENeration DAtaset（AGENDA），这是一个与科学摘要配对的知识图谱数据集。我们的数据集包含来自12个顶级AI会议(Ammar et al.，2018)会议过程的语义学者语料库(Semantic Scholar Corpus)的4万篇论文标题和摘要。</p>
 <p>对于每个摘要，我们分两步创建一个知识图谱。首先，我们应用Luan等人(2018年)的SciIE系统，一个最新的科学领域信息提取系统。该系统提供科学术语的命名实体识别，其实体类型为”Task”，“Method”,“Metric”,“Material”或”Other-Scientific Term”。该模型还产生共参考注释(co-reference annotations)以及可以在不同实体之间获得的七个关系（Compare，Used-for，Feature-of，Hyponym-of，Evaluate和Conjunction）。例如，在图1中，标记为”SemEval 2011 Task 11”的节点的类型为”Task”,“HMM Models”的类型为” Model”，并且存在”Evaluate-For”关系，该关系表明在任务上已被评估模型。</p>
 <p>我们将这些注释形成知识图谱。 我们将共同引用实体折叠到与最长提及相关联的单个节点中（假设这些实体将提供最多信息）。 然后，我们使用关系注释将节点彼此连接，将它们视为图形中的标记边缘。 结果是给定摘要的SciIE注释可能是未连接的图形表示形式。<br>表1中提供了AGENDA数据集的统计信息。我们将AGENDA数据集分为38,720个训练，1000个验证和1000个测试数据点。 我们提供标准化的数据拆分，以方便比较。</p>
-<p><img src="https://img-blog.csdnimg.cn/20200209221151600.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FSUE9TUEY=,size_16,color_FFFFFF,t_70" alt="表1"></p>
+<p><img src="https://img-blog.csdnimg.cn/20200209221151600.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FSUE9TUEY=,size_16,color_FFFFFF,t_70" alt=""></p>
 <h3 id="4-Model"><a href="#4-Model" class="headerlink" title="4.Model"></a>4.Model</h3><blockquote>
 <p>​        Following most work on neural generation we adopt an encoder-decoder architecture, shown in Figure 3, which we call GraphWriter. The input to GraphWriter is a title and a knowledge graph which are encoded respectively with a bidirectional recurrent neural network and a novel Graph Transformer architecture (to be discussed in Section 4.1). At each decoder time step, we attend on encodings of the knowledge graph and document title using the decoder hidden state ht ∈ Rd. The resulting vectors are used to select output wt either from the decoder’s vocabulary or by copying an entity from the knowledge graph. Details of our decoding process are described in Section 4.2. The model is trained end-to-end to minimize the negative log likelihood of the mixed copy and vocabulary probability distribution and the human authored text.</p>
 </blockquote>
@@ -582,7 +582,7 @@
 <p>​    The AGENDA dataset contains a knowledge graph for each datapoint, but our model requires unlabeled, connected graphs as input. To encode knowledge graphs with this model, we restructure each graph as an unlabeled connected graph, preserving label information by the method described below and sketched in Figure 2.</p>
 </blockquote>
 <p>​        AGENDA数据集对每个数据点都包含一个知识图谱，但是我们的模型需要无标记、相连接的图谱作为输入。为了用这个模型编码知识图谱，我们将每个图谱作为未标记已连接的图谱，如图2所示通过下面描述的方法保存标签信息。</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200823111326465.png" alt="image-20200823111326465"></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200823111326465.png" alt=""></p>
 <p>[^将未连接已标记的图谱转化成已连接未标记的图谱，作用于基于注意力机制的编码器中。vi是顶点，Rij是关系，G是全局文本节点。]: </p>
 <blockquote>
 <p><strong>Graph Preparation</strong> </p>
@@ -599,9 +599,9 @@
 <p>​        Specififically, <em>V</em> is embedded in a dense continuous space by the embedding process described at the end of this section, resulting in matrix <strong>V</strong>0 = [<strong>v*</strong>i<em>]</em>,* <strong>v*</strong>i* <em>∈</em> R<em>d</em> which will serve as input to the graph transformer model shown in Figure 4. Each vertex representation <strong>v*</strong>i* is contextualized by attending over the other vertices to which <em>v**i</em> is connected in <em>G</em>. We use an <em>N</em>-headed self attention setup, where <em>N</em> independent attentions are calculated and concatenated before a residual connection is applied:</p>
 </blockquote>
 <p>​        我们的图形Transformer编码器编码以顶点的本地令居的自注意力机制为起点，与GAT关键的差异就在于我们的模型包含额外捕捉全局上下文的机制。这个另外的使得图形Transformer能够在考虑邻居节点的前提下如何更新阐明一个顶点，同样也可以学习与模型目标相关的图形结构的全局模式。</p>
-<p><img src="C:/Users/89582/AppData/Roaming/Typora/typora-user-images/image-20200825093359698.png" alt="image-20200825093359698"></p>
+<p><img src="C:/Users/89582/AppData/Roaming/Typora/typora-user-images/image-20200825093359698.png" alt=""></p>
 <p>​        特别地，V就像在这个部分最后描述的嵌入过程中那样被嵌入在一个密集的连续空间中，导致生成矩阵V=[vi],vi∈Rd，矩阵作为如图4所示的图形tranformer模型中的输入。每一个顶点的表示vi都是通过处理与vi在图G中相连的其他所有顶点来进行上下文化。我们使用一个N头的自注意力机制，N头独立的注意力机制，这个N头自注意力机制中在被计算和连接之前需要处理剩余的连接：</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200825094135094.png" alt="image-20200825094135094"></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200825094135094.png" alt=""></p>
 <blockquote>
 <p>Here, || denotes the concatenation of the <em>N</em> attention heads, <em>N**i</em> denotes the neighborhood of <em>v**i</em> in <em>G</em>, <img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200825094704284.png" alt=""> , and where <em>a**n</em> are attention mechanisms parameterized per head. In this work,we use attention functions of the following form:</p>
 <p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200825094726513.png" alt=""></p>
@@ -611,7 +611,7 @@
 </blockquote>
 <p>​            在这，||表示N注意力头部的连接，Ni表示在图G中的vi的邻居顶点，<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200825103417862.png" alt="">)，并且a在每个头部注意力机制被参数化。在这个工作中，我们使用下面公式的注意力结构：<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200825103734156.png" alt=""></p>
 <p>每个a分别学习q和k的独立变换Wq，Wk∈R，并在所有连接的边上对所得乘积进行归一化。为了减少这些点积阻碍梯度流的趋势，我们按照1/根号d缩放。</p>
-<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200826180839842.png" alt="image-20200826180839842"></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200826180839842.png" alt=""></p>
 <p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200826181025088.png" alt=""></p>
 <p><img src="https://img-blog.csdnimg.cn/20200209221457785.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0FSUE9TUEY=,size_16,color_FFFFFF,t_70" alt=""></p>
 <h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>我们研究了从自动信息提取系统的输出中生成多句文本的问题，并表明将知识作为图形进行合并可以提高性能。 我们介绍了GraphWriter，它具有用于图形编码的新注意力模型，并通过与强基准相比的人工和自动评估证明了其实用性。 最后，我们为生成社区提供了一个新资源，即摘要和知识的AGENDA数据集。 未来的工作可能会解决所生成文本中重复和实体覆盖的问题。</p>
