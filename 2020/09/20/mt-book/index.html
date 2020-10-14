@@ -1,0 +1,1399 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="MT book, NLP，知识图谱，liudongdong1 .etc">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>MT book | BelovedHe&#39;s Blogs</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="BelovedHe's Blogs" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">BelovedHe&#39;s Blogs</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/about">
+          
+          <i class="fas fa-user-circle" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>about</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/resume">
+          
+          <i class="fa fa-user-secret" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>resume</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">BelovedHe&#39;s Blogs</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/about " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-user-circle" style="position: absolute;left:50px" ></i>
+			      
+		          <span>about</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/resume " style="margin-left:75px">
+				  
+				   <i class="fa fa fa-user-secret" style="position: absolute;left:50px" ></i>
+			      
+		          <span>resume</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/weiruohe" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/weiruohe" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">MT book</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    .toc-fixed .toc-link::before{
+        position: fixed!important;/*当toc的位置改为fixed时，.toc-link::before也要改为fixed*/
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/MT/">
+                                <span class="chip bg-color">MT</span>
+                            </a>
+                        
+                            <a href="/tags/NLP/">
+                                <span class="chip bg-color">NLP</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/BookLook/" class="post-category">
+                                BookLook
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2020-09-20
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2020-10-12
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    6.6k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    23 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="统计机器翻译"><a href="#统计机器翻译" class="headerlink" title="统计机器翻译"></a>统计机器翻译</h2><h3 id="3-基于词的机器翻译模型"><a href="#3-基于词的机器翻译模型" class="headerlink" title="3.基于词的机器翻译模型"></a>3.基于词的机器翻译模型</h3><h4 id="3-1-词在翻译中的作用"><a href="#3-1-词在翻译中的作用" class="headerlink" title="3.1 词在翻译中的作用"></a>3.1 词在翻译中的作用</h4><p>先把句子中的每个词对应翻译后重新排序。包括三个步骤：分析、转换、生成。</p>
+<h4 id="3-2构建简单的机器翻译系统"><a href="#3-2构建简单的机器翻译系统" class="headerlink" title="3.2构建简单的机器翻译系统"></a>3.2构建简单的机器翻译系统</h4><blockquote>
+<p>人为翻译：翻译知识的学习（翻译候选），运用知识生成译文（处理常见的单词搭配、主谓一致的问题，生成译文）</p>
+</blockquote>
+<p>机器翻译：</p>
+<p>1.获得每个单词的译文，拼装成句</p>
+<p>翻译词典，对单词进行进行拼装，相当于贯穿路径，计算机生成尽可能多的路径。</p>
+<p>2.评价译文的好坏</p>
+<p>设计统计模型，计算单词的翻译概率，最后得到整句的概率。</p>
+<p>[^训练模型=学习知识]: </p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200920190916668.png" alt="机器翻译的过程"></p>
+<p>统计机器翻译的核心：建模、训练和解码</p>
+<h5 id="基本框架"><a href="#基本框架" class="headerlink" title="基本框架"></a>基本框架</h5><blockquote>
+<p>很多思想来自IBM模型</p>
+</blockquote>
+<p>1.训练：从双语平行数据中学习翻译，记为P(t|s),表示把s翻译为t的概率。</p>
+<p>2.解码：为每一个翻译结果打分，最后选择得分最高的输出</p>
+<h6 id="如何从双语平行数据中学习？"><a href="#如何从双语平行数据中学习？" class="headerlink" title="如何从双语平行数据中学习？"></a>如何从双语平行数据中学习？</h6><p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200920193749247.png" alt=""></p>
+<p>[^X,Y分别表示源语言和目标语言的词汇表。任意x∈X，所有的y∈Y都可能是它的译文P(x&lt;-&gt;y;s,t)在观测到（s,t)的前提下X和y互译的概率。x是句子中t中的词，y属于句子t中的词。分子表示x和y在句子(s,t)中出现的次数，分母是任意x’和任意y‘在(s,t)共同出现的次数。]: </p>
+<p>出现零概率使用平滑算法。</p>
+<h6 id="如何从大量的双语平行数据中学习？"><a href="#如何从大量的双语平行数据中学习？" class="headerlink" title="如何从大量的双语平行数据中学习？"></a>如何从大量的双语平行数据中学习？</h6><p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200920195634234.png" alt=""></p>
+<p>[^分子分母多了一项累加符号，表示遍历所有的句对。]: </p>
+<p>句子级翻译模型</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200920201250924.png" alt=""></p>
+<h5 id="基础模型"><a href="#基础模型" class="headerlink" title="基础模型"></a>基础模型</h5><p>句子级翻译并不简单，定义新函数g(s,t),g(s,t)与翻译概率正相关。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200920201940286.png" alt=""></p>
+<p>词对齐</p>
+<p>用二元组(j,i)来描述词对齐，即原文与译文之间对应词语的位置编号。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200920222526109.png" alt=""></p>
+<p>[^g(s,t):句子s中的单词和句子t中的单词翻译概率的乘积。g(s,t)越高，词对齐越准确，s和t之间存在翻译关系的可能性越大。]: </p>
+<h5 id="生成流畅的译文"><a href="#生成流畅的译文" class="headerlink" title="生成流畅的译文"></a>生成流畅的译文</h5><blockquote>
+<p>上文的公式没有考虑词序信息，引入n-gram语言模型（确保流畅翻译结果）。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200920223725202.png" alt=""></p>
+<p> Plm(t)和g(s,t)相乘，这样就得到了一个新的g(s,t),同时考虑翻译准确性和流畅度。</p>
+</blockquote>
+<h5 id="解码（Decoding"><a href="#解码（Decoding" class="headerlink" title="解码（Decoding)"></a>解码（Decoding)</h5><blockquote>
+<p>解码系统要找到翻译概率最大的目标译文t，<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200920224851214.png" alt=""></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200920224956633.png" alt=""></p>
+<p>依次计算g(s,t)不可行，源语句s有m个词，每个词有n个可能的翻译候选，则有n的m次方种组合，翻译结果又有m！种排序，至少有<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200920230110650.png" style="zoom: 67%;">不同个译文。</p>
+</blockquote>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200920230221099.png" alt=""></p>
+<p>[^机器翻译是NP问题,该算法的思想是贪心算法，系统每次都保存当前最好的结果，然后进一步保存扩展后的所有可能，计算得分后保存最好结果。]: </p>
+<h4 id="3-3基于词的翻译建模"><a href="#3-3基于词的翻译建模" class="headerlink" title="3.3基于词的翻译建模"></a>3.3基于词的翻译建模</h4><blockquote>
+<p>空翻译？调序问题建模？数学模型描述翻译？更复杂的统计模型训练？</p>
+</blockquote>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200921083856909.png" alt="IBM模型的统计学基础"></p>
+<p>IBM模型基础是噪声信道，已知s和信道的性质，可以通过P(t|s)得到信源的信息，找到最可能的目标语句的过程被称为解码。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200921085322560.png" alt=""></p>
+<p>[^注意翻译的方向改变，P(s|t)而非P(t|s),P(t)是目标语句t出现的可能，P(s)是源句子s出现的可能性。引入P(s|t)和P(t)的原因是单纯使用P(t|s)会得到翻译对应比较好但不合法的语句。]: </p>
+<h6 id="3-3-2三个基本问题"><a href="#3-3-2三个基本问题" class="headerlink" title="3.3.2三个基本问题"></a>3.3.2三个基本问题</h6><blockquote>
+<p>建模：建立P(s|t)和P(t)的模型</p>
+<p>训练：获得P(s|t)和P(t)所需的参数</p>
+<p>解码：完成搜索最优解的过程，完成argmax</p>
+</blockquote>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200921092130147.png" alt=""></p>
+<p>[^红的部分表示译文的可能性，蓝色表示译文的流畅程度]: </p>
+<h5 id="词对齐"><a href="#词对齐" class="headerlink" title="词对齐"></a>词对齐</h5><p>源语言句子和目标语言单词之间的对应。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200921132515018.png" alt=""></p>
+<p>[^这里的词对齐是非对称词对齐，只对源语言做了约束，目标语言没有，如果没有对齐的目标词，就定义一个t0，引入空对齐的思想，该思想在虚词的翻译中体现较多]: </p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200921132654678.png" alt=""></p>
+<h5 id="基于词对齐的翻译模型"><a href="#基于词对齐的翻译模型" class="headerlink" title="基于词对齐的翻译模型"></a>基于词对齐的翻译模型</h5><p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200921134100659.png" alt="3.18"></p>
+<p>[^引入隐含变量可将困难的问题转化为分步学习问题，aj表示第j个源单词对应到目标语单词的位置。将a视为隐含变量从t生成s就变成从t同时生成s和隐含变量的问题。]: </p>
+<h5 id="因为隐含变量啊很复杂，所以使用链式法则。"><a href="#因为隐含变量啊很复杂，所以使用链式法则。" class="headerlink" title="因为隐含变量啊很复杂，所以使用链式法则。"></a>因为隐含变量啊很复杂，所以使用链式法则。</h5><p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200921143714782.png" alt="3.19"></p>
+<blockquote>
+</blockquote>
+<p>源语言句子：“在桌子上”，目标语“on the table”</p>
+<h4 id="3-4IBM模型1-2"><a href="#3-4IBM模型1-2" class="headerlink" title="3.4IBM模型1-2"></a>3.4IBM模型1-2</h4><p>[^词对齐的数量随着句子长度呈指数增长，如何遍历所有的对齐a，如何计S算P(m|t)、P(aj|aj−11,sj−11,m,t) 和 P(sj|aj1,sj−11,m,t)，提出了5个IBM模型.]:<br>[^对于每个位置 j，根据译文 t、源文长度 m、已经生成的源语言单词 sj−11和对齐 aj−11，生成第 j 个位置的对齐结果 aj，用 P(aj|aj−11,sj−11,m,t) 表示；]:<br>[^• 对于每个位置 j，根据译文 t、源文长度 m、已经生成的源语言单词 sj−11和对齐 aj1，生成第 j 个位置的源语言单词 sj，用 P(sj|aj1,sj−11,m,t) 表示]: </p>
+<h5 id="3-4-1IBM模型1"><a href="#3-4-1IBM模型1" class="headerlink" title="3.4.1IBM模型1"></a>3.4.1IBM模型1</h5><blockquote>
+<p>IBM1模型对公式3.19进行简化。</p>
+<ul>
+<li><p>假设P(m|t)为常数 ε，源语言的长度的生成概率服从均匀分布，</p>
+</li>
+<li><p>对齐概率仅依赖于译文长度l，每个词对齐连接的概率服从均匀分布<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200921202647088.png" alt=""></p>
+</li>
+<li><p>源语单词sj的生成概率及依赖于对齐的译文单词<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200921202949264.png" alt=""></p>
+<p>将三式和公式3.19代入公式3.18中</p>
+<p>![3.24](<a href="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922085836651.pn" target="_blank" rel="noopener">https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922085836651.pn</a></p>
+</li>
+</ul>
+</blockquote>
+<h5 id="3-4-2IBM模型2"><a href="#3-4-2IBM模型2" class="headerlink" title="3.4.2IBM模型2"></a>3.4.2IBM模型2</h5><p>IBM模型1简化了问题，但假设太强，但如果词对齐的生成概率服从均匀分布，模型会忽略目标语言单词的位置信息，IBM2考虑了这一点，生成位置aj与j、m、l有关。<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922093259937.png" alt="3.26"></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922093712006.png" alt=""></p>
+<p><img src="C:/Users/89582/AppData/Roaming/Typora/typora-user-images/image-20200922102502158.png" alt="3.28"></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922102636925.png" alt="3.29"></p>
+<p>[^这样要执行O((l+1)^m)如果将计算式改为3.29，则计算复杂度降为O((l+1)m,先乘后加改为先加后乘。]: </p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922102927802.png" alt="IBM1和IBM2模型的最终公式"></p>
+<h6 id="3-4-4训练"><a href="#3-4-4训练" class="headerlink" title="3.4.4训练"></a>3.4.4训练</h6><p>完成建模与解码，接下来要进行设置参数，最重要的。训练的过程就是在给定数据集上调整参数得到最优解。可以把优化目标视为对似然函数的优化。可以描述为对目标函数Pθ(s|t)的优化过程。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922143442385.png" alt=""></p>
+<h6 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h6><p>解决这类问题的常用方法是把带约束的目标函数转化为不带约束的目标函数。用到的是拉格朗日乘数法，</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922145932623.png" alt=""></p>
+<p>调整为无约束的函数后通过求偏导，再更新一组参数。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922151830537.png" alt="">这种方法叫期望最大化，简称EM方法</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922152802112.png" alt=""></p>
+<h4 id="3-5IBM模型及隐马尔可夫模型"><a href="#3-5IBM模型及隐马尔可夫模型" class="headerlink" title="3.5IBM模型及隐马尔可夫模型"></a>3.5IBM模型及隐马尔可夫模型</h4><p>[^采用更细致的建模方法，引入产出率、单词的抽象，隐马尔科夫模型和IBM有一定的联系但是从另一个视角看翻译问题。]: </p>
+<p>IBM1-2的基础上把奴痛的源语言单词看作相互独立的单元进行词对齐和翻译，这里提出另一个模型。首先确定每个目标语言单词生成源语言单词的个数，再决定译文中的每个单词生成的源语言单词，形成了一个列表。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922155322609.png" alt=""></p>
+<p>[^蓝色：生成元语言单词的个数eg:scientists有两个含义“科学家”和”们“，红色用来存储可以用Π来表示元语言单词存储的位置eg：{Π1}={Π11=1，Π12=2}]:<br>[^s、t、m 和 l 分别表示源语言句子、目标语译文、源语言单词数量以及译文单词数量。φ、τ 和 π 分别记录产出率、生成的源语言单词以及它们在源文中的位置。]: </p>
+<p>​        一组 τ 和 π（记为 &lt; τ,π &gt;）可以决定一个对齐 a 和一个源语句子 s。相反的，一个对齐 a 和一个源语句子 s 可以对应多组 &lt; τ,π &gt;，这里把不同的 &lt; τ, π &gt; 对应到的相同的源语句子 s 和对齐 a 记为 &lt; s,a &gt;。因此计算 P(s,a|t) 时需要把每个可能结果的概率加起来，如下：<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922193831542.png" style="zoom: 50%;">，&lt;s,a&gt;包含<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922194124464.png" style="zoom:50%;">个不同的二元组&lt; τ,π &gt;</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200922194713534.png" alt="图3.31"></p>
+<p>s、t、m 和 l 分别表示源语言句子、目标语译文、源语言单词数量以及译文单词数量。φ、τ 和 π 分别记录产出率、生成的源语言单词以及它们在源文中的位置。</p>
+<p>[^红色：目标单词产出率建模，即 φi的概率。绿色：词汇翻译建模 。黄色：[1, l] 的目标语言单词生成的源语言单词的扭曲度。灰色：i = 0 时的扭曲度建模，即空标记 t0生成的源语言单词在源语言句子中位置的概率。]</p>
+<h4 id="IBM模型3"><a href="#IBM模型3" class="headerlink" title="IBM模型3"></a>IBM模型3</h4><p>​        IBM模型3通过一些假设对图3.31进行化简</p>
+<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200923084514173.png" style="zoom: 50%;">
+
+<p>在已经放置了k个空对齐源语言单词的时候,应该 φ0-k个空位置,如果第i个位置为空,<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200923090956081.png" alt="image-20200923090956081" style="zoom: 50%;">,,对于上式就有<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200923091112876.png" alt="image-20200923091112876" style="zoom: 33%;"></p>
+<p>在IBM模型3中假设在所有的非空对齐源语言单词都被生成出来后.这些单词都以p1概率随机产生”槽”来放置空对齐单词.这样φ0就服从了一个二项分布.</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200923091727669.png" alt="image-20200923091727669" style="zoom: 50%;">,可得到P(s|t)的表达式<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200923092414928.png" style="zoom: 50%;"></p>
+<h4 id="IBM模型4"><a href="#IBM模型4" class="headerlink" title="IBM模型4"></a>IBM模型4</h4><p>IBM1-3中都不能很好地处理一个目标语言对应多个源语言单词的情况,因为相同目标语言对应多个源语言那么这些源语言单词往往构成短语或搭配.,但是模型1-3把这些源语言单词堪称独立的单元</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200923095840159.png" alt=""></p>
+<p>[^概念单元或概念(concept)是具有独立语法的一组词语,源语言和目标语言的cept不一定相等,在IBM词框架下,每个cept只能由一个目标语组成[i]表示位置⊙i表示位置为[i]的目标语对应源语言位置的平均值]: </p>
+<p>模型4对3进行修改,主要把扭曲度分解为两类参数,[i]对应源语言单词列表(τ[i]) 中的第一个单词 (τ[i]1）<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200923102229923.png" alt="image-20200923102229923" style="zoom:50%;"></p>
+<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200923101722374.png" alt="image-20200923101722374" style="zoom:50%;">
+
+<p>[^这里的函数A,B分别把目标语言和源语言的单词影射到单词的词类,这样可以减少数据的稀疏程度也可以减少参数空间的大小]: </p>
+<p>IBM4模型的过程就是将t[i]生成的第一个源语言单词代表整个t[i]生成的单词列表,先把第一个源语言单词放在合适的位置,再根据相对距离放置其他单词,这样就保证了同一目标单词生成的源语言单词之间可以互相影响</p>
+<h4 id="IBM模型5"><a href="#IBM模型5" class="headerlink" title="IBM模型5"></a>IBM模型5</h4><p>模型34都有可能将一部分概率分配给一些不存在的句子(缺陷Deficiency),因为没有这样的约束,如果已经放置了某个源语言单词的位置不能防止其他词放入同样的位置.,模型5针对这个问题增加了约束,即预先判断目标位置是否为空</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200923104437724.png" alt=""></p>
+<h5 id="3-5-5隐马尔科夫模型-Hidden-Markov-Model，HMM"><a href="#3-5-5隐马尔科夫模型-Hidden-Markov-Model，HMM" class="headerlink" title="3.5.5隐马尔科夫模型(Hidden Markov Model，HMM)"></a>3.5.5隐马尔科夫模型(Hidden Markov Model，HMM)</h5><p>隐马尔科夫模型是针对IBM2模型的改进版.描述一个系统,隐含状态的转移和可见状态的概率.</p>
+<p>HMM包括三个问题:</p>
+<ol>
+<li>估计：给定模型根据可见状态链计算该结果概率。（前后向算法）</li>
+<li>参数学习：给定隐含状态数量，根据多个可见状态链估计模型的参数（EM算法）</li>
+<li>解码问题：给定模型和可见状态链，计算最可能出现的状态序列。(Viterbi Algorithm,动态规划）</li>
+</ol>
+<blockquote>
+</blockquote>
+<p>HMM词对齐模型，词语与词语之间并不是毫无联系的，对其概率取决于对齐位置的差异。不是所有的模型使用EM算法都能找到全局最优解，IBM模型1是一个凹凸函数，理论上使用EM方法是能找到全局最优解的。IBM1是凸函数，理论上使用EM方法能找到全局最优解，IBM1训练结果与参数初始化过程无关</p>
+<h3 id="基于短语和句法的机器翻译模型"><a href="#基于短语和句法的机器翻译模型" class="headerlink" title="基于短语和句法的机器翻译模型"></a>基于短语和句法的机器翻译模型</h3><h4 id="4-1翻译中的结构信息"><a href="#4-1翻译中的结构信息" class="headerlink" title="4.1翻译中的结构信息"></a>4.1翻译中的结构信息</h4><p>相较于基于单词的机器翻译模型，如果在翻译红茶时很大概率会翻译成“red tea”而非”black tea”,如果机器翻译系统能记住这样的搭配就可以做得更好。</p>
+<p>使用短语的优点在于引入更大颗粒度的翻译单元给建模增加了灵活性，同时增大了翻译假设空间</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200923164311326.png" alt=""></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200923164340632.png" alt="image-20200923164340632"></p>
+<h4 id="4-2基于短语的翻译模型"><a href="#4-2基于短语的翻译模型" class="headerlink" title="4.2基于短语的翻译模型"></a>4.2基于短语的翻译模型</h4><p>定义4.2.1对于一个句子W=w1w2w3…wn,任意子串w1…wj（i&lt;=j且0&lt;=i,j&lt;=n)都是句子W的一个短语</p>
+<p>定义4.2.2如果一个句子W=w1w2….wn可以被分为m个子串，则称W由m个短语组成，记W=p1..pm,pi是W的一个短语，p1,,pm被称为句子W的一个切分</p>
+<p>定义4.2.3双语短语</p>
+<p>源语和目标语句对(s,t),s和t中的任意一个短语都可以构成一个双语短语对，简称短语对，&lt;-&gt;表示互译关系</p>
+<p>定义4.2.4基于短语的翻译推导</p>
+<p>{aj}表示{tj}中每个短语对应到源语言短语的编号，构成了s到t的基于短语的翻译推导</p>
+<p>有四个基本问题</p>
+<ol>
+<li>用统计模型描述每个翻译推导的好坏——翻译的统计建模问题</li>
+<li>获得双语短语对</li>
+<li>对调序问题建模</li>
+<li>找到输入句子s的最佳译文</li>
+</ol>
+<h5 id="4-2-2数学建模及判别式模型"><a href="#4-2-2数学建模及判别式模型" class="headerlink" title="4.2.2数学建模及判别式模型"></a>4.2.2数学建模及判别式模型</h5><p>统计学习的目标是找到生成概率最大的译文即t=argmax(P(t|s)),可以把翻译推导d当作从s到t翻译的隐含结构。P(t|s)=ΣP(d,t|s),因为空间D中d数量太大枚举很费时间，所以可以选择最好的n个翻译推导来代表整个空间D，<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200924085306350.png" style="zoom: 50%;"></p>
+<p>另一种方法是用P(d,t|s)的最大值代表整个翻译推导的概率和，翻译的目标可以被重新定义为<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200924085750248.png" style="zoom: 50%;"></p>
+<h5 id="对数线性模型"><a href="#对数线性模型" class="headerlink" title="对数线性模型"></a>对数线性模型</h5><p>how to denifite P(d,t|s)?可以使用判别式模型对P(d,t|s)进行描述。<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200924091009590.png" style="zoom:80%;"></p>
+<p>[^每个特征用函数 hi(d,t,s) 表示。每个特征都对应一个权重 λi，这样值越大得分越高，最大的好处在于它可以更灵活的引入特征。]: </p>
+<h5 id="搭建模型"><a href="#搭建模型" class="headerlink" title="搭建模型"></a>搭建模型</h5><p>设计特征函数+获得最好的特征权重{ λi}</p>
+<h5 id="4-2-3短语抽取"><a href="#4-2-3短语抽取" class="headerlink" title="4.2.3短语抽取"></a>4.2.3短语抽取</h5><blockquote>
+<p>获得短语翻译的常用方法，图中任意一个矩阵框都是双语短语，为了提高效率获得有效的短语对</p>
+</blockquote>
+<p>定义4.2.5与词对齐一致的双语短语</p>
+<p>对于源语言句子 s 和目标语句子 t，存在 s 和 t 之间的词对齐。如果有 (s,t) 中的双语短语 (s,t)，且 s 中所有单词仅对齐到t 中的单词，同时t 中所有单词仅对齐到s 中的单词，那么称 (s,t) 与是与词对齐一致的（兼容的）双语短语。</p>
+<h6 id="获取词对齐"><a href="#获取词对齐" class="headerlink" title="获取词对齐"></a>获取词对齐</h6><p>IBM模型获得的模型是不对称的，为了获得对称的，先前向后反向再取交并集</p>
+<p>词对齐质量可以用词对齐错误率AER评价</p>
+<h5 id="度量双语短语质量"><a href="#度量双语短语质量" class="headerlink" title="度量双语短语质量"></a>度量双语短语质量</h5><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200924101902928.png" alt="image-20200924101902928" style="zoom:50%;">
+
+<p>[^分母是短语s在S中出现的次数，count(s,t)在（S,T）中被抽取出来的次数。]: </p>
+<p>这样对于低频短语不合理，但是可以把短语拆解为单词，简介度量，可以使用词汇话翻译概率，词对齐信息本身就包含了<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200924162210374.png" alt=""></p>
+<h5 id="调序"><a href="#调序" class="headerlink" title="调序"></a>调序</h5><p>为了使得译文质量提高，在双语短语之外还需要进行调序，调序包括基于距离、基于方向(WSD)以及基于分类。</p>
+<blockquote>
+<p>基于距离：度量当前结果与顺序翻译之间的差距</p>
+<p>基于方向的调序模型:顺序(M)：monotone,源与目标的顺序相同,与前一个短语交换位置（S）：swap,对应的短语顺序在目标语中是相反的,非连续翻译（D）：discontinuous,两个短语之间有其他的短语</p>
+<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200924180756803.png" style="zoom: 50%;">
+
+<p>基于分类的调序</p>
+<p>使用最大熵、SVM等分类器输出调序概率</p>
+</blockquote>
+<h5 id="4-2-6-最小错误率训练（Minimum-Error-Rate-Training-WERT"><a href="#4-2-6-最小错误率训练（Minimum-Error-Rate-Training-WERT" class="headerlink" title="4.2.6 最小错误率训练（Minimum Error Rate Training,WERT)"></a>4.2.6 最小错误率训练（Minimum Error Rate Training,WERT)</h5><blockquote>
+<p>在统计机器翻译中，短语抽取和翻译概率被看作是模型训练，特征权重的训练，被称作权重调优。</p>
+</blockquote>
+<p>[^假设翻译结果相对于标准答案的错误是可度量的，通过降低错误数量的方式来找到最优的特征权重]: </p>
+<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200924200101033.png" style="zoom: 50%;">
+
+<p>[^所有样本的参考译文集合为R={r1,r2,..,rN},通过调整不同特征的权重λ = {λi}，让错误率最小Error(),Error可以是WER,PER,BLEU,NIST。]: </p>
+<p>BLEU本身是不可微分函数，无法梯度下降，可以使用线搜索</p>
+<p>横坐标为所有的M个特征函数，纵坐标为权重可能的取值，遍历所有的特征权重取值的组合有<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200924201100968.png" style="zoom:33%;">种。假设计算BLEU的时间开销为B，那么遍历所有的路径时间复杂度为<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200924201220445.png" alt="image-20200924201220445" style="zoom:33%;">,对全搜索的改进可以是局部搜索，循环处理每个特征，每一次只调整一个特征值，找到使BLEU达到最大的权重，这种方法被称为格搜索。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200924200645158.png" alt=""></p>
+<p>[^BLEU(Bilingual Evaluation Understudy双语评估替补）]: </p>
+<p>假设对于每个输入的句子，翻译模型生成了两个推导(d1,d2),score(d)表示成关于第i个特征值的权重λi的线性函数</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200925134420414.png" alt=""></p>
+<p>在交叉点右边d1是最优的翻译结果，左侧是d2是最优的结果，只需要比较左侧右侧BLEU谁高就好</p>
+<h5 id="4-2-7栈解码"><a href="#4-2-7栈解码" class="headerlink" title="4.2.7栈解码"></a>4.2.7栈解码</h5><p>解码的目的是根据模型和输入找到模型得分最高的推导。机器翻译被证明是一个NP问题，无法简单暴力搜索，介绍一种基于栈的从左到右的方法。</p>
+<h5 id="剪枝"><a href="#剪枝" class="headerlink" title="剪枝"></a>剪枝</h5><p>在句子变长时，有可能空间爆炸，可以使用束剪枝，即思路一：在每次翻译扩展时最多生成k个新的翻译假设，对束宽度进行限制，也称为直方图剪枝。思路二：每次扩展只保留与最优翻译假设得分相差在δ 之内的翻译假设。即阈值剪枝</p>
+<h5 id="假设重组"><a href="#假设重组" class="headerlink" title="假设重组"></a>假设重组</h5><p>对翻译假设进行的重新组合，把代表同一个译文的不同翻译假设融合为一个翻译假设，两个不同的翻译假设需要舍弃分数较低的</p>
+<h5 id="解码中的栈结构"><a href="#解码中的栈结构" class="headerlink" title="解码中的栈结构"></a>解码中的栈结构</h5><p>因为质量较差的翻译假设在早期出现时，会被剪枝，这样可以减少搜索空间，但是删除的翻译假设可能又被重新搜索出来，过早地删除翻译假设也可能导致无法搜索到最优。</p>
+<p>所以我们可以引入栈结构，对翻译假设进行整理，当放入栈的翻译假设超过一定阈值可以删除模型得分低的，每个栈代表覆盖源语言单词数量相同的翻译假设，翻译相同数量的单词所对应的翻译假设</p>
+<blockquote>
+<p>翻译相同数量的单词所对应的翻译假设一般是 “可比的”，因此</p>
+<p>在同一个栈里对它们进行剪枝带来的风险较小。</p>
+</blockquote>
+<h4 id="基于层次短语的模型"><a href="#基于层次短语的模型" class="headerlink" title="基于层次短语的模型"></a>基于层次短语的模型</h4><p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200925151135776.png" alt="">单词间的距离有时需要距离很远的搭配，但是如果使用长短语来解决长距离依赖问题。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200925151748605.png" alt=""></p>
+<p>[^左右连接的方框表示翻译模板的源语言和目标语言中的变量被同步替换。]: </p>
+<h5 id="同步上下文无关法（Synchronous-Context-free-Grammar，SCFG"><a href="#同步上下文无关法（Synchronous-Context-free-Grammar，SCFG" class="headerlink" title="同步上下文无关法（Synchronous Context-free Grammar，SCFG)"></a>同步上下文无关法（Synchronous Context-free Grammar，SCFG)</h5><p>很好的解决短语系统对翻译中长距离调序建模不足的问题。</p>
+<h5 id="胶水规则"><a href="#胶水规则" class="headerlink" title="胶水规则"></a>胶水规则</h5><p>在实际系统中需要把两个局部翻译拼接到一起。需要引入胶水规则<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200926085151863.png" style="zoom: 33%;"></p>
+<p>引入一个新的非终止符S，S只能和X顺序拼接，或者S由X生成，胶水规则将句子都划分为若干部分，每个部分都被归纳为X</p>
+<h5 id="处理流程"><a href="#处理流程" class="headerlink" title="处理流程"></a>处理流程</h5><p>双语数据中学习同步翻译语法，进行翻译特征的学习）规则+特征即为翻译模型，从目标语言数据中学习语言模型，将二者一起送入解码器。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200926090100559.png" alt=""></p>
+<h5 id="4-3-2层次短语规则抽取"><a href="#4-3-2层次短语规则抽取" class="headerlink" title="4.3.2层次短语规则抽取"></a>4.3.2层次短语规则抽取</h5><p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200926091954366.png" alt=""></p>
+<p>通过挖槽的方法来进行大量的层次短语抽取，但是我们需要进行限制，包括：抽取的规则最多可以跨越 10 个词； 规则的（源语言端）变量个数不能超过 2； 规则的（源语言端）变量不能连续出现</p>
+<h5 id="4-3-3翻译模型及特征"><a href="#4-3-3翻译模型及特征" class="headerlink" title="4.3.3翻译模型及特征"></a>4.3.3翻译模型及特征</h5><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200926092550184.png" style="zoom:80%;">
+
+<p>对每一条翻译规则有:</p>
+<ul>
+<li><p>(h1-2)短语翻译概率</p>
+</li>
+<li><p>(h3-4)词汇话翻译概率</p>
+</li>
+<li><p>(h5)翻译规则数量</p>
+</li>
+<li><p>(h7)短语规则数量</p>
+<p>最终模型得分为：</p>
+</li>
+</ul>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200926093110615.png" alt=""></p>
+<p>[^log表示语言模型得分，|t|表示译文长度]: </p>
+<h5 id="4-3-4CKY解码"><a href="#4-3-4CKY解码" class="headerlink" title="4.3.4CKY解码"></a>4.3.4CKY解码</h5><p>CKY方法可以看作是基于二叉规则的一种分析方法，从小范围开始不断扩大，最终完成整个字符串的分析，跨度是表示从一个起始位置到一个结束位置中间的部分。</p>
+<blockquote>
+<p>CKY方法跨度由小到大的次序执行，是一种自上而下的分析。对每个跨度要检查：</p>
+<ul>
+<li><p>是否有形如 A→a 的规则可以匹配</p>
+</li>
+<li><p>是否有形如 A→BC 的规则可以匹配。</p>
+<p>[^第一种匹配字符串即可第二种需要将当前跨度分为两部分，左边归纳为B右边为C]: </p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200926095656136.png" alt="CKY算法伪代码"></p>
+<p>还有两个实践问题：</p>
+<p>1.剪枝：CKY中每个跨度的推导呈指数关系，存储有困难所以使用束剪枝，只保留top-k个推导，局部结果只保留最好的k个，k=1为贪心</p>
+<p>2.n-best:整个句子的翻译结果保存在最大跨度所对应的结构，去除排名前n即可</p>
+</li>
+</ul>
+</blockquote>
+<h5 id="4-3-5立方剪枝"><a href="#4-3-5立方剪枝" class="headerlink" title="4.3.5立方剪枝"></a>4.3.5立方剪枝</h5><p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200926101629420.png" alt=""></p>
+<p>[^立方剪枝假设如果空间某个点的得分较高，那么它周围的点得分也较高。]: </p>
+<h4 id="4-4基于语言学句法的模型"><a href="#4-4基于语言学句法的模型" class="headerlink" title="4.4基于语言学句法的模型"></a>4.4基于语言学句法的模型</h4><blockquote>
+<p>在翻译中使用树结构可以更有效的对句子结构进行抽象，在句子中距离较远的在树结构可以很近，层次短语没有语言学句法标记，而且不允许对多个结构进行调序。</p>
+</blockquote>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200926110026491.png" alt=""></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200926110052141.png" alt=""></p>
+<h5 id="4-4-2基于树结构的文法"><a href="#4-4-2基于树结构的文法" class="headerlink" title="4.4.2基于树结构的文法"></a>4.4.2基于树结构的文法</h5><p>有两种规则：树到树、树到串</p>
+<h6 id="树到树翻译规则"><a href="#树到树翻译规则" class="headerlink" title="树到树翻译规则"></a>树到树翻译规则</h6><blockquote>
+<p>（Nt,Ns,Ts,Tt,Is,It,R)</p>
+<p>Ns,Nt源、目标非终结符集合</p>
+<p>Ts,Tt源、目标终结符集合</p>
+<p>Is∈Ns,It∈Nt，其实非终结符集合</p>
+<p>R是规则集合，r∈R，<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200927091618035.png" style="zoom: 50%;"></p>
+<p>[^αh∈Ns，βh∈Nt，αr，βr表示由源语言(目标）终结符和非终结符组成的树结构，~是αr和βr叶子非终结符1-1对应关系]: </p>
+</blockquote>
+<h6 id="基于树结构的翻译推导"><a href="#基于树结构的翻译推导" class="headerlink" title="基于树结构的翻译推导"></a>基于树结构的翻译推导</h6><p>树到树：同步树替换文法规则</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200927092736753.png" alt=""></p>
+<h6 id="树到串翻译规则"><a href="#树到串翻译规则" class="headerlink" title="树到串翻译规则"></a>树到串翻译规则</h6><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200927093010384.png" style="zoom:50%;">
+
+<h5 id="4-4-3树到串翻译规则抽取"><a href="#4-4-3树到串翻译规则抽取" class="headerlink" title="4.4.3树到串翻译规则抽取"></a>4.4.3树到串翻译规则抽取</h5><p>文法归纳和解码，文法归纳学习规则以及特征，解码利用得到的文法进行分析获得概率最高的翻译推导。介绍树到串的经典方法——<strong>GHKM</strong></p>
+<h6 id="树的切割与最小规则"><a href="#树的切割与最小规则" class="headerlink" title="树的切割与最小规则"></a>树的切割与最小规则</h6><p>GHKM input：源语言句子及句法树、目标语言句子、源与目标之间的词对齐</p>
+<blockquote>
+<p>定义4.4.2Span目标语言第一个单词与最后一个单词所构成的范围，4.4.3Comlement Span除了祖先和子孙外其他节点Span的并集</p>
+<p>4.4.4对于Span与Complement Span不相交，节点node可信，说明和其他部份无歧义</p>
+<p>4.4.5一个树片段根节点和叶子结点的非终结系节点都是可信节点，那么树片段合格</p>
+</blockquote>
+<p>所有可信节点可以看作是边缘集合，边缘集合定义了哪些可以被切割，切割后得到的片段不能再被分割，被称为最小规则</p>
+<h6 id="组合规则"><a href="#组合规则" class="headerlink" title="组合规则"></a>组合规则</h6><p>同时处理多个变量的调序，需要规则同时处理多个变量时需要更大的规则，称为composed-m规则（m个最小规则）</p>
+<h6 id="SPMT规则"><a href="#SPMT规则" class="headerlink" title="SPMT规则"></a>SPMT规则</h6><p>对任意一个与词对齐兼容的短语可以找到包含它的最小翻译规则。</p>
+<h6 id="句法树二叉化"><a href="#句法树二叉化" class="headerlink" title="句法树二叉化"></a>句法树二叉化</h6><p>句法树是描述句子结构的工具，但是过于扁平抽取困难，可以进行二叉化，树二叉化可以帮助规则抽取到更细颗粒度的规则</p>
+<h5 id="4-2-4树到树翻译规则抽取"><a href="#4-2-4树到树翻译规则抽取" class="headerlink" title="4.2.4树到树翻译规则抽取"></a>4.2.4树到树翻译规则抽取</h5><p>可以基于节点对齐进行规则抽取，这样可以避免词对齐的错误：先利用外部节点对其工具或的对应关系，再将每个对其的节点看作是树片段的根节点进行规则抽取。也可以使用<strong>对齐矩阵</strong></p>
+<h5 id="4-4-6基于超图的推导空间表示"><a href="#4-4-6基于超图的推导空间表示" class="headerlink" title="4.4.6基于超图的推导空间表示"></a>4.4.6基于超图的推导空间表示</h5><p>在句法分析中，上下文无关文法（CFG）可以被组织成一个叫有向超图的结构。或称为<strong>超图</strong></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200927155206085.png" alt=""></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200927155513360.png" alt=""></p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://weiruohe.github.io" rel="external nofollow noreferrer">Weiruohe</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://weiruohe.github.io/2020/09/20/mt-book/">https://weiruohe.github.io/2020/09/20/mt-book/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint polocy. If reproduced, please indicate source
+                    <a href="https://weiruohe.github.io" target="_blank">Weiruohe</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/MT/">
+                                    <span class="chip bg-color">MT</span>
+                                </a>
+                            
+                                <a href="/tags/NLP/">
+                                    <span class="chip bg-color">NLP</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,qzone,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2020/09/28/task-oriented-dialogue/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Task-Oriented Dialogue as Dataflow Synthesis">
+                        
+                        <span class="card-title">Task-Oriented Dialogue as Dataflow Synthesis</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            《Task-Oriented Dialogue as Dataflow Synthesis》一、对话系统的问题和挑战
+短句包括多个指示。
+
+人类语言具有长尾性，无法使用高频意图覆盖
+[^长尾性：系统中的个体相差悬殊，缺乏优选]: 
+
+多轮对
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-28
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/PaperLookThrough/" class="post-category">
+                                    PaperLookThrough
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/MT/">
+                        <span class="chip bg-color">MT</span>
+                    </a>
+                    
+                    <a href="/tags/NLP/">
+                        <span class="chip bg-color">NLP</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/08/29/common-tools/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="code structure">
+                        
+                        <span class="card-title">code structure</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            prerequisite
+MLemail
+
+bert相比于Transformer+Ngram
+利用上下文相邻词的搭配信息计算出具有最大概率的句子。
+
+该表格是人为训练得到的词组附加信息
+代码部分：
+
+
+data_preprocessing:
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Code/" class="post-category">
+                                    Code
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/code-structure/">
+                        <span class="chip bg-color">code structure</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+   
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script type="text/javascript" src="/js/CFS.Snow.min.js"></script>
+    <!-- 点击爆灯效果 -->
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+    <!--动态线条背景-->
+    <script type="text/javascript"
+        color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+    </script>
+    <!-- 天气 -->
+    <!-- weather -->
+    <!-- weather -->
+    <script type="text/javascript">
+         WIDGET = {FID: 'knAMQaFanP'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

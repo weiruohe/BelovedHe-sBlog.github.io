@@ -464,12 +464,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/deep-learning/">
-                                <span class="chip bg-color">deep-learning</span>
+                            <a href="/tags/MT/">
+                                <span class="chip bg-color">MT</span>
                             </a>
                         
-                            <a href="/tags/language-model/">
-                                <span class="chip bg-color">language model</span>
+                            <a href="/tags/Transformer/">
+                                <span class="chip bg-color">Transformer</span>
+                            </a>
+                        
+                            <a href="/tags/NLP/">
+                                <span class="chip bg-color">NLP</span>
                             </a>
                         
                     </div>
@@ -480,8 +484,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/AI/" class="post-category">
-                                AI
+                            <a href="/categories/PaperLookThrough/" class="post-category">
+                                PaperLookThrough
                             </a>
                         
                     </div>
@@ -500,21 +504,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-08-13
+                    2020-10-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    625
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    2 Min
+                    5 Min
                 </div>
                 
 
@@ -529,8 +533,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Expanding-knowledge"><a href="#Expanding-knowledge" class="headerlink" title="Expanding  knowledge"></a><strong>Expanding  knowledge</strong></h3><blockquote>
+                <p>Source：<a href="https://arxiv.org/pdf/1706.03762.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1706.03762.pdf</a></p>
+<h3 id="Expanding-knowledge"><a href="#Expanding-knowledge" class="headerlink" title="Expanding  knowledge"></a><strong>Expanding  knowledge</strong></h3><blockquote>
 <p>1.RNN(Recurrent Neural Network)循环神经网络：为了能更好的处理前后相关的sequence信息提出了RNN。假设该网络在输入为xt，隐藏层为st，输出为ot，前提下，st的值不仅取决于xt，还取决于st-1</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201009195053782.png" alt=""></p>
+<p>提出RNN的原因是CNN和人工翻译都假设输入输出的相互独立的，但RNN可以解决输入输出不独立的情况，将神经网络加入记忆。再使用激活函数进行非线性映射过滤无用的信息，只记住重要的信息，使用softmax来进行预测下一个词出现的概率，预测时要带权重矩阵。</p>
+<p>[^与CNN相同，RNN每个cell都共享（U,V,W),极大降低计算量]: </p>
+<p>双向RNN是在RNN的基础上预测当前状态需要考虑前后的信息。</p>
 <p>2.CNN(Conventional Neural Network)卷积神经网络</p>
 <p>3.LSTM长短时记忆（Long Short Time Memory)：</p>
 <p>1.处理和预测时间序列中间隔和延迟相对较长的重要事件（在词汇预测中如果关联词相差较远，RNN就会出现“梯度消失”的问题</p>
@@ -538,10 +547,13 @@
 </blockquote>
 <p><strong>attention机制</strong></p>
 <p>与RNN,CNN不同，完全采用的是attention机制，具有更强的的并行性、节约了训练的时间</p>
-<p><strong>Result</strong></p>
-<p>Transformer模型采用的训练结果比最好结果（English-to-French modle)中提升了两个蓝度。</p>
+<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>seq翻译模型主要基于复杂的recurrent or convolution 神经网络，它包括一个解码器一个编码器，表现最好的模型也通过注意力机制连接了解码编码器。</p>
+<p><strong>S</strong>:Transformer仅仅基于注意力机制，与CNN,RNN均无关，发现Transformer具有更好的并行性，使用了更少的时间去训练。</p>
+<p><strong>C</strong>:28.4BLEU on WMT2014 English-to-German translation task,我们发现Transformer也可很好的推广到其他任务，like English constituency parsing both with large and limited training data.</p>
+<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>Recurrent model通常沿着输入输出的标记位置进行计算，将position与当前时间对齐生成隐藏状态ht，作为ht-1的函数以及position t的输入，对于长序列的处理至关重要，因为内存有限制，最近通过factorization tricks and conditional computation提高了计算效率，后者提高了模型的表现，但顺序计算的限制依旧存在。</p>
 <h3 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h3><p>基础是Extended Neural GPU,ByteNet,ConvS2S,它们中两个词汇之间的依赖关系与两者之间的距离反相关，这样如果两个词汇的距离太远它们的依赖性就很难体现。Transformer模型针对这种缺陷提出了Multi-Head Attention，Transformer模型没有使用RNN,CNN，它全部使用了attention机制对整个机制进行监控。</p>
 <h3 id="Model-Architecture"><a href="#Model-Architecture" class="headerlink" title="Model Architecture"></a>Model Architecture</h3><p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200716234419464.png" alt="image-20200716234419464"></p>
+<p><strong>Encoder: 6 identical layers,Each layer has 2 sub-layers.One is Multi-Head Attenion,The other is a feed-forward network.Between the two sub-layers,there is a residual connection followed by layer normalization(dmodel=512).output is **<br>$$<br>LayerNorm(x+Sublater(x))<br>$$<br>**Decoder:compared with encoder,the decoder has 3 sub-layers,the 3rd layer perform multi-head attention over the output of the encoder stack.The attention ensures the prediction for position i depend only on the pre-position.</strong></p>
 <blockquote>
 <p><strong>basic knowledge</strong></p>
 <ol>
@@ -549,10 +561,33 @@
 </li>
 <li><p>positional encoding</p>
 <p>对位置不敏感的模型（模型的输出不随着文本数据顺序的改变而改变）分为两类，Sinusoidal Positional Encoding（相对）和Learned Positional Encoding.（绝对）</p>
-<p>[^绝对是对不同位置随机初始化一个position embedding,相对位置向量：用正余弦函数分别表示绝对位置，然后用乘积表示绝对位置，complex embedding使用复数域上连续函数来编码词在不同位置的表示。]: </p>
+<p>[^绝对是对不同位置随机初始化一个position embedding,相对位置向量：用正余弦函数分别表示绝对位置，然后用乘积表示绝对位置，complex embedding使用复数域上连续函数来编码词在不同位置的表示]:</p>
+</li>
+<li><p>AR模型(Auto-regressive)and MA(Moving-average)模型</p>
+<ul>
+<li>AR自回归模型</li>
+</ul>
+<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201008110340470.png" style="zoom: 50%;">
+
+<p>[^本身前面的数据影响后面的数据（自相关），ut表示白噪声，在时间序列中数值随机波动，θ自回归系数]: </p>
+<ul>
+<li><p>MA移动平均模型</p>
+<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201008110842915.png" alt="image-20201008110842915" style="zoom: 50%;">
+
+</li>
+</ul>
+<p>[^对时间序列的白噪声序列进行加权和，得到移动平均方程]: </p>
 </li>
 </ol>
 </blockquote>
+<p><strong>Attention</strong></p>
+<p>the output is computed as a weighted sum of th values,where the weight assigned to each value is computed by a function of query with the corrsponding key.</p>
+<p><img src="C:/Users/89582/AppData/Roaming/Typora/typora-user-images/image-20201009100048322.png" alt=""></p>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p>1.<a href="https://blog.csdn.net/FrankieHello/article/details/80883147?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param" target="_blank" rel="noopener">https://blog.csdn.net/FrankieHello/article/details/80883147?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param</a></p>
+<p>2.</p>
+<p><a href="https://blog.csdn.net/qq_39521554/article/details/79337929?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param" target="_blank" rel="noopener">https://blog.csdn.net/qq_39521554/article/details/79337929?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param</a></p>
+<p>3.<a href="https://blog.csdn.net/qq_35799003/article/details/84780289" target="_blank" rel="noopener">https://blog.csdn.net/qq_35799003/article/details/84780289</a></p>
+<p>4.<a href="https://blog.csdn.net/qq_39422642/article/details/78676567" target="_blank" rel="noopener">https://blog.csdn.net/qq_39422642/article/details/78676567</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -634,12 +669,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/deep-learning/">
-                                    <span class="chip bg-color">deep-learning</span>
+                                <a href="/tags/MT/">
+                                    <span class="chip bg-color">MT</span>
                                 </a>
                             
-                                <a href="/tags/language-model/">
-                                    <span class="chip bg-color">language model</span>
+                                <a href="/tags/Transformer/">
+                                    <span class="chip bg-color">Transformer</span>
+                                </a>
+                            
+                                <a href="/tags/NLP/">
+                                    <span class="chip bg-color">NLP</span>
                                 </a>
                             
                         </div>
@@ -838,8 +877,8 @@ import numpy as np
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/AI/" class="post-category">
-                                    AI
+                            <a href="/categories/Code/" class="post-category">
+                                    Code
                                 </a>
                             
                             
@@ -876,8 +915,9 @@ import numpy as np
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            A Unified MRC Framework for Named Entity Recognition
-Abstract:The task of named entity recognition (NER) is normally div
+                            titleA Unified MRC Framework for Named Entity Recognition
+
+Abstract:The task of named entity recognition (NER) is normal
                         
                     </div>
                     <div class="publish-info">
