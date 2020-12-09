@@ -504,21 +504,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-10-12
+                    2020-10-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    622
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    3 Min
+                    4 Min
                 </div>
                 
 
@@ -558,12 +558,61 @@
 <p>[^系统某一时刻的输出是由多个输入共同作用的结果]: </p>
 <img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201010163005135.png" style="zoom:50%;">
 
+<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201013083349412.png" alt="计算第一个元素" style="zoom:50%;">
+
+<p>[^计算第二个元素只需将蓝色方框向右移动一列]: </p>
+<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201013085823114.png" style="zoom:67%;">
+
+<p>[^上图中间的卷积矩阵通过卷积运算可以看出输入矩阵是从暗变亮还是从亮变暗]: </p>
+<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201013090713446.png" style="zoom:67%;">
+
+<p>[^卷积矩阵可以用来当作水平或垂直边缘检测]: </p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201013090157757.png" alt="Sobel filter"></p>
+<p>[^中间一行的参数权重变大是为了增大鲁棒性]: </p>
+<p><strong>可以将矩阵的九个参数全都通过神经网络去学习（反向算法），矩阵还可以进行翻转</strong></p>
 <p>卷积核上所有作用点依次作用于原始像素点后（即乘起来），线性叠加的输出结果，即是最终卷积的输出，也是我们想要的结果，我们称为destination pixel.</p>
-<p><strong>原始图像通过与卷积核的数学运算，可以提取出图像的某些指定特征（features)。</strong></p>
-<p><strong>不同卷积核，提取的特征也是不一样的。</strong></p>
-<p><strong>提取的特征一样，不同的卷积核，效果也不一样。</strong></p>
+<h4 id="Padding"><a href="#Padding" class="headerlink" title="Padding"></a>Padding</h4><p>对输入矩阵进行卷积的时候，假设输入矩阵维数为n，卷积矩阵为f，则输出矩阵为n-f+1，f&gt;=1，所以输出会被缩小，这样边缘的特征会丢失。</p>
+<p>引入padding，对输入矩阵四周进行扩充，元素为0.</p>
+<blockquote>
+<p>根据是否padding，将卷积分为Valid,Same。</p>
+<ul>
+<li>Vaild输出矩阵维数为n-f+1.</li>
+<li>Same输出矩阵n+2p-f+1(p为padding的维数)</li>
+</ul>
 </blockquote>
-<h4 id="position-embedding"><a href="#position-embedding" class="headerlink" title="position embedding"></a>position embedding</h4><p>show the current position of the input or output seq.</p>
+<p><strong>要使input=output，p=(f-1)/2,即p为基数时才能均匀padding</strong></p>
+<h4 id="Strided-convolution"><a href="#Strided-convolution" class="headerlink" title="Strided convolution"></a>Strided convolution</h4><p>卷积步长是s，即每次卷积后的输出矩阵为<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201013101555904.png" style="zoom:50%;"></p>
+<p>three dimensional CNN</p>
+<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201013102941304.png" style="zoom:67%;">
+
+<p>输出矩阵的通道数可以随着核的数量继续增加</p>
+<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201013185315195.png" style="zoom: 50%;">
+
+<h4 id="Pooling-layer"><a href="#Pooling-layer" class="headerlink" title="Pooling layer"></a>Pooling layer</h4><ul>
+<li><p>Max Pooling</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201013191203733.png" alt="image-20201013191203733"></p>
+<p>如果在过滤器中提取出任何的特征则保留最大值，反之则不是最大值</p>
+</li>
+<li><p>Average pooling</p>
+<p>通过计算方块特征值中的平均数来进行特征提取。效果没有Max pooling好。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201014090917968.png" alt=""></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201014091116584.png" alt=""></p>
+<p>POOL层无参数，卷积层参数较少，全连接层参数最多，随着层数增加，激活值减少。</p>
+<p><strong>Why use CNN?</strong></p>
+<p>通过共享参数和使用稀疏网络(防止过拟合)来减少参数。</p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201014093550570.png" alt=""></p>
+<h4 id="经典网络"><a href="#经典网络" class="headerlink" title="经典网络"></a>经典网络</h4><p><strong>LetNet-5</strong></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201014095914134.png" alt=""></p>
+<p>[^早期pooling只有avg，人们早期使用Sigmoid/tanh,而非Relu]: </p>
+<p><strong>AlexNet</strong></p>
+<h5 id="残差网络（Residual-block"><a href="#残差网络（Residual-block" class="headerlink" title="残差网络（Residual block)"></a>残差网络（Residual block)</h5><p>神经网络的层数太深会导致梯度爆炸或梯度消失。残差网络，可以将从一层获取的激活值迅速反馈给其他层或是更深的网络。</p>
+<p><img src="C:/Users/89582/AppData/Roaming/Typora/typora-user-images/image-20201014102558076.png" alt=""></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201014103039678.png" alt=""></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201014103253269.png" alt=""></p>
+</li>
+</ul>
+</blockquote>
+<h5 id="CNN"><a href="#CNN" class="headerlink" title="CNN"></a>CNN</h5><h4 id="position-embedding"><a href="#position-embedding" class="headerlink" title="position embedding"></a>position embedding</h4><p>show the current position of the input or output seq.</p>
 <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a href="https://arxiv.org/abs/1705.03122" target="_blank" rel="noopener">https://arxiv.org/abs/1705.03122</a></p>
 <p><a href="https://mp.weixin.qq.com/s?__biz=MzU0MDQyMzQ2MA==&amp;mid=2247483721&amp;idx=1&amp;sn=2cbebf2ba17c14d98da44ef477cc80dc&amp;chksm=fb382502cc4fac14cb962248d6dbc1cfdb840de189e634edd425ab9c87332b88f27c3f0d720c&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">https://mp.weixin.qq.com/s?__biz=MzU0MDQyMzQ2MA==&amp;mid=2247483721&amp;idx=1&amp;sn=2cbebf2ba17c14d98da44ef477cc80dc&amp;chksm=fb382502cc4fac14cb962248d6dbc1cfdb840de189e634edd425ab9c87332b88f27c3f0d720c&amp;scene=21#wechat_redirect</a></p>
 <script>
@@ -840,8 +889,10 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第九章 EM算法及其推广9.1EM算法引入EM算法（expectation maximization algorithm)期望极大值算法
-https://blog.csdn.net/u010834867/article/details/90
+                            第六章 logistic regression model(logistic 回归模型)
+拟牛顿法：https://blog.csdn.net/itplus/article/details/21896453
+
+第九章 EM算法及其推广9.1
                         
                     </div>
                     <div class="publish-info">

@@ -484,8 +484,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/PaperLookThrough/" class="post-category">
-                                PaperLookThrough
+                            <a href="/categories/Origin-PaperLookThrough/" class="post-category">
+                                Origin PaperLookThrough
                             </a>
                         
                     </div>
@@ -504,21 +504,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-10-12
+                    2020-11-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    1.3k
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    5 Min
+                    8 Min
                 </div>
                 
 
@@ -583,11 +583,36 @@
 <p><strong>Attention</strong></p>
 <p>the output is computed as a weighted sum of th values,where the weight assigned to each value is computed by a function of query with the corrsponding key.</p>
 <p><img src="C:/Users/89582/AppData/Roaming/Typora/typora-user-images/image-20201009100048322.png" alt=""></p>
+<h2 id="1-Transformer-模型直观认识"><a href="#1-Transformer-模型直观认识" class="headerlink" title="1 Transformer 模型直观认识"></a>1 Transformer 模型直观认识</h2><p>首先来说一下transformer和LSTM的最大区别, 就是LSTM的训练是<strong>迭代</strong>的, 是一个接一个字的来, 当前这个字过完LSTM单元, 才可以进下一个字, 而transformer的训练是<strong>并行</strong>的, 就是所有字是全部同时训练的, 这样就大大加快了计算效率, transformer使用了位置嵌入 (𝑝𝑜𝑠𝑖𝑡𝑖𝑜𝑛𝑎𝑙 𝑒𝑛𝑐𝑜𝑑𝑖𝑛𝑔) 来理解语言的顺序, 使用自注意力机制和全连接层来进行计算, 这些后面都会详细讲解.</p>
+<p>transformer模型主要分为两大部分, 分别是编码器和解码器, <strong>编码器</strong>负责把自然语言序列映射成为隐藏层(下图中第2步用九宫格比喻的部分), 含有自然语言序列的数学表达. 然后<strong>解码器</strong>把隐藏层再映射为自然语言序列, 从而使我们可以解决各种问题, 如情感分类, 命名实体识别, 语义关系抽取, 摘要生成, 机器翻译等等, 下面我们以机器翻译为例简单说一下下图的每一步都做了什么:</p>
+<ol>
+<li>输入自然语言序列到编码器: Why do we work?(为什么要工作);</li>
+<li>编码器输出到隐藏层, 再输入到解码器;</li>
+<li>输入 &lt;𝑠𝑡𝑎𝑟𝑡&gt; (起始)符号到解码器;</li>
+<li>得到第一个字”为”;</li>
+<li>将得到的第一个字”为”落下来再输入到解码器;</li>
+<li>得到第二个字”什”;</li>
+<li>将得到的第二字再落下来, 直到解码器输出 &lt;𝑒𝑛𝑑&gt; (终止符), 即序列生成完成</li>
+</ol>
+<h2 id="2-Transformer-Block结构图"><a href="#2-Transformer-Block结构图" class="headerlink" title="2 Transformer Block结构图"></a>2 Transformer Block结构图</h2><p><img src="https://img-blog.csdnimg.cn/20200630151025713.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0ODM4NjQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>编码器的输入X是一个自然语言序列，它的维度是[batch size,sequence length]，batch size是一次训练句子的个数，sequence length是句子的长度。它通过查阅字向量表或者其他方式得到每个字embedding dimension维的嵌入向量。</p>
+<p>上面是一个transformer block，实际网络中可以堆叠多个block。</p>
+<p>我们通过编码器输出的X h i d d e n X_{hidden}<em>X*</em>h<strong>i</strong>d<strong>d</strong>e*<em>n</em>就是隐藏层，下面详细介绍每个模块。</p>
+<h3 id="2-1-𝑝𝑜𝑠𝑖𝑡𝑖𝑜𝑛𝑎𝑙-𝑒𝑛𝑐𝑜𝑑𝑖𝑛𝑔"><a href="#2-1-𝑝𝑜𝑠𝑖𝑡𝑖𝑜𝑛𝑎𝑙-𝑒𝑛𝑐𝑜𝑑𝑖𝑛𝑔" class="headerlink" title="2.1 𝑝𝑜𝑠𝑖𝑡𝑖𝑜𝑛𝑎𝑙 𝑒𝑛𝑐𝑜𝑑𝑖𝑛𝑔"></a>2.1 𝑝𝑜𝑠𝑖𝑡𝑖𝑜𝑛𝑎𝑙 𝑒𝑛𝑐𝑜𝑑𝑖𝑛𝑔</h3><blockquote>
+<p>加position encoding是因为trandformer与LSTM不同，不是循环生成的</p>
+</blockquote>
+<p>由于transformer模型没有循环神经网络的迭代操作, 所以我们必须提供每个字的位置信息给transformer, 才能识别出<strong>语言中的顺序关系</strong>.</p>
+<p>注意, 我们<strong>一般以字为单位训练transformer模型</strong>, 数的线性变换来提供给模型位置信息:<br><strong>位置嵌入在e m b e d d i n g  d i m e n s i o n embedding \ dimension*e\</strong>m*<em>b*<em>e*</em>d*<em>d*</em>i*<em>n*</em>g\</em> *d*<em>i*</em>m*<em>e*</em>n*<em>s*</em>i*<em>o*</em>n*维度上随着维度序号增大, 周期变化会越来越慢**, .<br><img src="https://img-blog.csdnimg.cn/20200630152716607.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0ODM4NjQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20200630152723649.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0ODM4NjQz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="2-2-𝑠𝑒𝑙𝑓-𝑎𝑡𝑡𝑒𝑛𝑡𝑖𝑜𝑛-𝑚𝑒𝑐ℎ𝑎𝑛𝑖𝑠𝑚"><a href="#2-2-𝑠𝑒𝑙𝑓-𝑎𝑡𝑡𝑒𝑛𝑡𝑖𝑜𝑛-𝑚𝑒𝑐ℎ𝑎𝑛𝑖𝑠𝑚" class="headerlink" title="2.2 𝑠𝑒𝑙𝑓 𝑎𝑡𝑡𝑒𝑛𝑡𝑖𝑜𝑛 𝑚𝑒𝑐ℎ𝑎𝑛𝑖𝑠𝑚"></a>2.2 𝑠𝑒𝑙𝑓 𝑎𝑡𝑡𝑒𝑛𝑡𝑖𝑜𝑛 𝑚𝑒𝑐ℎ𝑎𝑛𝑖𝑠𝑚</h3><p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201026162217543.png" alt="image-20201026162217543"><br><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201026162336219.png" alt=""></p>
+<p><strong>Attention Mask</strong><br><img src="https://img-blog.csdnimg.cn/20200630152942384.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0ODM4NjQz,size_16,color_FFFFFF,t_70" alt=""><br><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201026162415835.png" alt=""></p>
+<p><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201026162449863.png" alt=""></p>
+<h4 id="自己总结的图"><a href="#自己总结的图" class="headerlink" title="自己总结的图"></a>自己总结的图</h4><p><img src="Attention-is-all-your-need.assets/QQ%E5%9B%BE%E7%89%8720201027081151-1603757541161.jpg" alt=""></p>
+<h4 id="BERT"><a href="#BERT" class="headerlink" title="BERT"></a>BERT</h4><p>BERT（<strong>B</strong>idirectional <strong>E</strong>ncoder <strong>R</strong>epresentations from <strong>T</strong>ransformers）</p>
 <h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p>1.<a href="https://blog.csdn.net/FrankieHello/article/details/80883147?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param" target="_blank" rel="noopener">https://blog.csdn.net/FrankieHello/article/details/80883147?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param</a></p>
 <p>2.</p>
 <p><a href="https://blog.csdn.net/qq_39521554/article/details/79337929?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param" target="_blank" rel="noopener">https://blog.csdn.net/qq_39521554/article/details/79337929?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param</a></p>
 <p>3.<a href="https://blog.csdn.net/qq_35799003/article/details/84780289" target="_blank" rel="noopener">https://blog.csdn.net/qq_35799003/article/details/84780289</a></p>
 <p>4.<a href="https://blog.csdn.net/qq_39422642/article/details/78676567" target="_blank" rel="noopener">https://blog.csdn.net/qq_39422642/article/details/78676567</a></p>
+<p>5.<a href="https://www.bilibili.com/video/BV1Mt411J734" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1Mt411J734</a><br><a href="https://github.com/aespresso/a_journey_into_math_of_ml" target="_blank" rel="noopener">https://github.com/aespresso/a_journey_into_math_of_ml</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {

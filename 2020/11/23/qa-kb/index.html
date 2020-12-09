@@ -1,0 +1,1201 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="QA_KB, NLP，知识图谱，liudongdong1 .etc">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>QA_KB | BelovedHe&#39;s Blogs</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="BelovedHe's Blogs" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">BelovedHe&#39;s Blogs</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/about">
+          
+          <i class="fas fa-user-circle" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>about</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/resume">
+          
+          <i class="fa fa-user-secret" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>resume</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">BelovedHe&#39;s Blogs</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/about " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-user-circle" style="position: absolute;left:50px" ></i>
+			      
+		          <span>about</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/resume " style="margin-left:75px">
+				  
+				   <i class="fa fa fa-user-secret" style="position: absolute;left:50px" ></i>
+			      
+		          <span>resume</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/weiruohe" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/weiruohe" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">QA_KB</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    .toc-fixed .toc-link::before{
+        position: fixed!important;/*当toc的位置改为fixed时，.toc-link::before也要改为fixed*/
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/QA/">
+                                <span class="chip bg-color">QA</span>
+                            </a>
+                        
+                            <a href="/tags/NLP/">
+                                <span class="chip bg-color">NLP</span>
+                            </a>
+                        
+                            <a href="/tags/KB/">
+                                <span class="chip bg-color">KB</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/PaperLookThrough/" class="post-category">
+                                PaperLookThrough
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2020-11-23
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2020-11-26
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    1.9k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    7 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h3 id="Title"><a href="#Title" class="headerlink" title="Title"></a>Title</h3><p>《<strong>Beyond I.I.D.: Three Levels of Generalization for Question Answering on Knowledge Bases</strong>》</p>
+<h3 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h3><p>现在对KBQA的研究都是假设在问题上的训练分布和测试分布是相同的（i.i.d)。但是在大规模数据集上很难实现：</p>
+<ol>
+<li>真实的用户分布何难捕捉（覆盖面很大，组合也很多）</li>
+</ol>
+<p>[^]: 即使迭代注释了所有的用户问题，没有泛化能力的模型在面对新的out-of distribution questions时依然会失败</p>
+<ol>
+<li>从大空间中随机抽样训练样本效率低下</li>
+</ol>
+<p>所以我们建立三个层次的内置泛化：<strong>i.i.d,compositional,zero-shot</strong>,为了增大泛化能力提出了<strong>GRAILQA</strong>数据集以及基于BERT的KBQA模型</p>
+<p>[^i.i.d]: indenpendently and identically distributed独立同分布（有相同的概率分布且相互独立。</p>
+<h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><blockquote>
+<p>As the scale and coverage of KBs increase,KBQA is becoming even more important due to the increasing difficulty of writing structured queries like <strong>SPARQL</strong></p>
+</blockquote>
+<p>随着KB规模和覆盖范围的增大，编写像<strong>SPARQL</strong>这样的结构化查询语句变得很难，所以<strong>KBQA</strong>越来越重要 。</p>
+<p><img src="QA-KB.assets/image-20201123095801291.png" alt=""></p>
+<p><strong>KBQA</strong>模型有三个层次的泛化：<strong>i.i.d,compositional,zero-shot</strong>,所以KBQA可以在可见的模式项(relations,classes,function)中进行重新组合,能回答所有涉及模式项的问题，即使在训练中不包含这种特定组合。KBQA在遇到训练中完全没有的关于整个模式甚至整个作用域的问题时，需要在zero-shot进行泛化</p>
+<p>一个理想的数据集应该是大规模，多样化，可以为KBQA捕捉其他的实际挑战，比如实体链接，复杂问题以及语言变异，但是现在的KBQA数据库通常被限制在1 or more维。大多数专注于i.i.d的设置，<strong>GRAPHQ,QALD</strong>可用来测试成分泛化但却不能测试zero-shot泛化,它们的规模都相对较小，对KB本体只有有限的覆盖。<strong>SIMPLEQ</strong>虽然规模很大，但是仅仅限于有限多样性的单关系问题。</p>
+<p>[^language viriation]: 语言变异是指某一个语言现象在实际使用中的话语中的变化。语言现象可以是语音、音位、词汇、语义项目或语法范畴等。例如第二人称单数，在普通话里有“你”（ni）和“您”（nin）两种形式，这两种不同的变化，就是第二人称单数的变异。 –摘自《什么是社会语言学》游汝杰著，上海外语教育出版社，39页</p>
+<p><strong>GRAILQA</strong>支持三种层次的泛化，64331个中包括&gt;=4个关系（<strong>counting,comparatives,superlatives</strong>)的众包问题,数据库覆盖了<strong>FREEBASE COMMONS</strong>的86个领域，我们数据集中的问题涉及的实体是从美国到酒店名的所有受欢迎的实体。</p>
+<p>为了增加多样性和真实性，通过大规模的web mining和众包来收集实体的常见表现形式。</p>
+<blockquote>
+<p><strong>*”Obama”,”President Obama”<em>for *Barack_Obama</em></strong></p>
+</blockquote>
+<p>还提出了一种基于BERT的新KBQA模型，数据库和模型的结合让我们能够测试KBQA的几种挑战<strong>search space pruning and language,ontology alignment</strong>。BERT在实现组合和零射泛化上有很大的作用。</p>
+<h3 id="BACKGROUND"><a href="#BACKGROUND" class="headerlink" title="BACKGROUND"></a>BACKGROUND</h3><p><img src="QA-KB.assets/image-20201124143852828.png" alt=""></p>
+<p>a)从给定的KB到具体的复杂性生成典型的逻辑结构</p>
+<p>b)专家为了典型逻辑形式注释权威问题，实体和文字包含在括号里以便简单替换</p>
+<p>c)通过众包获取高质量以及有差异的注释</p>
+<p>d)从每个由entity grounding构成的逻辑形式生成不同的逻辑形式(?)</p>
+<p>e)采样不同的逻辑形式和注释的组合去生成最终的问题，还可以通过网络挖掘常见的实体表现形式，使用它们使得实体连接更加有真实性</p>
+<h4 id="2-1KB"><a href="#2-1KB" class="headerlink" title="2.1KB"></a>2.1KB</h4><p><img src="QA-KB.assets/image-20201124144742690.png" alt=""></p>
+<p>KB包含两部分：</p>
+<ol>
+<li><strong>ontology</strong>:O ⊆ C × R × C</li>
+<li><strong>relational fact</strong>:M ⊆ E × R × (C ∪ E ∪ L)</li>
+</ol>
+<p>[^C:class R:binary relation E:entity L:litral]: </p>
+<h4 id="2-2Three-Levels-of-Generalization-Definition"><a href="#2-2Three-Levels-of-Generalization-Definition" class="headerlink" title="2.2Three Levels of Generalization:Definition"></a>2.2Three Levels of Generalization:Definition</h4><h3 id="3-Data"><a href="#3-Data" class="headerlink" title="3 Data"></a>3 Data</h3><h4 id="3-1Data-collection"><a href="#3-1Data-collection" class="headerlink" title="3.1Data collection"></a>3.1Data collection</h4><p>3步</p>
+<p>1) generate logical forms from a KB</p>
+<p>2) convert logical forms into canonical questions</p>
+<p>3) paraphrase canonical questions into more natural forms via crowdsourcing</p>
+<h5 id="Canonical-logical-form-generation"><a href="#Canonical-logical-form-generation" class="headerlink" title="Canonical logical form generation"></a>Canonical logical form generation</h5><p>首先遍历KB本体生成仅包含class，relation,function的图形形状的模板，接着落地到兼容实体的节点上，去生成表示含义的逻辑形式，样板和实体生成了canonical logical form。</p>
+<h5 id="Canonical-question-annotation"><a href="#Canonical-question-annotation" class="headerlink" title="Canonical question annotation"></a>Canonical question annotation</h5><h5 id="Crowd-powered-paraphrasing"><a href="#Crowd-powered-paraphrasing" class="headerlink" title="Crowd-powered paraphrasing"></a>Crowd-powered paraphrasing</h5><h5 id="Grouding-and-sampling"><a href="#Grouding-and-sampling" class="headerlink" title="Grouding and sampling"></a>Grouding and sampling</h5><p>标准逻辑形式和兼容的实体生成更多的逻辑形式。同一标准逻辑形式相关的逻辑形式和注释会形成一个pool，每次从每个pool中采样生成一个问题。开始时权值统一，选择logical form or paraphrase时同时除 ρ1，ρp。ρ1 to 2，ρp to 10（diversity），最后随机替换entity form(task3).</p>
+<h4 id="3-2-Data-Analyse"><a href="#3-2-Data-Analyse" class="headerlink" title="3.2 Data Analyse"></a>3.2 Data Analyse</h4><p>Entity linking</p>
+<p>表面形式的基本类型有首字母缩写，姓/名，常识，口语vs书面语，这样挖掘的表面形式用更有代表性，口语化的方法表示KB中的实体，在现有的KBQA数据库中被忽略。</p>
+<h4 id="3-3Logical-Form-in-S-expression"><a href="#3-3Logical-Form-in-S-expression" class="headerlink" title="3.3Logical Form in S-expression"></a>3.3Logical Form in S-expression</h4><p><strong>graph query to S-expression</strong></p>
+<p>更有可读性 </p>
+<h3 id="4-MODEL"><a href="#4-MODEL" class="headerlink" title="4 MODEL"></a>4 MODEL</h3><p>比较和zero-shot泛化相比于i.i.d有两个挑战：<strong>大搜索空间，语言-本体对齐</strong>。</p>
+<ol>
+<li><p>search space:</p>
+<p>i.i.d:ontology observed during training(词汇表主要来自训练数据)</p>
+<p>zero-shot:entire ontology(<em>Qusetion-specific search space pruning</em>)</p>
+</li>
+<li><p>language-ontology alignment:</p>
+<p>zero-shot:学习unseen-schema item为了解决可能出现的相关问题</p>
+<p>组合泛化：生成新的组合而非在训练中记忆的，传统方法是利用数据挖掘建立自然语言到KB语义项的词典，可能会更偏向受欢迎的语义项 </p>
+</li>
+</ol>
+<p>预训练的文本嵌入（BERT）为对齐提供可选择的方案，基于BERT的KBQA模型让我们能测量在非i.i.d泛化中文本嵌入的有效性。</p>
+<p><img src="QA-KB.assets/image-20201125100451071.png" alt=""></p>
+<h4 id="4-1-Model-Overview"><a href="#4-1-Model-Overview" class="headerlink" title="4.1 Model Overview"></a>4.1 Model Overview</h4><p>目标是生成map:input question q=x1,x2,…,x|q| to logical form a=y1,y2,..ya</p>
+<p>基于Seq2Seq2，输出token是在输入的条件下自回归生成的，V是解码词汇表。条件概率定义为：<img src="QA-KB.assets/image-20201125104930255.png" style="zoom:67%;"></p>
+<p>编码和解码器是两个不同的有LSTM的RNN，LSTM根据下面的公式生成token<br>$$<br>h𝑡 = 𝐿𝑆𝑇𝑀(h𝑡-1, g𝑡),<br>$$<br>基于当前的ht和W计算的每个输出token的概率<br>$$<br>𝑝(𝑦𝑡 |𝑦&lt;𝑡<br>, 𝑞) = [𝑆𝑜 𝑓 𝑡𝑚𝑎𝑥 (Wh𝑡)]𝑦𝑡 .<br>$$</p>
+<p>我们使用Seq2seq中的W连接输入输出，从预训练的嵌入中分配语义，促进开放的词汇学习</p>
+<h4 id="4-2BERT-Encoding"><a href="#4-2BERT-Encoding" class="headerlink" title="4.2BERT Encoding"></a>4.2BERT Encoding</h4><p>之前用文本表示学习text-to-SQL的对齐时，将question和所有vocabulary item连接起来作为BERT的输入，但是KBQA中的词汇太多了，超过的BERT的输入长度，vocabulary分成chunk，将chunk和question连接后进行处理。</p>
+<blockquote>
+<p><img src="QA-KB.assets/image-20201125162825742.png" alt="?"></p>
+</blockquote>
+<h4 id="Vocabulary-construction"><a href="#Vocabulary-construction" class="headerlink" title="Vocabulary construction"></a>Vocabulary construction</h4><p>在处理zero-shot泛化时，可以将来自KB本体的所有模式项都包括进来。但是搜索空间太大并且很耗时.为了减少size of V，利用从question中识别的实体作为在KB中的anchor，并且仅选择距离（&gt;=1个）anchor两跳之内的KB items。（<strong>Vocabulary pruning</strong>）我们对每个输入都有一个动态V，所有在S-expression中的被识别实体，函数以及语法常量也包含在其中，同理求出基于BERT的实体表示，表示与它的表面形式相关。</p>
+<h3 id="5-Experiment"><a href="#5-Experiment" class="headerlink" title="5.Experiment"></a>5.Experiment</h3><p><img src="QA-KB.assets/image-20201126111238105.png" alt=""></p>
+<blockquote>
+<ol>
+<li><p>正确率 = 提取出的正确信息条数 /  提取出的信息条数   </p>
+</li>
+<li><p>召回率 = 提取出的正确信息条数 /  样本中的信息条数 </p>
+<p><strong>F-Measure</strong>（综合评价指标，α=1时即为F-1）：<br><img src="QA-KB.assets/20130808110619562" alt=""></p>
+</li>
+</ol>
+</blockquote>
+<h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><p><a href="https://baike.baidu.com/item/%E8%87%AA%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B/1037587?fr=aladdin" target="_blank" rel="noopener">https://baike.baidu.com/item/%E8%87%AA%E5%9B%9E%E5%BD%92%E6%A8%A1%E5%9E%8B/1037587?fr=aladdin</a></p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://weiruohe.github.io" rel="external nofollow noreferrer">Weiruohe</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://weiruohe.github.io/2020/11/23/qa-kb/">https://weiruohe.github.io/2020/11/23/qa-kb/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint polocy. If reproduced, please indicate source
+                    <a href="https://weiruohe.github.io" target="_blank">Weiruohe</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/QA/">
+                                    <span class="chip bg-color">QA</span>
+                                </a>
+                            
+                                <a href="/tags/NLP/">
+                                    <span class="chip bg-color">NLP</span>
+                                </a>
+                            
+                                <a href="/tags/KB/">
+                                    <span class="chip bg-color">KB</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,qzone,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2020/11/27/qa-ka/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="QA_KA">
+                        
+                        <span class="card-title">QA_KA</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Title《Scalable Multi-Hop Relational Reasoning for Knowledge-Aware Question Answering》
+Abstract
+Existing work on augmenti
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-27
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/PaperLookThrough/" class="post-category">
+                                    PaperLookThrough
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/QA/">
+                        <span class="chip bg-color">QA</span>
+                    </a>
+                    
+                    <a href="/tags/NLP/">
+                        <span class="chip bg-color">NLP</span>
+                    </a>
+                    
+                    <a href="/tags/KB/">
+                        <span class="chip bg-color">KB</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/11/19/studynote-20201106-20201119/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="studynote-20201106-20201119">
+                        
+                        <span class="card-title">studynote-20201106-20201119</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            一、学习内容
+研读nlp领域的经典论文
+《LXMERT: Learning Cross-Modality Encoder Representations from Transformers》
+《Improving Language Unde
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            WeiRuoHe
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+   
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script type="text/javascript" src="/js/CFS.Snow.min.js"></script>
+    <!-- 点击爆灯效果 -->
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+    <!--动态线条背景-->
+    <script type="text/javascript"
+        color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+    </script>
+    <!-- 天气 -->
+    <!-- weather -->
+    <!-- weather -->
+    <script type="text/javascript">
+         WIDGET = {FID: 'knAMQaFanP'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

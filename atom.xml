@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weiruohe.github.io/"/>
-  <updated>2020-10-12T08:01:27.256Z</updated>
+  <updated>2020-12-09T01:34:01.746Z</updated>
   <id>https://weiruohe.github.io/</id>
   
   <author>
@@ -17,11 +17,94 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Deep Belief Network-ASR.md</title>
-    <link href="https://weiruohe.github.io/2020/10/12/deep-belief-network-asr-md/"/>
-    <id>https://weiruohe.github.io/2020/10/12/deep-belief-network-asr-md/</id>
-    <published>2020-10-12T02:13:59.000Z</published>
-    <updated>2020-10-12T08:01:27.256Z</updated>
+    <title>Semantic Parsing</title>
+    <link href="https://weiruohe.github.io/2020/12/08/semantic-parsing/"/>
+    <id>https://weiruohe.github.io/2020/12/08/semantic-parsing/</id>
+    <published>2020-12-08T08:17:02.000Z</published>
+    <updated>2020-12-09T01:34:01.746Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title&quot;&gt;&lt;/a&gt;Title&lt;/h3&gt;&lt;p&gt;《&lt;strong&gt;How Far are We from Effective Context Modeling?
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
+    
+    
+      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
+    
+      <category term="SQC(语境语义解析)" scheme="https://weiruohe.github.io/tags/SQC-%E8%AF%AD%E5%A2%83%E8%AF%AD%E4%B9%89%E8%A7%A3%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>compositional Generalization</title>
+    <link href="https://weiruohe.github.io/2020/12/04/compositional-generalization/"/>
+    <id>https://weiruohe.github.io/2020/12/04/compositional-generalization/</id>
+    <published>2020-12-04T09:37:01.000Z</published>
+    <updated>2020-12-08T08:06:19.255Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title&quot;&gt;&lt;/a&gt;Title&lt;/h3&gt;&lt;p&gt;《&lt;strong&gt;Compositional Generalization by Learning
+        
+      
+    
+    </summary>
+    
+    
+      <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
+    
+    
+      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
+    
+      <category term="组合泛化" scheme="https://weiruohe.github.io/tags/%E7%BB%84%E5%90%88%E6%B3%9B%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>魏若荷_studynote_20201120-20201203</title>
+    <link href="https://weiruohe.github.io/2020/12/03/wei-ruo-he-studynote-20201120-20201203/"/>
+    <id>https://weiruohe.github.io/2020/12/03/wei-ruo-he-studynote-20201120-20201203/</id>
+    <published>2020-12-03T01:57:20.000Z</published>
+    <updated>2020-12-03T02:26:12.996Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;一、学习内容&quot;&gt;&lt;a href=&quot;#一、学习内容&quot; class=&quot;headerlink&quot; title=&quot;一、学习内容&quot;&gt;&lt;/a&gt;一、学习内容&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;研读nlp领域有关KBQA的最新论文&lt;/p&gt;
+&lt;p&gt;《&lt;strong&gt;Scalable
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>QA_KA</title>
+    <link href="https://weiruohe.github.io/2020/11/27/qa-graph/"/>
+    <id>https://weiruohe.github.io/2020/11/27/qa-graph/</id>
+    <published>2020-11-27T00:51:25.000Z</published>
+    <updated>2020-11-28T11:24:55.819Z</updated>
     
     <summary type="html">
     
@@ -43,20 +126,20 @@
       <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
     
     
-      <category term="ASR" scheme="https://weiruohe.github.io/tags/ASR/"/>
-    
-      <category term="HMM-DBN" scheme="https://weiruohe.github.io/tags/HMM-DBN/"/>
+      <category term="QA" scheme="https://weiruohe.github.io/tags/QA/"/>
     
       <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
     
+      <category term="KB" scheme="https://weiruohe.github.io/tags/KB/"/>
+    
   </entry>
   
   <entry>
-    <title>Notes-LiHang</title>
-    <link href="https://weiruohe.github.io/2020/10/11/notes-lihang/"/>
-    <id>https://weiruohe.github.io/2020/10/11/notes-lihang/</id>
-    <published>2020-10-11T01:37:03.000Z</published>
-    <updated>2020-10-12T02:06:43.956Z</updated>
+    <title>QA_KA</title>
+    <link href="https://weiruohe.github.io/2020/11/27/qa-ka/"/>
+    <id>https://weiruohe.github.io/2020/11/27/qa-ka/</id>
+    <published>2020-11-27T00:51:25.000Z</published>
+    <updated>2020-12-01T01:48:44.420Z</updated>
     
     <summary type="html">
     
@@ -64,34 +147,7 @@
       
         
         
-          &lt;h3 id=&quot;第九章-EM算法及其推广&quot;&gt;&lt;a href=&quot;#第九章-EM算法及其推广&quot; class=&quot;headerlink&quot; title=&quot;第九章 EM算法及其推广&quot;&gt;&lt;/a&gt;第九章 EM算法及其推广&lt;/h3&gt;&lt;h4 id=&quot;9-1EM算法引入&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="BookLook" scheme="https://weiruohe.github.io/categories/BookLook/"/>
-    
-    
-      <category term="Statistics" scheme="https://weiruohe.github.io/tags/Statistics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Convs2s-MT</title>
-    <link href="https://weiruohe.github.io/2020/10/09/convs2s-mt/"/>
-    <id>https://weiruohe.github.io/2020/10/09/convs2s-mt/</id>
-    <published>2020-10-09T07:10:43.000Z</published>
-    <updated>2020-10-12T08:00:53.522Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title&quot;&gt;&lt;/a&gt;Title&lt;/h3&gt;&lt;p&gt;《&lt;strong&gt;Convolutional Sequence to Sequence
+          &lt;h3 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title&quot;&gt;&lt;/a&gt;Title&lt;/h3&gt;&lt;p&gt;《&lt;strong&gt;Scalable Multi-Hop Relational Reasoning for
         
       
     
@@ -101,20 +157,20 @@
       <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
     
     
-      <category term="MT" scheme="https://weiruohe.github.io/tags/MT/"/>
-    
-      <category term="CNN" scheme="https://weiruohe.github.io/tags/CNN/"/>
+      <category term="QA" scheme="https://weiruohe.github.io/tags/QA/"/>
     
       <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
+    
+      <category term="KB" scheme="https://weiruohe.github.io/tags/KB/"/>
     
   </entry>
   
   <entry>
-    <title>dynamaticonv</title>
-    <link href="https://weiruohe.github.io/2020/10/07/dynamaticonv/"/>
-    <id>https://weiruohe.github.io/2020/10/07/dynamaticonv/</id>
-    <published>2020-10-07T02:49:42.000Z</published>
-    <updated>2020-10-12T07:59:51.634Z</updated>
+    <title>QA_KB</title>
+    <link href="https://weiruohe.github.io/2020/11/23/qa-kb/"/>
+    <id>https://weiruohe.github.io/2020/11/23/qa-kb/</id>
+    <published>2020-11-23T00:23:19.000Z</published>
+    <updated>2020-11-26T03:15:50.987Z</updated>
     
     <summary type="html">
     
@@ -122,7 +178,7 @@
       
         
         
-          &lt;h3 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title&quot;&gt;&lt;/a&gt;Title&lt;/h3&gt;&lt;p&gt;《Pay Less Attention With Lightweight and Dynamic
+          &lt;h3 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title&quot;&gt;&lt;/a&gt;Title&lt;/h3&gt;&lt;p&gt;《&lt;strong&gt;Beyond I.I.D.: Three Levels of Generalization
         
       
     
@@ -132,20 +188,20 @@
       <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
     
     
-      <category term="MT" scheme="https://weiruohe.github.io/tags/MT/"/>
-    
-      <category term="CNN" scheme="https://weiruohe.github.io/tags/CNN/"/>
+      <category term="QA" scheme="https://weiruohe.github.io/tags/QA/"/>
     
       <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
+    
+      <category term="KB" scheme="https://weiruohe.github.io/tags/KB/"/>
     
   </entry>
   
   <entry>
-    <title>Multi-Scale attention-seq</title>
-    <link href="https://weiruohe.github.io/2020/10/06/multi-scale-attention-seq/"/>
-    <id>https://weiruohe.github.io/2020/10/06/multi-scale-attention-seq/</id>
-    <published>2020-10-06T07:07:20.000Z</published>
-    <updated>2020-10-12T07:57:30.125Z</updated>
+    <title>studynote-20201106-20201119</title>
+    <link href="https://weiruohe.github.io/2020/11/19/studynote-20201106-20201119/"/>
+    <id>https://weiruohe.github.io/2020/11/19/studynote-20201106-20201119/</id>
+    <published>2020-11-19T10:35:44.000Z</published>
+    <updated>2020-11-21T23:38:31.646Z</updated>
     
     <summary type="html">
     
@@ -153,7 +209,146 @@
       
         
         
-          &lt;h3 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title&quot;&gt;&lt;/a&gt;Title&lt;/h3&gt;&lt;p&gt;《MUSE: PARALLEL MULTI-SCALE ATTENTION FOR SEQUENCE TO
+          &lt;h4 id=&quot;一、学习内容&quot;&gt;&lt;a href=&quot;#一、学习内容&quot; class=&quot;headerlink&quot; title=&quot;一、学习内容&quot;&gt;&lt;/a&gt;一、学习内容&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;研读nlp领域的经典论文&lt;/p&gt;
+&lt;p&gt;《&lt;strong&gt;LXMERT:
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>LXMERT</title>
+    <link href="https://weiruohe.github.io/2020/11/18/lxmert/"/>
+    <id>https://weiruohe.github.io/2020/11/18/lxmert/</id>
+    <published>2020-11-18T13:13:26.000Z</published>
+    <updated>2020-11-22T11:49:03.628Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title&quot;&gt;&lt;/a&gt;Title&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;LXMERT: Learning Cross-Modality Encoder
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Origin PaperLookThrough" scheme="https://weiruohe.github.io/categories/Origin-PaperLookThrough/"/>
+    
+    
+      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
+    
+      <category term="Pre-training" scheme="https://weiruohe.github.io/tags/Pre-training/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>闲话语义</title>
+    <link href="https://weiruohe.github.io/2020/11/18/xian-hua-yu-yi/"/>
+    <id>https://weiruohe.github.io/2020/11/18/xian-hua-yu-yi/</id>
+    <published>2020-11-18T13:13:26.000Z</published>
+    <updated>2020-11-22T01:17:48.309Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;闲话语义（7）&quot;&gt;&lt;a href=&quot;#闲话语义（7）&quot; class=&quot;headerlink&quot; title=&quot;闲话语义（7）&quot;&gt;&lt;/a&gt;闲话语义（7）&lt;/h4&gt;&lt;h5 id=&quot;1-相谐&quot;&gt;&lt;a href=&quot;#1-相谐&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="conceptual record" scheme="https://weiruohe.github.io/categories/conceptual-record/"/>
+    
+    
+      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GPT</title>
+    <link href="https://weiruohe.github.io/2020/11/18/gpt/"/>
+    <id>https://weiruohe.github.io/2020/11/18/gpt/</id>
+    <published>2020-11-18T07:50:52.000Z</published>
+    <updated>2020-11-22T13:02:45.507Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title&quot;&gt;&lt;/a&gt;Title&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Improving Language Understanding by Generative
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Origin PaperLookThrough" scheme="https://weiruohe.github.io/categories/Origin-PaperLookThrough/"/>
+    
+    
+      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
+    
+      <category term="Pre-training" scheme="https://weiruohe.github.io/tags/Pre-training/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GPT</title>
+    <link href="https://weiruohe.github.io/2020/11/18/pretraining-improving-understand/"/>
+    <id>https://weiruohe.github.io/2020/11/18/pretraining-improving-understand/</id>
+    <published>2020-11-18T07:50:52.000Z</published>
+    <updated>2020-11-22T13:02:41.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title&quot;&gt;&lt;/a&gt;Title&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Improving Language Understanding by Generative
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Origin PaperLookThrough" scheme="https://weiruohe.github.io/categories/Origin-PaperLookThrough/"/>
+    
+    
+      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
+    
+      <category term="Pre-training" scheme="https://weiruohe.github.io/tags/Pre-training/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Event2Mind-BiRNN</title>
+    <link href="https://weiruohe.github.io/2020/11/18/event2mind-birnn/"/>
+    <id>https://weiruohe.github.io/2020/11/18/event2mind-birnn/</id>
+    <published>2020-11-18T02:11:05.000Z</published>
+    <updated>2020-11-18T07:47:27.163Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title&quot;&gt;&lt;/a&gt;Title&lt;/h3&gt;&lt;p&gt;《&lt;strong&gt;Event2Mind: Commonsense Inference on Events,
         
       
     
@@ -163,20 +358,18 @@
       <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
     
     
-      <category term="MT" scheme="https://weiruohe.github.io/tags/MT/"/>
+      <category term="BiRNN" scheme="https://weiruohe.github.io/tags/BiRNN/"/>
     
-      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
-    
-      <category term="attention" scheme="https://weiruohe.github.io/tags/attention/"/>
+      <category term="Commonsense" scheme="https://weiruohe.github.io/tags/Commonsense/"/>
     
   </entry>
   
   <entry>
-    <title>deep transformer-NMT</title>
-    <link href="https://weiruohe.github.io/2020/10/06/deep-transformer-nmt/"/>
-    <id>https://weiruohe.github.io/2020/10/06/deep-transformer-nmt/</id>
-    <published>2020-10-06T03:21:56.000Z</published>
-    <updated>2020-10-12T07:56:30.077Z</updated>
+    <title>“卷积+池化+激活+全连接”</title>
+    <link href="https://weiruohe.github.io/2020/11/16/juan-ji-chi-hua-ji-huo-quan-lian-jie/"/>
+    <id>https://weiruohe.github.io/2020/11/16/juan-ji-chi-hua-ji-huo-quan-lian-jie/</id>
+    <published>2020-11-16T12:58:55.000Z</published>
+    <updated>2020-11-16T13:18:17.309Z</updated>
     
     <summary type="html">
     
@@ -184,30 +377,29 @@
       
         
         
-          &lt;h3 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title:&quot;&gt;&lt;/a&gt;Title:&lt;/h3&gt;&lt;p&gt;《&lt;a href=&quot;https://arxiv.org/abs/2008.07772&quot;
+          &lt;p&gt;&lt;strong&gt;卷积&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;用它来进行特征提取&lt;/p&gt;
+&lt;p&gt;一个对象对一个系统连续做用一段时间后求系统的状态&lt;/p&gt;
+&lt;p&gt;形象化例子：&lt;a
         
       
     
     </summary>
     
     
-      <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
+      <category term="NN" scheme="https://weiruohe.github.io/categories/NN/"/>
     
     
-      <category term="MT" scheme="https://weiruohe.github.io/tags/MT/"/>
-    
-      <category term="Admin" scheme="https://weiruohe.github.io/tags/Admin/"/>
-    
-      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
+      <category term="Basic concept" scheme="https://weiruohe.github.io/tags/Basic-concept/"/>
     
   </entry>
   
   <entry>
-    <title>Back-Translation</title>
-    <link href="https://weiruohe.github.io/2020/10/06/back-translation/"/>
-    <id>https://weiruohe.github.io/2020/10/06/back-translation/</id>
-    <published>2020-10-06T01:10:58.000Z</published>
-    <updated>2020-10-12T07:56:06.892Z</updated>
+    <title>AMBert</title>
+    <link href="https://weiruohe.github.io/2020/11/10/ambert/"/>
+    <id>https://weiruohe.github.io/2020/11/10/ambert/</id>
+    <published>2020-11-10T00:52:33.000Z</published>
+    <updated>2020-11-10T00:52:33.362Z</updated>
     
     <summary type="html">
     
@@ -215,30 +407,26 @@
       
         
         
-          &lt;h3 id=&quot;title-《Understanding-Back-Translation-at-Scale》&quot;&gt;&lt;a href=&quot;#title-《Understanding-Back-Translation-at-Scale》&quot; class=&quot;headerlink&quot;
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
         
       
     
     </summary>
     
     
-      <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
-    
-    
-      <category term="MT" scheme="https://weiruohe.github.io/tags/MT/"/>
-    
-      <category term="Transformer" scheme="https://weiruohe.github.io/tags/Transformer/"/>
-    
-      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
     
   </entry>
   
   <entry>
-    <title>Task-Oriented Dialogue as Dataflow Synthesis</title>
-    <link href="https://weiruohe.github.io/2020/09/28/task-oriented-dialogue/"/>
-    <id>https://weiruohe.github.io/2020/09/28/task-oriented-dialogue/</id>
-    <published>2020-09-28T10:37:51.000Z</published>
-    <updated>2020-10-12T07:55:25.993Z</updated>
+    <title>AMBert</title>
+    <link href="https://weiruohe.github.io/2020/11/10/ambert-fu-ben/"/>
+    <id>https://weiruohe.github.io/2020/11/10/ambert-fu-ben/</id>
+    <published>2020-11-10T00:52:33.000Z</published>
+    <updated>2020-12-07T02:47:29.365Z</updated>
     
     <summary type="html">
     
@@ -246,28 +434,23 @@
       
         
         
-          &lt;h3 id=&quot;《Task-Oriented-Dialogue-as-Dataflow-Synthesis》&quot;&gt;&lt;a href=&quot;#《Task-Oriented-Dialogue-as-Dataflow-Synthesis》&quot; class=&quot;headerlink&quot;
+          &lt;blockquote&gt;
+&lt;h4 id=&quot;1-Explain-Yourself-Leveraging-Language-Models-for-Commonsense-Reasoning&quot;&gt;&lt;a
         
       
     
     </summary>
     
     
-      <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
-    
-    
-      <category term="MT" scheme="https://weiruohe.github.io/tags/MT/"/>
-    
-      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
     
   </entry>
   
   <entry>
-    <title>MT book</title>
-    <link href="https://weiruohe.github.io/2020/09/20/mt-book/"/>
-    <id>https://weiruohe.github.io/2020/09/20/mt-book/</id>
-    <published>2020-09-20T10:04:30.000Z</published>
-    <updated>2020-10-12T07:53:41.735Z</updated>
+    <title>SpanBert</title>
+    <link href="https://weiruohe.github.io/2020/11/09/spanbert/"/>
+    <id>https://weiruohe.github.io/2020/11/09/spanbert/</id>
+    <published>2020-11-09T01:45:37.000Z</published>
+    <updated>2020-11-10T00:42:02.572Z</updated>
     
     <summary type="html">
     
@@ -275,28 +458,28 @@
       
         
         
-          &lt;h2 id=&quot;统计机器翻译&quot;&gt;&lt;a href=&quot;#统计机器翻译&quot; class=&quot;headerlink&quot; title=&quot;统计机器翻译&quot;&gt;&lt;/a&gt;统计机器翻译&lt;/h2&gt;&lt;h3 id=&quot;3-基于词的机器翻译模型&quot;&gt;&lt;a href=&quot;#3-基于词的机器翻译模型&quot;
+          &lt;h3 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title&quot;&gt;&lt;/a&gt;Title&lt;/h3&gt;&lt;p&gt;《&lt;strong&gt;SpanBERT: Improving Pre-training by Representing
         
       
     
     </summary>
     
     
-      <category term="BookLook" scheme="https://weiruohe.github.io/categories/BookLook/"/>
-    
-    
-      <category term="MT" scheme="https://weiruohe.github.io/tags/MT/"/>
     
       <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
+    
+      <category term="pre-training-model" scheme="https://weiruohe.github.io/tags/pre-training-model/"/>
+    
+      <category term="SpanBERT" scheme="https://weiruohe.github.io/tags/SpanBERT/"/>
     
   </entry>
   
   <entry>
-    <title>code structure</title>
-    <link href="https://weiruohe.github.io/2020/08/29/common-tools/"/>
-    <id>https://weiruohe.github.io/2020/08/29/common-tools/</id>
-    <published>2020-08-29T02:52:21.000Z</published>
-    <updated>2020-10-12T07:47:27.100Z</updated>
+    <title>K-Bert</title>
+    <link href="https://weiruohe.github.io/2020/11/07/k-bert/"/>
+    <id>https://weiruohe.github.io/2020/11/07/k-bert/</id>
+    <published>2020-11-07T08:28:51.000Z</published>
+    <updated>2020-11-09T09:02:26.349Z</updated>
     
     <summary type="html">
     
@@ -304,28 +487,29 @@
       
         
         
-          &lt;p&gt;prerequisite&lt;/p&gt;
-&lt;p&gt;MLemail&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/github-25970295/blogImage/raw/master/img/image-20200727181706415.png&quot;
+          &lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/1909.07606.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://arxiv.org/pdf/1909.07606.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h3
         
       
     
     </summary>
     
     
-      <category term="Code" scheme="https://weiruohe.github.io/categories/Code/"/>
     
+      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
     
-      <category term="code structure" scheme="https://weiruohe.github.io/tags/code-structure/"/>
+      <category term="K-BERT" scheme="https://weiruohe.github.io/tags/K-BERT/"/>
+    
+      <category term="pre-training-model" scheme="https://weiruohe.github.io/tags/pre-training-model/"/>
     
   </entry>
   
   <entry>
-    <title>neo4j</title>
-    <link href="https://weiruohe.github.io/2020/08/29/neo4j/"/>
-    <id>https://weiruohe.github.io/2020/08/29/neo4j/</id>
-    <published>2020-08-29T02:52:21.000Z</published>
-    <updated>2020-10-12T07:40:31.510Z</updated>
+    <title>Pre-train-knowledge-graph</title>
+    <link href="https://weiruohe.github.io/2020/11/07/pre-train-knowledge-graph/"/>
+    <id>https://weiruohe.github.io/2020/11/07/pre-train-knowledge-graph/</id>
+    <published>2020-11-07T00:28:34.000Z</published>
+    <updated>2020-11-07T00:28:34.463Z</updated>
     
     <summary type="html">
     
@@ -333,7 +517,34 @@
       
         
         
-          &lt;h4 id=&quot;一、Basic-concepts&quot;&gt;&lt;a href=&quot;#一、Basic-concepts&quot; class=&quot;headerlink&quot; title=&quot;一、Basic concepts&quot;&gt;&lt;/a&gt;一、Basic concepts&lt;/h4&gt;&lt;h5
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ssh-win10</title>
+    <link href="https://weiruohe.github.io/2020/11/03/ssh-win10/"/>
+    <id>https://weiruohe.github.io/2020/11/03/ssh-win10/</id>
+    <published>2020-11-03T07:27:18.000Z</published>
+    <updated>2020-11-03T09:22:11.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;ssh远程登录linux系统（win10）&quot;&gt;&lt;a href=&quot;#ssh远程登录linux系统（win10）&quot; class=&quot;headerlink&quot;
         
       
     
@@ -343,18 +554,18 @@
       <category term="Commontools" scheme="https://weiruohe.github.io/categories/Commontools/"/>
     
     
-      <category term="database" scheme="https://weiruohe.github.io/tags/database/"/>
-    
       <category term="neo4j" scheme="https://weiruohe.github.io/tags/neo4j/"/>
     
+      <category term="ssh" scheme="https://weiruohe.github.io/tags/ssh/"/>
+    
   </entry>
   
   <entry>
-    <title>juice recipe</title>
-    <link href="https://weiruohe.github.io/2020/08/28/juice-recipe/"/>
-    <id>https://weiruohe.github.io/2020/08/28/juice-recipe/</id>
-    <published>2020-08-28T14:01:57.000Z</published>
-    <updated>2020-08-28T14:25:46.417Z</updated>
+    <title>Extraction-rule-Morphological-Agreement</title>
+    <link href="https://weiruohe.github.io/2020/10/30/extraction-rule-morphological-agreement/"/>
+    <id>https://weiruohe.github.io/2020/10/30/extraction-rule-morphological-agreement/</id>
+    <published>2020-10-30T00:30:22.000Z</published>
+    <updated>2020-10-30T02:44:01.593Z</updated>
     
     <summary type="html">
     
@@ -362,247 +573,23 @@
       
         
         
-          &lt;h4 id=&quot;一、果昔&quot;&gt;&lt;a href=&quot;#一、果昔&quot; class=&quot;headerlink&quot; title=&quot;一、果昔&quot;&gt;&lt;/a&gt;一、果昔&lt;/h4&gt;&lt;p&gt;[^Tips:if you want to make juice stickier,you can add some
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
         
       
     
     </summary>
     
     
-      <category term="food" scheme="https://weiruohe.github.io/categories/food/"/>
-    
-    
-      <category term="juice" scheme="https://weiruohe.github.io/tags/juice/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Wuenda&#39;s class(2)</title>
-    <link href="https://weiruohe.github.io/2020/08/20/wuenda-s-class-2/"/>
-    <id>https://weiruohe.github.io/2020/08/20/wuenda-s-class-2/</id>
-    <published>2020-08-20T00:50:32.000Z</published>
-    <updated>2020-10-12T07:39:27.470Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;p1-Train-dev-test-sets&quot;&gt;&lt;a href=&quot;#p1-Train-dev-test-sets&quot; class=&quot;headerlink&quot; title=&quot;p1.Train/dev/test sets&quot;&gt;&lt;/a&gt;p1.Train/dev/test
-        
-      
-    
-    </summary>
-    
-    
-      <category term="VideoClass" scheme="https://weiruohe.github.io/categories/VideoClass/"/>
-    
-    
-      <category term="deep-learning" scheme="https://weiruohe.github.io/tags/deep-learning/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Word Representation-Sememes</title>
-    <link href="https://weiruohe.github.io/2020/08/12/word-representation-sememes/"/>
-    <id>https://weiruohe.github.io/2020/08/12/word-representation-sememes/</id>
-    <published>2020-08-12T13:48:18.000Z</published>
-    <updated>2020-10-12T08:03:48.884Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;Abstract&quot;&gt;&lt;a href=&quot;#Abstract&quot; class=&quot;headerlink&quot; title=&quot;Abstract&quot;&gt;&lt;/a&gt;Abstract&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Sememes are minimum semantic
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
+      <category term="PaperLookThroughy" scheme="https://weiruohe.github.io/categories/PaperLookThroughy/"/>
     
     
       <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
     
-      <category term="WRL - WSD(词消歧)" scheme="https://weiruohe.github.io/tags/WRL-WSD-%E8%AF%8D%E6%B6%88%E6%AD%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sequence-wuenda</title>
-    <link href="https://weiruohe.github.io/2020/08/01/sequence-wuenda/"/>
-    <id>https://weiruohe.github.io/2020/08/01/sequence-wuenda/</id>
-    <published>2020-08-01T03:01:08.000Z</published>
-    <updated>2020-10-12T07:37:13.813Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;1-2数学符号&quot;&gt;&lt;a href=&quot;#1-2数学符号&quot; class=&quot;headerlink&quot; title=&quot;1.2数学符号&quot;&gt;&lt;/a&gt;1.2数学符号&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;创建词表（UNK表示未知词）2.represent
-        
-      
-    
-    </summary>
-    
-    
-      <category term="VedioLearning" scheme="https://weiruohe.github.io/categories/VedioLearning/"/>
-    
-    
-      <category term="sequence model" scheme="https://weiruohe.github.io/tags/sequence-model/"/>
-    
-      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pytorch official code</title>
-    <link href="https://weiruohe.github.io/2020/07/20/pytorch-official-code/"/>
-    <id>https://weiruohe.github.io/2020/07/20/pytorch-official-code/</id>
-    <published>2020-07-20T07:39:44.000Z</published>
-    <updated>2020-10-12T07:36:28.371Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;1-numpy&quot;&gt;&lt;a href=&quot;#1-numpy&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Code" scheme="https://weiruohe.github.io/categories/Code/"/>
-    
-    
-      <category term="pytorch" scheme="https://weiruohe.github.io/tags/pytorch/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Attention is all your need</title>
-    <link href="https://weiruohe.github.io/2020/07/15/attention-is-all-your-need/"/>
-    <id>https://weiruohe.github.io/2020/07/15/attention-is-all-your-need/</id>
-    <published>2020-07-15T02:37:38.000Z</published>
-    <updated>2020-10-12T08:00:31.042Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Source：&lt;a href=&quot;https://arxiv.org/pdf/1706.03762.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://arxiv.org/pdf/1706.03762.pdf&lt;/a&gt;&lt;/p&gt;
-&lt;h3
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
-    
-    
-      <category term="MT" scheme="https://weiruohe.github.io/tags/MT/"/>
-    
-      <category term="Transformer" scheme="https://weiruohe.github.io/tags/Transformer/"/>
-    
-      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MRC for NER</title>
-    <link href="https://weiruohe.github.io/2020/07/10/mrc-for-ner/"/>
-    <id>https://weiruohe.github.io/2020/07/10/mrc-for-ner/</id>
-    <published>2020-07-10T13:43:38.000Z</published>
-    <updated>2020-10-12T07:38:06.683Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;title&quot;&gt;&lt;a href=&quot;#title&quot; class=&quot;headerlink&quot; title=&quot;title&quot;&gt;&lt;/a&gt;title&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;A Unified MRC Framework for Named Entity
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
-    
-    
-      <category term="-NER -实体重叠" scheme="https://weiruohe.github.io/tags/NER-%E5%AE%9E%E4%BD%93%E9%87%8D%E5%8F%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>deep learning-Wuenda</title>
-    <link href="https://weiruohe.github.io/2020/07/07/deep-learning-wuenda/"/>
-    <id>https://weiruohe.github.io/2020/07/07/deep-learning-wuenda/</id>
-    <published>2020-07-07T09:49:47.000Z</published>
-    <updated>2020-10-12T07:35:17.198Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;4-1多功能&quot;&gt;&lt;a href=&quot;#4-1多功能&quot; class=&quot;headerlink&quot; title=&quot;4-1多功能&quot;&gt;&lt;/a&gt;4-1多功能&lt;/h3&gt;&lt;h3 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="VideoClass" scheme="https://weiruohe.github.io/categories/VideoClass/"/>
-    
-    
-      <category term="deep-learning" scheme="https://weiruohe.github.io/tags/deep-learning/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MNER-Multimodal Entity Span Detection</title>
-    <link href="https://weiruohe.github.io/2020/07/06/improving-multimodal-named-entity-recognition-via-entity-spandetection-with-unified-multimodal-transformer/"/>
-    <id>https://weiruohe.github.io/2020/07/06/improving-multimodal-named-entity-recognition-via-entity-spandetection-with-unified-multimodal-transformer/</id>
-    <published>2020-07-06T14:48:36.000Z</published>
-    <updated>2020-10-12T08:05:43.716Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Named-entity recognition&lt;/strong&gt; (NER) (also known as &lt;strong&gt;entity identification&lt;/strong&gt;, &lt;strong&gt;entity
-        
-      
-    
-    </summary>
-    
-    
-      <category term="PaperLookThrough" scheme="https://weiruohe.github.io/categories/PaperLookThrough/"/>
-    
-    
-      <category term="NLP" scheme="https://weiruohe.github.io/tags/NLP/"/>
-    
-      <category term="MNER - NER(命名实体识别)" scheme="https://weiruohe.github.io/tags/MNER-NER-%E5%91%BD%E5%90%8D%E5%AE%9E%E4%BD%93%E8%AF%86%E5%88%AB/"/>
+      <category term="Extraction-rule" scheme="https://weiruohe.github.io/tags/Extraction-rule/"/>
     
   </entry>
   

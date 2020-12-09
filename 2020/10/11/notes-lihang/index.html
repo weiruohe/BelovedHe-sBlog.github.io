@@ -496,21 +496,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2020-10-12
+                    2020-10-31
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    198
+                    713
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    2 Min
                 </div>
                 
 
@@ -525,7 +525,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="第九章-EM算法及其推广"><a href="#第九章-EM算法及其推广" class="headerlink" title="第九章 EM算法及其推广"></a>第九章 EM算法及其推广</h3><h4 id="9-1EM算法引入"><a href="#9-1EM算法引入" class="headerlink" title="9.1EM算法引入"></a>9.1EM算法引入</h4><p>EM算法（expectation maximization algorithm)期望极大值算法</p>
+                <h3 id="第六章-logistic-regression-model-logistic-回归模型"><a href="#第六章-logistic-regression-model-logistic-回归模型" class="headerlink" title="第六章 logistic regression model(logistic 回归模型)"></a>第六章 logistic regression model(logistic 回归模型)</h3><blockquote>
+<p>拟牛顿法：<a href="https://blog.csdn.net/itplus/article/details/21896453" target="_blank" rel="noopener">https://blog.csdn.net/itplus/article/details/21896453</a></p>
+</blockquote>
+<h3 id="第九章-EM算法及其推广"><a href="#第九章-EM算法及其推广" class="headerlink" title="第九章 EM算法及其推广"></a>第九章 EM算法及其推广</h3><h4 id="9-1EM算法引入"><a href="#9-1EM算法引入" class="headerlink" title="9.1EM算法引入"></a>9.1EM算法引入</h4><p>EM算法（expectation maximization algorithm)期望极大值算法</p>
 <p><a href="https://blog.csdn.net/u010834867/article/details/90762296" target="_blank" rel="noopener">https://blog.csdn.net/u010834867/article/details/90762296</a></p>
 <p><strong>Jensen不等式</strong></p>
 <p>对于凸函数而言：</p>
@@ -534,8 +537,40 @@
 <h3 id="第十章-HMM（Hidden-Markov-model-隐马尔科夫模型"><a href="#第十章-HMM（Hidden-Markov-model-隐马尔科夫模型" class="headerlink" title="第十章 HMM（Hidden Markov model)隐马尔科夫模型"></a>第十章 HMM（Hidden Markov model)隐马尔科夫模型</h3><p><strong>HMM</strong>是统计模型，包含五要素：观测序列，隐状态，初始概率，转移概率（隐含状态之间的概率），输出概率（隐含状态和可见状态之间的概率）</p>
 <img src="C:/Users/89582/AppData/Roaming/Typora/typora-user-images/image-20201012100629184.png" style="zoom:50%;">
 
+<h3 id="第七章-支持向量机"><a href="#第七章-支持向量机" class="headerlink" title="第七章 支持向量机"></a>第七章 支持向量机</h3><h4 id="7-2线性支持向量机与软间隔最大化"><a href="#7-2线性支持向量机与软间隔最大化" class="headerlink" title="7.2线性支持向量机与软间隔最大化"></a>7.2线性支持向量机与软间隔最大化</h4><p>p128 7.53,7.54</p>
+<h5 id="Q-在不等式约束的拉格朗日函数中，什么条件下取到极值？"><a href="#Q-在不等式约束的拉格朗日函数中，什么条件下取到极值？" class="headerlink" title="Q:在不等式约束的拉格朗日函数中，什么条件下取到极值？"></a>Q:在不等式约束的拉格朗日函数中，什么条件下取到极值？</h5><p>C1：假设目标函数是f(x),限定条件是等式h(x)=0,则极值点一定取在切点，假设不在切点那么h(x)向内移或者向外移动会变大或变小，所以不是极值点。</p>
+<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201021084447071.png" alt="图中为f(x)的等值图以及h(x)的函数图" style="zoom: 50%;">
+
+<p>C2：在限定条件中加一个不等式约束g(x)&lt;=0,f(x)的等值图与h(x)与g(x)的图像如下</p>
+<img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201021084837306.png" alt="image-20201021084837306" style="zoom:50%;">
+
+<p>关于f(x)极值点的分布有两种情况:</p>
+<ol>
+<li>f(x)本身的极值点在限制域中</li>
+<li>极值点在h(x)的边界上取到</li>
+</ol>
+<p>第一种情况：h(x)限制无效，则不对它进行约束，目标函数可以看作f(x)+μg(x),对x求偏导得到f’(x)+μg’(x),由图像可知，在极值点f(x)与g(x)的极值符号相反，为了使目标函数的偏导为0，则μ&gt;=0且g(x)=0（对μ求偏导得到g(x)</p>
+<p>[^取等号是因为有可能g(x)也在该点处取到极值点。]: </p>
+<p>第二种情况：g(x)限制无效，则μ=0且g(x)&lt;=0</p>
+<p><strong>综上μg(x)=0</strong></p>
+<h5 id="7-2-4合页损失函数"><a href="#7-2-4合页损失函数" class="headerlink" title="7.2.4合页损失函数"></a>7.2.4合页损失函数</h5><img src="https://gitee.com/github-25970295/blogImage/raw/master/img/image-20201021093753757.png" style="zoom:50%;">
+
+<ol>
+<li><p>0-1损失</p>
+<p>正确分类，损失为0；错误分类，损失为1</p>
+</li>
+<li><p>感知机损失函数</p>
+<p>正确分类，损失为0；错误分离，损失为-y(w·x+b)</p>
+</li>
+<li><p>合页损失函数</p>
+<p>正确分类且函数间隔&gt;=1损失为0，否则损失为1-y(w·x+b)，*<em>合页损失函数对函数有更高的要求                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  *</em></p>
+<p>[^函数间隔是指实例点到超级分离平面的距离，表示该实例点被分类的可信任程度。]: </p>
+</li>
+</ol>
 <h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h4><p><a href="https://blog.csdn.net/baidu_38172402/article/details/89090383" target="_blank" rel="noopener">https://blog.csdn.net/baidu_38172402/article/details/89090383</a></p>
-<p><a href="https://www.cnblogs.com/fulcra/p/11065474.html（HMM" target="_blank" rel="noopener">https://www.cnblogs.com/fulcra/p/11065474.html（HMM</a>)</p>
+<p><a href="https://www.cnblogs.com/fulcra/p/11065474.html" target="_blank" rel="noopener">https://www.cnblogs.com/fulcra/p/11065474.html</a></p>
+<p><a href="https://blog.csdn.net/weixin_41500849/article/details/80493712?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param" target="_blank" rel="noopener">https://blog.csdn.net/weixin_41500849/article/details/80493712?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param</a></p>
+<p>《统计学习方法》（李航）</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
